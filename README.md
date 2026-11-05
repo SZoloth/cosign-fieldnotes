@@ -4,6 +4,10 @@ An independent, source-linked study of design, product, and growth practice. It 
 
 **A research starting point, not a ranking or a claim of exhaustive study.** The project is not affiliated with Cosign or endorsed by the people featured. A nomination is not an award won. Individual, team, interviewer, and publisher contributions remain distinct.
 
+## Read the research
+
+Start with the [study library](studies/README.md), which provides a readable page for each practitioner, explicit coverage counts, a discovery-only queue, and cross-study comparisons. Source JSON remains available for reuse and inspection.
+
 ## Use it
 
 - Browse practitioner studies by discipline or search people, ideas, and source works.
@@ -29,6 +33,7 @@ Then open `http://localhost:8080`. Use HTTP rather than opening `index.html` as 
 
 ## Content structure
 
+- `studies/`: Readable, source-linked Markdown studies, coverage index, comparisons, and discovery queue.
 - `research/*.json`: Public-safe source research with full provenance and limitations.
 - `scripts/build-collection.mjs`: Converts research records into the normalized UI collection.
 - `dist/data/collection.json`: Portable normalized people, works, decisions, writing observations, exercises, and study paths.
@@ -40,6 +45,7 @@ To update research, edit the relevant public data file, then run:
 
 ```sh
 node scripts/build-collection.mjs
+node scripts/build-study-notes.mjs
 npm run check
 npm test
 ```

@@ -1,0 +1,244 @@
+{
+  "schemaVersion": "1.0",
+  "discipline": "Design",
+  "researchedAt": "2026-11-05",
+  "status": "Ready: two additional motion and creative-coding profiles; existing profiles are unchanged",
+  "editorialNote": "Original educational analysis of public, bylined sources. Documented decisions are distinguished from editorial alternatives and tradeoffs. Exercises are original practice suggestions, not assignments endorsed by the practitioners. Historical browser-support statements are not current compatibility advice. Sources remain their authors' property; inclusion implies no endorsement.",
+  "people": [
+    {
+      "id": "matt-perry",
+      "name": "Matt Perry",
+      "discipline": "Design",
+      "focus": "Animation architecture, responsive interaction, and explicit performance tradeoffs",
+      "keyIdea": "Choose animation machinery for the interaction it must preserve, then explain the rendering costs and failure cases rather than treating smoothness as magic.",
+      "artifacts": [
+        {
+          "title": "Crashing cars and improving hover detection",
+          "url": "https://motion.dev/magazine/collision-detection-in-hover-detection",
+          "date": "2026-06-04",
+          "author": "Matt Perry",
+          "sourceType": "Bylined implementation essay with comparative demos",
+          "confidence": "high",
+          "summary": "Explains skipped hover targets through discrete pointer sampling, then applies line-segment collision testing and grouped geometry reads to a showcase grid."
+        },
+        {
+          "title": "Building the ultimate ticker",
+          "url": "https://motion.dev/magazine/building-the-ultimate-ticker",
+          "date": "2025-06-05",
+          "author": "Matt Perry",
+          "sourceType": "Bylined component design rationale and commercial announcement",
+          "confidence": "high",
+          "summary": "Describes Motion+ Ticker's item recycling, velocity-based animation, visibility controls, reduced-motion behavior, and an explicitly provisional keyboard-navigation approach."
+        },
+        {
+          "title": "The Web Animation Performance Tier List",
+          "url": "https://motion.dev/magazine/web-animation-performance-tier-list",
+          "date": "2025-11-05",
+          "author": "Matt Perry",
+          "sourceType": "Bylined technical explainer",
+          "confidence": "high",
+          "summary": "Organizes animation approaches by rendering work and execution thread, while discussing layer memory, layout reads, and exceptions to simple performance rankings."
+        },
+        {
+          "title": "Do you still need Framer Motion?",
+          "url": "https://motion.dev/magazine/do-you-still-need-framer-motion",
+          "date": "2024-05-29",
+          "author": "Matt Perry",
+          "sourceType": "Bylined historical comparison of native CSS and a JavaScript animation library",
+          "confidence": "high",
+          "summary": "Compares native animation capabilities with library behavior, including the difference between a sampled spring-like curve and velocity-aware, interruptible spring motion."
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "Test the segment between previous and current pointer positions against target rectangles.",
+          "alternative": "React only when a sampled pointer position lands inside a target.",
+          "tradeoff": "Fast swipes reach otherwise skipped targets, but geometry measurement and intersection checks add work.",
+          "evidenceUrls": ["https://motion.dev/magazine/collision-detection-in-hover-detection"],
+          "status": "Documented demo implementation and comparison"
+        },
+        {
+          "decision": "Recycle ticker items across the visible boundary and create only the clones required by the measured viewport.",
+          "alternative": "Duplicate a fixed item set or provision for the widest possible viewport.",
+          "tradeoff": "Less duplicated content reduces overhead, at the cost of measurement and item-positioning logic.",
+          "evidenceUrls": ["https://motion.dev/magazine/building-the-ultimate-ticker"],
+          "status": "Documented component design; complexity tradeoff is editorial analysis"
+        },
+        {
+          "decision": "Expose ticker velocity in pixels per second and drive its offset on the main thread.",
+          "alternative": "Use a fixed-duration CSS loop whose speed changes with content length.",
+          "tradeoff": "Speed stays intelligible and supports gesture composition, but scheduling becomes vulnerable to main-thread contention.",
+          "evidenceUrls": ["https://motion.dev/magazine/building-the-ultimate-ticker"],
+          "status": "Documented component choice; contention consequence is editorial analysis"
+        },
+        {
+          "decision": "Apply layer-promotion hints deliberately rather than adding will-change to every animated element.",
+          "alternative": "Treat blanket layer promotion as a universal performance fix.",
+          "tradeoff": "Promotion can avoid paint for suitable updates, but excessive or oversized layers consume GPU memory.",
+          "evidenceUrls": ["https://motion.dev/magazine/web-animation-performance-tier-list"],
+          "status": "Author's stated recommendation and Motion implementation rationale"
+        },
+        {
+          "decision": "Preserve incoming velocity when a spring animation follows a gesture or interrupted animation.",
+          "alternative": "Replay a predefined spring-shaped easing curve from a new starting point.",
+          "tradeoff": "Velocity-aware behavior supports continuity; a fixed curve can be a simpler, lightweight choice for self-contained motion.",
+          "evidenceUrls": ["https://motion.dev/magazine/do-you-still-need-framer-motion"],
+          "status": "Documented library behavior and author's comparison, not a universal selection rule"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "technique": "Let readers experience the defect before naming the algorithm.",
+          "evidence": "Two hover grids establish a perceptual difference before the essay connects pointer sampling to tunnelling in game physics.",
+          "sourceUrl": "https://motion.dev/magazine/collision-detection-in-hover-detection"
+        },
+        {
+          "technique": "Use the same problem categories to structure the critique and proposed solution.",
+          "evidence": "The ticker article revisits responsiveness, accessibility, and animation in the same order, making the component's claimed remedies easy to audit.",
+          "sourceUrl": "https://motion.dev/magazine/building-the-ultimate-ticker"
+        },
+        {
+          "technique": "Teach the mechanism before offering a memorable classification.",
+          "evidence": "The performance article introduces rendering stages and threads before assigning tiers, then adds caveats that prevent the ranking from replacing judgment.",
+          "sourceUrl": "https://motion.dev/magazine/web-animation-performance-tier-list"
+        }
+      ],
+      "exercise": {
+        "task": "Prototype one reversible panel transition using a fixed easing curve and a velocity-aware spring. Keep distance and visual styling equal. Reverse each at early, middle, and late points; record the response with and without a controlled main-thread workload. Add a reduced-motion version and write when you would choose each implementation.",
+        "deliverable": "Two original prototypes, a six-case interruption matrix, browser and device details, and a 250-word decision note separating measured results from perceived continuity.",
+        "evaluation": [
+          "Does reversal preserve a convincing trajectory without delaying the requested state change?",
+          "Are claims backed by repeatable traces or recordings rather than a tier label alone?",
+          "Can the interface remain understandable with motion disabled?"
+        ]
+      },
+      "limitations": [
+        "Perry authors the articles and created Motion; this does not establish sole authorship of every component or dependency.",
+        "The ticker article is also marketing. Its keyboard approach is explicitly described as work in progress, not a proven accessibility standard.",
+        "The hover demonstration approximates movement as straight segments between samples and checks rectangles; it does not reconstruct the true continuous path.",
+        "Performance depends on browser, device, layer size, and workload. No demos, paid components, or benchmark claims were independently executed here.",
+        "The CSS comparison dates from 2024 and contains historical support and implementation statements. Recheck current documentation before implementation."
+      ],
+      "coverage": "Four bylined primary artifacts reviewed, with five concrete decisions, three communication techniques, and an original interruption-testing exercise."
+    },
+    {
+      "id": "jhey",
+      "name": "jhey",
+      "discipline": "Design",
+      "focus": "Creative coding, parametric CSS, and teaching through inspectable experiments",
+      "keyIdea": "Turn a striking effect into a small set of understandable inputs, expose how those inputs work, and keep the result adaptable to devices and user preferences.",
+      "artifacts": [
+        {
+          "title": "Parallax Powered by CSS Custom Properties",
+          "url": "https://dev.to/jh3y/parallax-powered-by-css-custom-properties-3p83",
+          "date": "2022-01-10",
+          "author": "Jhey Tompkins",
+          "sourceType": "Author-published syndication of a first-person implementation tutorial",
+          "confidence": "high",
+          "summary": "Separates pointer input from per-object visual coefficients in a parallax scene, with configurable motion reduction and non-hover behavior."
+        },
+        {
+          "title": "Building Chrometober!",
+          "url": "https://web.dev/articles/building-chrometober",
+          "date": "2022-10-31",
+          "author": "Jhey Tompkins",
+          "sourceType": "Bylined team-project retrospective; date is the displayed last-updated date",
+          "confidence": "high",
+          "summary": "Documents a scrolling-book project, its responsive concept change, component architecture, accessibility review, and experimental API feedback. Team responsibilities are explicitly credited."
+        },
+        {
+          "title": "Speedy CSS Tip! Animated Loader",
+          "url": "https://web.dev/articles/speedy-css-tip-animated-loader",
+          "date": "2022-09-22",
+          "author": "Jhey Tompkins",
+          "sourceType": "Bylined compact CSS tutorial; date is the displayed last-updated date",
+          "confidence": "high",
+          "summary": "Builds a radial loader from count and index custom properties, calculated geometry and opacity, and a matching stepped rotation."
+        },
+        {
+          "title": "The Path To Awesome CSS Easing With The linear() Function",
+          "url": "https://www.smashingmagazine.com/2023/09/path-css-easing-linear-function/",
+          "date": "2023-09-22",
+          "author": "Jhey Tompkins",
+          "sourceType": "Bylined technical tutorial and tool-building account",
+          "confidence": "high",
+          "summary": "Explains custom easing through visual examples and recounts simplifying a GSAP-to-CSS conversion tool with Jake Archibald's help."
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "Pass two normalized pointer values into scoped CSS properties; configure each object's response separately.",
+          "alternative": "Calculate every object's visual transform in the pointer handler.",
+          "tradeoff": "Input logic stays reusable, while CSS coefficient relationships require careful naming and tuning.",
+          "evidenceUrls": ["https://dev.to/jh3y/parallax-powered-by-css-custom-properties-3p83"],
+          "status": "Documented implementation; alternative and maintenance tradeoff are editorial analysis"
+        },
+        {
+          "decision": "Replace the initial sideways scene-navigation concept with a scrolling 3D book.",
+          "alternative": "Continue developing rotating and scaling scenes along a horizontal route.",
+          "tradeoff": "The book better matched the team's responsive ambitions, while retaining substantial page-turning and accessibility complexity.",
+          "evidenceUrls": ["https://web.dev/articles/building-chrometober"],
+          "status": "Jhey's documented concept decision; remaining complexity is editorial analysis"
+        },
+        {
+          "decision": "Derive radial loader geometry, opacity, and stepped rotation from shared count and index values.",
+          "alternative": "Hand-author separate placement and timing values for every spoke.",
+          "tradeoff": "One parameter system supports variation, but generated markup and the declared count must stay synchronized.",
+          "evidenceUrls": ["https://web.dev/articles/speedy-css-tip-animated-loader"],
+          "status": "Documented tutorial implementation; alternative and synchronization caution are editorial analysis"
+        },
+        {
+          "decision": "Convert GSAP easing functions directly instead of extracting and rescaling SVG paths from its visualizer.",
+          "alternative": "Continue using an intermediate geometric representation of the easing curve.",
+          "tradeoff": "Direct function input removes conversion work; generated point simplification still trades output size against approximation fidelity.",
+          "evidenceUrls": ["https://www.smashingmagazine.com/2023/09/path-css-easing-linear-function/"],
+          "status": "Documented simplification prompted by Jake Archibald; fidelity tradeoff is editorial analysis"
+        },
+        {
+          "decision": "Multiply decorative parallax transforms by a shared motion coefficient and set it to zero when hovering is unavailable.",
+          "alternative": "Keep the full pointer-driven effect for every user and device.",
+          "tradeoff": "Central control simplifies adaptation; reducing motion amplitude alone does not establish accessibility.",
+          "evidenceUrls": ["https://dev.to/jh3y/parallax-powered-by-css-custom-properties-3p83"],
+          "status": "Documented implementation; accessibility boundary is editorial analysis"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "technique": "Build one visible mechanism at a time.",
+          "evidence": "The loader tutorial moves from markup to placement, opacity, and stepped rotation, so each code addition has an observable purpose.",
+          "sourceUrl": "https://web.dev/articles/speedy-css-tip-animated-loader"
+        },
+        {
+          "technique": "Include the detour that explains why the simpler solution is better.",
+          "evidence": "The easing account preserves the unsuccessful SVG route and credits Archibald's question before showing direct function conversion.",
+          "sourceUrl": "https://www.smashingmagazine.com/2023/09/path-css-easing-linear-function/"
+        },
+        {
+          "technique": "Make a polished result legible as a series of decisions made by a team.",
+          "evidence": "Chrometober names contributors, shows the abandoned concept, and records device-testing and accessibility work rather than presenting the final effect as inevitable.",
+          "sourceUrl": "https://web.dev/articles/building-chrometober"
+        }
+      ],
+      "exercise": {
+        "task": "Create an original five-shape decorative scene with two shared input values and per-shape coefficients. Make normal, reduced, and static variants. Keep adjacent content usable without the decoration. Write a short tutorial that reveals input mapping, one shape, and the full composition in three stages; include one rejected approach.",
+        "deliverable": "A small original experiment, a parameter map, screenshots at narrow and wide widths, a motion-preference test record, and a 300-word explanation with credit for borrowed techniques.",
+        "evaluation": [
+          "Can a reader predict what changing one coefficient will do?",
+          "Does the static version preserve all information and actions?",
+          "Are pointer, non-hover, keyboard, and motion-preference cases considered?",
+          "Does the explanation distinguish the author's contribution from libraries, specifications, and collaborators?"
+        ]
+      },
+      "limitations": [
+        "jhey is the public name used here; the articles are bylined Jhey Tompkins.",
+        "Chrometober credits Jhey as architectural and creative lead, Tyler Reed for illustration and design, Una Kravets as project lead, and other contributors. It is not a solo project.",
+        "Chrometober uses a 2022 experimental API and polyfill. Its syntax and browser-support statements must not be copied as current implementation guidance.",
+        "The parallax tutorial's example motion-reduction coefficient is not a universal safe value. Its personal-site original was unavailable through the research tool; the author's DEV syndication was reviewed.",
+        "The linear() article credits Jake Archibald's specification and generator work. Jhey's contribution discussed here is the explanation and conversion workflow, not invention of the underlying API.",
+        "The compact loader tutorial is not a complete accessible loading-state component. Status semantics, announcements, and motion preferences need separate design.",
+        "Demos were read, not executed. Dates for the web.dev articles identify their displayed update dates, not independently verified original publication dates."
+      ],
+      "coverage": "Four bylined primary artifacts reviewed, including an author-published syndication, a credited team retrospective, a compact tutorial, and a tool-building account; five decisions and three communication techniques are included."
+    }
+  ]
+}

@@ -1,0 +1,1031 @@
+{
+  "schemaVersion": 1,
+  "cohort": "product",
+  "verifiedAt": "2026-11-05",
+  "selectionSource": "https://cosign.co/awards/product",
+  "batch": "Product additions: public-source learning studies",
+  "methodology": {
+    "selection": "Five people verified on Cosign’s open product nominations roster. The roster is not an adjudicated ranking.",
+    "evidence": "Primary authored works, original interviews and official collective product artifacts. Each source records access and authorship limits.",
+    "interpretation": "Findings distinguish source facts from editorial tradeoffs, boundary tests and original practice exercises. No lesson is represented as an endorsed curriculum.",
+    "rights": "Short original paraphrases only; no transcripts or copyrighted long excerpts are reproduced. Read the original source for full context.",
+    "roles": "Roles are framed at the time of the cited work, not assumed permanently current."
+  },
+  "people": [
+    {
+      "id": "mario-zechner",
+      "name": "Mario Zechner",
+      "role": "Creator of pi; programmer and open-source builder",
+      "category": "Product",
+      "focus": [
+        "Agent harnesses",
+        "Scope control",
+        "Observability",
+        "Portability",
+        "Review capacity"
+      ],
+      "summary": "Study a personal tool built around explicit constraints, then challenge which constraints survive a multi-user or high-stakes setting.",
+      "studyQuestions": [
+        "Which complexity belongs in the product, and which can remain in an existing tool?",
+        "What state must survive a provider or session failure?",
+        "Does faster generation exceed the team’s ability to verify changes?"
+      ],
+      "sources": [
+        {
+          "id": "mario-pi-2025",
+          "title": "What I learned building an opinionated and minimal coding agent",
+          "url": "https://mariozechner.at/posts/2025-11-30-pi-coding-agent/",
+          "date": "2025-11-30",
+          "kind": "Authored technical essay",
+          "attribution": "Mario Zechner; personal implementation account.",
+          "access": "Public page opened and relevant body text inspected.",
+          "readFor": "Read the toolset, visibility requirements, package boundaries and benchmark caveats as a dated design record."
+        },
+        {
+          "id": "mario-mcp-2025",
+          "title": "What if you don't need MCP at all?",
+          "url": "https://mariozechner.at/posts/2025-11-02-what-if-you-dont-need-mcp/",
+          "date": "2025-11-02",
+          "kind": "Authored technical essay",
+          "attribution": "Mario Zechner; worked example, not a universal protocol comparison.",
+          "access": "Public page opened and relevant body text inspected.",
+          "readFor": "Follow the browser-task example from requirements to tool inventory and composable outputs."
+        },
+        {
+          "id": "mario-state-2025",
+          "title": "Armin is wrong and here's why",
+          "url": "https://mariozechner.at/posts/2025-11-22-armin-is-wrong/",
+          "date": "2025-11-22",
+          "kind": "Authored technical argument",
+          "attribution": "Mario Zechner responding to Armin Ronacher; the response is one side of a debate.",
+          "access": "Public page opened and relevant body text inspected.",
+          "readFor": "Separate recoverable application state from opaque provider state."
+        },
+        {
+          "id": "mario-slow-2026",
+          "title": "Thoughts on slowing the fuck down",
+          "url": "https://mariozechner.at/posts/2026-03-25-thoughts-on-slowing-the-fuck-down/",
+          "date": "2026-03-25",
+          "kind": "Authored opinion essay",
+          "attribution": "Mario Zechner; explicitly anecdotal industry observations.",
+          "access": "Public page opened and relevant body text inspected.",
+          "readFor": "Read the review-capacity argument and the limits of narrow evaluation functions."
+        }
+      ],
+      "lessons": [
+        {
+          "id": "mario-visible-kernel",
+          "title": "Build around a visible, stable kernel",
+          "kind": "Decision study",
+          "finding": "A feature list is less useful than an explicit contract about what the operator can inspect.",
+          "evidence": "Zechner prioritized inspectable context and sessions, separated API, agent loop and terminal UI, and used four default tools.",
+          "tradeoff": "A smaller core transfers some integration work to users.",
+          "limits": "This describes the November 2025 design, not a verified inventory of the current release.",
+          "exercise": "Choose an agent workflow. Draw its state, tools and UI separately. Mark every hidden input. Define a versioned trace format and show how a reviewer would reproduce one failure without reading application source.",
+          "sourceIds": [
+            "mario-pi-2025"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        },
+        {
+          "id": "mario-tool-economics",
+          "title": "Price tool overhead against a concrete task",
+          "kind": "Decision study",
+          "finding": "Compare tool exposure and result handling for the job, not the prestige of an integration standard.",
+          "evidence": "The browser example replaces broad server interfaces with a small script set; outputs can be composed outside model context.",
+          "tradeoff": "A narrow interface saves context but can make discovery and maintenance harder.",
+          "limits": "The article itself allows that both approaches can be efficient; its token counts are historical, task-specific measurements.",
+          "exercise": "For five recurring tasks, list tool descriptions loaded, output retained, authentication requirements and maintenance owner. Compare two implementations on successful completion, not token reduction alone. Use authorized test accounts and synthetic data.",
+          "sourceIds": [
+            "mario-mcp-2025"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        },
+        {
+          "id": "mario-own-state",
+          "title": "Make recovery a product requirement",
+          "kind": "Decision study",
+          "finding": "Identify what the application must reconstruct before choosing who hosts its state.",
+          "evidence": "Zechner distinguishes local observable logs from provider-private caches and execution environments; losing necessary remote artifacts is more serious than losing optional traces.",
+          "tradeoff": "Owning recovery state adds storage, synchronization and lifecycle work.",
+          "limits": "His API observations are dated opinions; test present provider contracts rather than assuming permanent limitations.",
+          "exercise": "Create a failure matrix: expired session, lost container, provider switch, interrupted write. For each, specify authoritative data, recovery action, user-visible loss and a test. Never store credentials in the recovery log.",
+          "sourceIds": [
+            "mario-state-2025"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        },
+        {
+          "id": "mario-review-budget",
+          "title": "Treat review capacity as a throughput constraint",
+          "kind": "Decision study",
+          "finding": "More generated output is not equivalent to more trustworthy product change.",
+          "evidence": "He recommends bounded, evaluable tasks and limiting generated code to what a human can review. He warns narrow objectives omit other quality dimensions.",
+          "tradeoff": "Deliberate review reduces raw output but preserves understanding.",
+          "limits": "The essay does not establish a causal industry-wide decline in software quality or prove all autonomous development fails.",
+          "exercise": "For a week, track changes accepted, review time, regressions, duplicated concepts and rollback time. Compare a small-diff policy with your baseline. Inspect failures that tests passed. Decide whether speed improved after review costs.",
+          "sourceIds": [
+            "mario-slow-2026"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        }
+      ],
+      "writingTechniques": [
+        {
+          "title": "Use exclusions as the outline",
+          "observation": "The pi essay organizes several sections around features deliberately left out.",
+          "practice": "Write three non-goals with the rejected alternative, the user cost of exclusion and the condition that would reverse the choice.",
+          "sourceIds": [
+            "mario-pi-2025"
+          ],
+          "kind": "Analyst observation of the cited text"
+        },
+        {
+          "title": "Start with the smallest executable example",
+          "observation": "The MCP argument defines a specific browser workload before comparing interfaces.",
+          "practice": "Replace a broad claim with one repeatable task, two implementations and a result readers can inspect.",
+          "sourceIds": [
+            "mario-mcp-2025"
+          ],
+          "kind": "Analyst observation of the cited text"
+        },
+        {
+          "title": "Concede a narrower truth",
+          "observation": "The state essay explicitly returns to where the opposing perspective is useful.",
+          "practice": "Write the strongest version of an objection, concede its valid part, then restate the smaller claim you can defend.",
+          "sourceIds": [
+            "mario-state-2025"
+          ],
+          "kind": "Analyst observation of the cited text"
+        }
+      ],
+      "counterexamples": [
+        {
+          "claimToTest": "Minimal tools imply safe autonomy.",
+          "analysis": "Few tools can still grant enormous authority. Shell access is not a safety boundary. The 2025 no-guardrails choice is unsuitable as a general enterprise security recommendation. Evaluate least privilege, isolation, approvals and auditability separately.",
+          "sourceIds": [
+            "mario-pi-2025"
+          ],
+          "kind": "Analyst counterexample or boundary condition, not a reported experiment"
+        },
+        {
+          "claimToTest": "A narrow benchmark proves a general workflow.",
+          "analysis": "A successful coding or speed task can conceal integration, accessibility, maintainability and recovery failures. Add release-level acceptance tests before adopting the workflow broadly.",
+          "sourceIds": [
+            "mario-slow-2026"
+          ],
+          "kind": "Analyst counterexample or boundary condition, not a reported experiment"
+        }
+      ],
+      "capstone": {
+        "title": "Design an inspectable agent workflow",
+        "deliverable": "A two-page architecture decision record, one synthetic run trace and one recovery drill.",
+        "steps": [
+          "Select a reversible, low-risk task and define the human acceptance decision.",
+          "Specify the minimum tools, persisted state, permissions and artifacts.",
+          "Run a baseline and a reduced-tool version on the same cases.",
+          "Inject one interrupted run and show how work resumes without repeating external actions.",
+          "Record a reason to add complexity and a reason to refuse it."
+        ],
+        "evaluation": [
+          "Another person can identify the source of every consequential action.",
+          "The recovery drill preserves correctness, not just conversation continuity.",
+          "Evaluation includes task success, review effort and unhandled failure modes.",
+          "No unrestricted access is justified merely by simplicity."
+        ],
+        "attribution": "Original learning exercise created for this collection, not prescribed or endorsed by the person studied."
+      },
+      "learningPath": [
+        "mario-pi-2025",
+        "mario-mcp-2025",
+        "mario-state-2025",
+        "mario-slow-2026"
+      ],
+      "provenanceNotes": [
+        "Verified on the Cosign product nominations roster on 2026-11-05. Nomination is a discovery signal, not an independently validated quality ranking.",
+        "All four texts are authored essays. Product claims and benchmark interpretations remain the author’s account.",
+        "The linked GitHub package could not be fetched through the research tool. No current code audit or current feature inventory is claimed.",
+        "Exercises, tradeoff analysis and counterexamples are editorial synthesis."
+      ]
+    },
+    {
+      "id": "josh-woodward",
+      "name": "Josh Woodward",
+      "role": "Google product leader for Labs, the Gemini app and AI Studio in the cited 2026 material",
+      "category": "Product",
+      "focus": [
+        "Research products",
+        "Personalization",
+        "Product distribution",
+        "Trust communication",
+        "User feedback"
+      ],
+      "summary": "Study how product announcements explain a changing capability while preserving a clear job, user control and recognizable workflow.",
+      "studyQuestions": [
+        "What should remain stable as capability and distribution expand?",
+        "How does the user inspect or correct personalization?",
+        "Which evidence connects a requested feature to a durable job?"
+      ],
+      "sources": [
+        {
+          "id": "josh-personal-2026",
+          "title": "Gemini introduces Personal Intelligence",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/personal-intelligence/",
+          "date": "2026-01-14",
+          "kind": "Bylined product announcement",
+          "attribution": "Josh Woodward on Google’s official blog; corporate claims and personal demonstration.",
+          "access": "Public page opened and relevant body text inspected.",
+          "readFor": "Read the concrete opening scenario, controls and explicit failure examples."
+        },
+        {
+          "id": "josh-notebook-2026",
+          "title": "NotebookLM is now Gemini Notebook",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
+          "date": "2026-07-16",
+          "kind": "Bylined product announcement",
+          "attribution": "Josh Woodward on Google’s official blog; collective product work.",
+          "access": "Public page opened and relevant body text inspected.",
+          "readFor": "Follow how standalone identity is preserved while analysis and cross-app distribution expand."
+        },
+        {
+          "id": "josh-notebook-history-2025",
+          "title": "The inside story of building NotebookLM",
+          "url": "https://blog.google/innovation-and-ai/products/developing-notebooklm/",
+          "date": "2025-07-29",
+          "kind": "Official team retrospective",
+          "attribution": "Chaim Gartenberg, quoting Steven Johnson and Ani Mohan. This is not Woodward-authored prose or proof of his individual decisions.",
+          "access": "Public page opened and relevant body text inspected.",
+          "readFor": "Study feedback channels, language expansion and the difference between team evidence and executive attribution."
+        },
+        {
+          "id": "josh-labs-interview-2026",
+          "title": "Why every company now needs to think and operate like a lab team",
+          "url": "https://www.lennysnewsletter.com/p/why-every-company-now-needs-to-think",
+          "date": "2026-10-11",
+          "kind": "Original interview landing page",
+          "attribution": "Lenny Rachitsky interviewing Josh Woodward.",
+          "access": "Public introduction and episode links inspected. Paid takeaways and full interview were not inspected; no substantive lesson below depends on them.",
+          "readFor": "Optional listening on experiment selection, stopping ideas and changing planning horizons."
+        }
+      ],
+      "lessons": [
+        {
+          "id": "josh-personal-control",
+          "title": "Pair personalization with visible escape hatches",
+          "kind": "Decision study",
+          "finding": "Treat correction and non-personalized use as first-class paths.",
+          "evidence": "The launch describes opt-in app connections, source explanations, corrections, temporary chats and regenerating without personalization.",
+          "tradeoff": "Additional controls introduce choices that users must understand.",
+          "limits": "These are announced behaviors, not independently audited privacy or reliability guarantees.",
+          "exercise": "Design a personalization settings screen and a wrong-inference recovery flow using fictional data. Test whether users can identify the connected source, correct the inference and complete the same task without personalization.",
+          "sourceIds": [
+            "josh-personal-2026"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        },
+        {
+          "id": "josh-boundary-examples",
+          "title": "Explain failure with a plausible counterexample",
+          "kind": "Decision study",
+          "finding": "A limitation becomes actionable when readers can recognize it.",
+          "evidence": "Woodward illustrates over-personalization with photos that suggest a hobby but actually reflect supporting a family member.",
+          "tradeoff": "A memorable example can illuminate a class of error but cannot quantify its frequency.",
+          "limits": "One example does not establish coverage across sensitive topics or changing relationships.",
+          "exercise": "Write three false-inference scenarios for a recommendation feature. For each, distinguish observed behavior, inferred preference and confidence. Specify when the product should ask, abstain or offer a correction.",
+          "sourceIds": [
+            "josh-personal-2026"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        },
+        {
+          "id": "josh-preserve-job",
+          "title": "Expand capability without losing the product’s center",
+          "kind": "Decision study",
+          "finding": "Describe what remains constant before asking users to absorb a rebrand or new surface.",
+          "evidence": "The rename keeps a standalone research product while adding source-grounded code execution and syncing notebooks across Google surfaces.",
+          "tradeoff": "Distribution can increase utility while complicating identity, permissions and support.",
+          "limits": "The announcement states rollout plans; it does not prove feature availability for every account today.",
+          "exercise": "Draft a migration brief for a research tool gaining an execution feature. Name the stable job, changed behavior, eligibility, permissions, failure recovery and support route. Have an existing user explain what changed in their own words.",
+          "sourceIds": [
+            "josh-notebook-2026"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        },
+        {
+          "id": "josh-feedback-capability",
+          "title": "Join user demand to newly feasible capability",
+          "kind": "Decision study",
+          "finding": "Use both workflow demand and technical feasibility to choose expansion.",
+          "evidence": "The NotebookLM team reports requests for more languages and mobile access; model capability expanded the language plan.",
+          "tradeoff": "Broadening access competes with depth in existing workflows.",
+          "limits": "This is Johnson and Mohan’s team account. Reported growth after launches is not a controlled causal estimate or Woodward’s sole accomplishment.",
+          "exercise": "Build a matrix of five user requests against feasibility, underserved audience, measurable outcome and operational cost. Pick one small test. State what adoption evidence would justify expansion and what result would stop it.",
+          "sourceIds": [
+            "josh-notebook-history-2025"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        }
+      ],
+      "writingTechniques": [
+        {
+          "title": "Lead with an ordinary moment",
+          "observation": "The Personal Intelligence post opens with a tire-shop task before explaining the feature.",
+          "practice": "Write a launch opening around a specific interruption, needed information and completed outcome. Avoid a capability list in the first paragraph.",
+          "sourceIds": [
+            "josh-personal-2026"
+          ],
+          "kind": "Analyst observation of the cited text"
+        },
+        {
+          "title": "Separate continuity from change",
+          "observation": "The rename announcement explains the enduring research role before listing upgrades.",
+          "practice": "For a major release, write separate sentences for the unchanged promise, new capability and rollout boundary.",
+          "sourceIds": [
+            "josh-notebook-2026"
+          ],
+          "kind": "Analyst observation of the cited text"
+        },
+        {
+          "title": "Attribute the mechanism to its operators",
+          "observation": "The team retrospective names the people explaining feedback and technical expansion.",
+          "practice": "In a case study, identify who observed the signal, who changed the plan and what remains uncertain. Do not collapse all work into a leader story.",
+          "sourceIds": [
+            "josh-notebook-history-2025"
+          ],
+          "kind": "Analyst observation of Gartenberg’s team retrospective, not Woodward’s individual writing style"
+        }
+      ],
+      "counterexamples": [
+        {
+          "claimToTest": "More context always means more relevance.",
+          "analysis": "Personal data can be correct while the inference is wrong. Evaluate whether context improves the requested answer and whether the user can contest it.",
+          "sourceIds": [
+            "josh-personal-2026"
+          ],
+          "kind": "Analyst counterexample or boundary condition, not a reported experiment"
+        },
+        {
+          "claimToTest": "A larger distribution surface proves a stronger core product.",
+          "analysis": "A cross-app launch can produce exposure without improving task success. Measure research quality and return use separately from reach.",
+          "sourceIds": [
+            "josh-notebook-2026"
+          ],
+          "kind": "Analyst counterexample or boundary condition, not a reported experiment"
+        }
+      ],
+      "capstone": {
+        "title": "Write a trust-aware AI launch",
+        "deliverable": "A 500-word launch note, a control map and a measurement plan for a fictional research assistant.",
+        "steps": [
+          "Open with one credible user job rather than a benchmark.",
+          "Explain the new capability and the product behavior that stays stable.",
+          "Map each personal or organizational source to permission, visibility, correction and deletion behavior.",
+          "Add two realistic failure cases and a non-personalized fallback.",
+          "Propose a staged test separating discovery, successful use and repeat use."
+        ],
+        "evaluation": [
+          "Readers can explain both benefit and limitation without reading support docs.",
+          "Promised availability is distinct from future plans.",
+          "Privacy statements describe specific behavior rather than absolute safety claims.",
+          "Metrics distinguish distribution gains from actual task improvement."
+        ],
+        "attribution": "Original learning exercise created for this collection, not prescribed or endorsed by the person studied."
+      },
+      "learningPath": [
+        "josh-personal-2026",
+        "josh-notebook-history-2025",
+        "josh-notebook-2026",
+        "josh-labs-interview-2026"
+      ],
+      "provenanceNotes": [
+        "Verified on the Cosign product nominations roster on 2026-11-05.",
+        "Two works are Woodward-bylined announcements; one is a team retrospective by another author. Collective work is labeled accordingly.",
+        "Google’s claimed outcomes, controls and rollout statements are not independently validated here.",
+        "The Lenny episode is a verified further-listening link only; its paid material was not used."
+      ]
+    },
+    {
+      "id": "emrecan-dogan",
+      "name": "Emrecan Dogan",
+      "role": "Product leader at Glean in the cited works",
+      "category": "Product",
+      "focus": [
+        "Enterprise discovery",
+        "Shared agents",
+        "Permissions",
+        "Admin experience",
+        "Rollout design"
+      ],
+      "summary": "Study enterprise AI as a shared operating system: common jobs beneath bespoke requests, explicit agent identity and an adoption path that includes administrators.",
+      "studyQuestions": [
+        "Is a customer asking for a unique solution or revealing a shared job?",
+        "Whose identity and authority does a team agent use?",
+        "What prevents a technically complete feature from being adopted?"
+      ],
+      "sources": [
+        {
+          "id": "emrecan-cieden",
+          "title": "AI-native products and the future of SaaS",
+          "url": "https://cieden.com/podcast/ai-native-products-and-the-future-of-saas",
+          "date": null,
+          "kind": "Original interview transcript",
+          "attribution": "Cieden interviewing Emrecan Dogan; speaker-labeled first-person answers.",
+          "access": "Public page opened and relevant body text inspected.",
+          "readFor": "Read the sections on requests, deferred jobs, full-stack builders and rollout.",
+          "dateNote": "No precise publication date confirmed in the retrieved page; inspected 2026-11-05."
+        },
+        {
+          "id": "emrecan-independent-2026",
+          "title": "Introducing independent agents: AI coworkers securely built for autonomous, multiplayer work",
+          "url": "https://www.glean.com/blog/introducing-independent-agents",
+          "date": "2026-06-30",
+          "kind": "Bylined product announcement",
+          "attribution": "Emrecan Dogan, Glean; collective product design and corporate claims.",
+          "access": "Public page opened and relevant body text inspected.",
+          "readFor": "Inspect identity, accountability, emergency stop and the on-call beta example."
+        },
+        {
+          "id": "emrecan-coworker-2026",
+          "title": "The collaborative enterprise AI coworker with full meeting context and deep data analysis expertise",
+          "url": "https://www.glean.com/blog/enterprise-ai-coworker",
+          "date": "2026-06-09",
+          "kind": "Bylined product announcement",
+          "attribution": "Emrecan Dogan, Glean; collective product work.",
+          "access": "Public page opened and relevant body text inspected.",
+          "readFor": "Study meeting records as reusable context and the stated availability boundary."
+        }
+      ],
+      "lessons": [
+        {
+          "id": "emrecan-common-job",
+          "title": "Translate bespoke requests into shared jobs",
+          "kind": "Decision study",
+          "finding": "The synthesis step is discovering a common need, not averaging requested features.",
+          "evidence": "Dogan describes connecting customer requests at the underlying job level to keep a standardized product.",
+          "tradeoff": "Generalization can serve more customers but erase important local constraints.",
+          "limits": "This is a reported practice, not evidence that every request should be generalized.",
+          "exercise": "Take six fictional requests from three teams. Separate requested interface, underlying job, policy constraint and desired outcome. Propose one shared capability and one deliberately unsupported variation. Test the synthesis with representatives of each team.",
+          "sourceIds": [
+            "emrecan-cieden"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        },
+        {
+          "id": "emrecan-rollout",
+          "title": "Keep adoption work in the definition of done",
+          "kind": "Decision study",
+          "finding": "A functioning prototype still needs an enterprise delivery path.",
+          "evidence": "Dogan retains admin tools, help content, release notes and staged deployment as necessary work even as builders cross functional boundaries.",
+          "tradeoff": "Enablement work can slow a visible launch while protecting usable adoption.",
+          "limits": "His account does not prescribe an unchanged process for every customer or company stage.",
+          "exercise": "Write a release checklist for a search feature: entitlement, admin preview, representative test group, documentation, rollback, ownership and adoption support. Include a failure in which the feature works but the organization cannot deploy it.",
+          "sourceIds": [
+            "emrecan-cieden"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        },
+        {
+          "id": "emrecan-agent-identity",
+          "title": "Give shared agents explicit identity and accountability",
+          "kind": "Decision study",
+          "finding": "A team agent should have a legible authority model, not implicit access borrowed from an arbitrary person.",
+          "evidence": "The announcement specifies provisioned agent identities, inspectable runs and an administrator emergency stop.",
+          "tradeoff": "Independent identity improves continuity but adds access-review and lifecycle obligations.",
+          "limits": "These are vendor design claims; no penetration test or independent permission audit was performed.",
+          "exercise": "For an on-call assistant, specify which resources it reads, which actions require review, who owns it, how access expires and how to stop it. Test departure of its original sponsor and a mistaken escalation using synthetic records.",
+          "sourceIds": [
+            "emrecan-independent-2026"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        },
+        {
+          "id": "emrecan-bounded-autonomy",
+          "title": "Separate investigation from consequential execution",
+          "kind": "Decision study",
+          "finding": "Define the transition from useful preparation to authorized action.",
+          "evidence": "The on-call example gathers context, investigates theories and drafts a fix for review.",
+          "tradeoff": "Keeping approval can reduce speed while containing irreversible mistakes.",
+          "limits": "The example is not a guarantee that every autonomous workflow has adequate review or that stated time savings generalize.",
+          "exercise": "Draw a state machine for alert, investigation, draft, approval, execution and verification. At each transition record evidence, authority and retry rules. Inject an ambiguous result and show that the agent checks outcome before repeating an action.",
+          "sourceIds": [
+            "emrecan-independent-2026"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        },
+        {
+          "id": "emrecan-shared-artifacts",
+          "title": "Make meeting output reusable beyond the meeting",
+          "kind": "Decision study",
+          "finding": "Treat decisions as governed artifacts that can support later work.",
+          "evidence": "The meeting-notes launch puts transcripts and actions alongside other enterprise sources; sharing makes them reusable knowledge.",
+          "tradeoff": "Reusable context increases discovery but also raises consent, retention and access questions.",
+          "limits": "Searchability does not make every meeting appropriate for organization-wide sharing.",
+          "exercise": "Create a decision-record template with source, owner, date, audience, status, expiry and superseding decision. Test finding the current decision after two contradictory meetings. Use fictional records and explicit access boundaries.",
+          "sourceIds": [
+            "emrecan-coworker-2026"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        }
+      ],
+      "writingTechniques": [
+        {
+          "title": "Separate new practices from durable obligations",
+          "observation": "The interview contrasts emerging builder roles with release responsibilities that remain.",
+          "practice": "Write a change proposal in two columns: what changes and what still has to be true. Attach a failure example to each obligation.",
+          "sourceIds": [
+            "emrecan-cieden"
+          ],
+          "kind": "Analyst observation of spoken argument in an edited transcript"
+        },
+        {
+          "title": "Turn a metaphor into inspectable requirements",
+          "observation": "The independent-agent post decomposes the coworker idea into named operational properties.",
+          "practice": "For any metaphor such as copilot or teammate, translate it into permissions, state, outputs and failure handling.",
+          "sourceIds": [
+            "emrecan-independent-2026"
+          ],
+          "kind": "Analyst observation of the cited text"
+        },
+        {
+          "title": "Describe the broken handoff before the feature",
+          "observation": "The meeting post moves from decisions lost across tools to a persistent artifact.",
+          "practice": "Explain one lost handoff, its cost and the new artifact that closes it. Then state availability and commercial limits separately.",
+          "sourceIds": [
+            "emrecan-coworker-2026"
+          ],
+          "kind": "Analyst observation of the cited text"
+        }
+      ],
+      "counterexamples": [
+        {
+          "claimToTest": "A shared agent should see everything.",
+          "analysis": "Continuity and collaboration do not justify unrestricted access. Test cross-team data isolation and distinguish the agent’s access from each recipient’s right to receive its output.",
+          "sourceIds": [
+            "emrecan-independent-2026"
+          ],
+          "kind": "Analyst counterexample or boundary condition, not a reported experiment"
+        },
+        {
+          "claimToTest": "A single standardized product means one workflow for all.",
+          "analysis": "Common jobs can coexist with irreducible regulatory or organizational constraints. Standardize the capability while allowing governed variation where evidence requires it.",
+          "sourceIds": [
+            "emrecan-cieden"
+          ],
+          "kind": "Analyst counterexample or boundary condition, not a reported experiment"
+        }
+      ],
+      "capstone": {
+        "title": "Design a governable team agent",
+        "deliverable": "A service blueprint, permissions matrix and rollout plan for a fictional internal support assistant.",
+        "steps": [
+          "Interview three simulated roles: end user, administrator and process owner.",
+          "Convert their requests into shared jobs and explicit exceptions.",
+          "Define agent identity, permissible actions, human review and emergency stop.",
+          "Create reusable decision artifacts with audience and retention rules.",
+          "Run a pilot plan with adoption, accuracy, unauthorized-disclosure and recovery tests."
+        ],
+        "evaluation": [
+          "Authority is explicit for every consequential step.",
+          "The rollout includes administrators and support, not only end users.",
+          "The agent can explain the source and currency of a recommendation.",
+          "The design remains useful when it must abstain or request approval."
+        ],
+        "attribution": "Original learning exercise created for this collection, not prescribed or endorsed by the person studied."
+      },
+      "learningPath": [
+        "emrecan-cieden",
+        "emrecan-coworker-2026",
+        "emrecan-independent-2026"
+      ],
+      "provenanceNotes": [
+        "Verified on the Cosign product nominations roster on 2026-11-05.",
+        "The corporate posts display “Head of Product”; the profile avoids substituting an unverified title.",
+        "Transcript lessons concern Dogan’s own answers; interviewer praise and valuation assertions are not treated as evidence of causal impact.",
+        "Claims that agents learn reliably or avoid repeating mistakes are not independently substantiated; the exercises require observable tests."
+      ]
+    },
+    {
+      "id": "anique-drumright",
+      "name": "Anique Drumright",
+      "role": "Product and operating leadership at Loom; Chief Product Officer at Harvey in the cited 2026 interview",
+      "category": "Product",
+      "focus": [
+        "Cross-functional ownership",
+        "Product narrative",
+        "Operating cadence",
+        "Professional workflows",
+        "Memory boundaries"
+      ],
+      "summary": "Study how an end-to-end product promise becomes coordinated execution, then how professional AI separates reusable preferences from case-specific information.",
+      "studyQuestions": [
+        "What customer moment should align product, design and go-to-market work?",
+        "Which coordination failure looks like a team execution problem?",
+        "What may persist across matters, and what must remain isolated?"
+      ],
+      "sources": [
+        {
+          "id": "anique-loom-depth",
+          "title": "Lessons from Loom on product strategy, organizational leadership, and cross-functional performance",
+          "url": "https://review.firstround.com/podcast/lessons-from-loom-on-product-strategy-organizational-leadership-and-cross-functional-performance-anique-drumright-coo-at-loom/",
+          "date": null,
+          "kind": "Original interview transcript",
+          "attribution": "First Round In Depth; Brett Berson interviewing Anique Drumright while she was Loom COO.",
+          "access": "Public page opened and relevant body text inspected.",
+          "readFor": "Study early customer storytelling, advance alignment and recurring execution reviews.",
+          "dateNote": "Exact publication date not exposed in retrieved original-page text; this is the 2023 Loom-era interview."
+        },
+        {
+          "id": "anique-memory-interview-2026",
+          "title": "Inside Harvey II: legal AI that remembers how you work",
+          "url": "https://www.pointblank.law/p/inside-harvey-ii-legal-ai-that-remembers-how-you-work",
+          "date": "2026-09-07",
+          "kind": "Original reported interview",
+          "attribution": "Point Blank reporting its own interview with Drumright at Harvey Forum Sydney.",
+          "access": "Public page opened and relevant body text inspected.",
+          "readFor": "Inspect the stated first-phase memory boundary and the need for audit and approval."
+        },
+        {
+          "id": "anique-harvey-ii-2026",
+          "title": "Introducing Harvey II",
+          "url": "https://www.harvey.ai/blog/introducing-harvey-ii",
+          "date": "2026-08-18",
+          "kind": "Official product announcement",
+          "attribution": "Harvey Team, not Drumright’s personal byline; collective product artifact.",
+          "access": "Public page opened and relevant body text inspected.",
+          "readFor": "Study matter-scoped context, task handoffs and the separation of project data from personal preferences."
+        }
+      ],
+      "lessons": [
+        {
+          "id": "anique-customer-moment",
+          "title": "Use the customer story before the feature review",
+          "kind": "Decision study",
+          "finding": "Align functions around the change the customer should experience.",
+          "evidence": "At Loom, Drumright describes beginning with how creators and viewers benefit, rather than jumping immediately to AI functionality.",
+          "tradeoff": "Early narrative can clarify choices but can also turn into unsupported marketing.",
+          "limits": "The interview reports her practice; it does not prove storytelling alone caused product success.",
+          "exercise": "Before scoping a feature, write what a user can now do, what they would tell a colleague and what evidence supports the promise. Ask design, support and marketing to identify contradictions before reviewing screens.",
+          "sourceIds": [
+            "anique-loom-depth"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        },
+        {
+          "id": "anique-alignment-loop",
+          "title": "Make alignment observable and revisitable",
+          "kind": "Decision study",
+          "finding": "Coordinate dependencies before announcing goals, then inspect progress and strain.",
+          "evidence": "She describes previewing plans with partners and recurring reviews of progress, problems, energy and execution.",
+          "tradeoff": "A repeatable rhythm adds overhead but can reveal hidden dependency failures.",
+          "limits": "Self-reported status is a signal, not an objective measure of performance.",
+          "exercise": "Map a launch’s dependencies and ask each owner what must change for the plan to succeed. Run a short review after two weeks. Compare confidence with completed evidence and investigate disagreements without treating color scores as rankings.",
+          "sourceIds": [
+            "anique-loom-depth"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        },
+        {
+          "id": "anique-memory-boundary",
+          "title": "Separate personal preference from case knowledge",
+          "kind": "Decision study",
+          "finding": "A reusable preference and a matter fact need different persistence rules.",
+          "evidence": "The interview says initial personal memory covers preferences, excludes matter-specific content and permits inspection, edits and deletion; saving requires approval and notification.",
+          "tradeoff": "Selective memory adds interaction cost while protecting professional boundaries.",
+          "limits": "This describes the September interview’s first phase. Future phases discussed there were plans, not verified shipped behavior.",
+          "exercise": "Classify twenty fictional observations as reusable preference, matter-only fact, sensitive information or uncertain inference. Define storage scope, approval and deletion behavior. Test that a style preference transfers while client facts do not.",
+          "sourceIds": [
+            "anique-memory-interview-2026"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        },
+        {
+          "id": "anique-work-container",
+          "title": "Carry context with the work instead of rebuilding it",
+          "kind": "Decision study",
+          "finding": "Use the matter or project as the unit of context, access and handoff.",
+          "evidence": "Harvey’s announcement describes Spaces holding documents, tasks, history and permissions, with work passed between agents and lawyers.",
+          "tradeoff": "A shared container reduces repetition but needs precise membership and boundary management.",
+          "limits": "This is a team product claim, not proof Drumright personally designed every feature or an independent security validation.",
+          "exercise": "Model a project with three roles and two restricted subgroups. Trace a task from intake through draft, specialist review and completion. Test changed membership, superseded evidence and an agent output addressed to a less-privileged collaborator.",
+          "sourceIds": [
+            "anique-harvey-ii-2026"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        }
+      ],
+      "writingTechniques": [
+        {
+          "title": "Reframe scope in the customer’s language",
+          "observation": "Her Loom explanation starts from what the creator and audience should be able to say.",
+          "practice": "Rewrite a roadmap item as a before-and-after customer sentence; remove internal team names and implementation terminology.",
+          "sourceIds": [
+            "anique-loom-depth"
+          ],
+          "kind": "Analyst observation of spoken argument in an interview, not a claim about authored essays"
+        },
+        {
+          "title": "Name the boundary as precisely as the capability",
+          "observation": "The Harvey interview distinguishes preference memory from matter-specific information.",
+          "practice": "For any persistent feature, write one example it may remember and one it must not, followed by the control available to the user.",
+          "sourceIds": [
+            "anique-memory-interview-2026"
+          ],
+          "kind": "Analyst observation of a reported interview"
+        },
+        {
+          "title": "Build the launch around repeated setup cost",
+          "observation": "The team announcement begins with the friction of restarting context for each task.",
+          "practice": "Describe the repeated work in concrete verbs, then show where context persists and where it intentionally stops.",
+          "sourceIds": [
+            "anique-harvey-ii-2026"
+          ],
+          "kind": "Analysis of Harvey Team’s product writing, not Drumright-authored prose"
+        }
+      ],
+      "counterexamples": [
+        {
+          "claimToTest": "A strong narrative can substitute for delivery evidence.",
+          "analysis": "A compelling customer promise can hide unresolved dependencies. Require a demonstrable workflow and failure handling before treating the launch story as achieved.",
+          "sourceIds": [
+            "anique-loom-depth"
+          ],
+          "kind": "Analyst counterexample or boundary condition, not a reported experiment"
+        },
+        {
+          "claimToTest": "Personal memory can absorb every correction.",
+          "analysis": "A correction may contain a client fact, confidential strategy or a temporary exception. Classify scope before reuse and verify current product controls rather than extrapolating from launch language.",
+          "sourceIds": [
+            "anique-memory-interview-2026"
+          ],
+          "kind": "Analyst counterexample or boundary condition, not a reported experiment"
+        }
+      ],
+      "capstone": {
+        "title": "Connect narrative to operating design",
+        "deliverable": "A launch narrative plus a responsibility map and a memory-boundary specification for a fictional professional assistant.",
+        "steps": [
+          "Write one customer promise with a falsifiable outcome.",
+          "Name the product, design, support, policy and go-to-market dependencies.",
+          "Preview the plan with dependency owners and record what must stop or change.",
+          "Specify project-scoped facts versus reusable preferences and their controls.",
+          "Demonstrate one successful handoff and one access-boundary failure."
+        ],
+        "evaluation": [
+          "The promise maps to evidence rather than aspiration.",
+          "Every dependency has an owner and a check date.",
+          "A user can inspect and correct persistent preferences.",
+          "No case-specific data silently crosses a project boundary."
+        ],
+        "attribution": "Original learning exercise created for this collection, not prescribed or endorsed by the person studied."
+      },
+      "learningPath": [
+        "anique-loom-depth",
+        "anique-memory-interview-2026",
+        "anique-harvey-ii-2026"
+      ],
+      "provenanceNotes": [
+        "Verified on the Cosign product nominations roster on 2026-11-05.",
+        "The First Round transcript and Point Blank report provide direct interview evidence; the Harvey Team launch is a separate collective artifact.",
+        "Announcement and rollout dates can differ. This collection studies documented decisions, not current account-level availability.",
+        "The Rippling author index returned 403; it was not used as substantive evidence."
+      ]
+    },
+    {
+      "id": "janie-lee",
+      "name": "Janie Lee",
+      "role": "Vice President of Product at Abridge in the cited material",
+      "category": "Product",
+      "focus": [
+        "High-stakes AI",
+        "Evaluation design",
+        "Written clarity",
+        "Workflow integration",
+        "Unit economics"
+      ],
+      "summary": "Study the work around AI output: domain-owned quality criteria, context continuity, written decisions and cost constraints attached to a real service unit.",
+      "studyQuestions": [
+        "Who is qualified to define good output?",
+        "Which requirements cannot be seen in a prototype?",
+        "What is the economic unit of the workflow, and how does it constrain quality and latency?"
+      ],
+      "sources": [
+        {
+          "id": "janie-latent-space",
+          "title": "AI-Native Healthcare: 100M Doctor Visits, 10–20 Hours Saved, Prior Auth in Minutes",
+          "url": "https://latent.space/p/abridge/",
+          "date": null,
+          "kind": "Original interview transcript",
+          "attribution": "Latent Space interviewing Janie Lee and Chai Asawa. Claims are attributed to the named speaker.",
+          "access": "Public original interview page and relevant speaker-labeled transcript passages inspected.",
+          "readFor": "Read Lee’s evaluation discussion around 30:50 and written-clarity reversal around 57:39.",
+          "dateNote": "Page displays May 14 without a year in retrieved text; search-index dates conflict, so no year is asserted."
+        },
+        {
+          "id": "janie-supercompanies-2026",
+          "title": "Why Headcount No Longer Equals Growth with Janie Lee (Abridge)",
+          "url": "https://supercompanies.captivate.fm/episode/why-headcount-no-longer-equals-growth-with-janie-lee-abridge",
+          "date": "2026-10-21",
+          "kind": "Original interview transcript",
+          "attribution": "Supercompanies with Greg Shove; Janie Lee’s first-person account.",
+          "access": "Public page opened and relevant body text inspected.",
+          "readFor": "Inspect per-encounter inference budgeting around 36:45–38:31."
+        },
+        {
+          "id": "janie-assistant-2026",
+          "title": "Meet the AI Assistant for Healthcare",
+          "url": "https://www.abridge.com/blog/abridge-assistant-is-the-ai-assistant-for-healthcare",
+          "date": "2026-10-13",
+          "kind": "Official launch with named contribution",
+          "attribution": "Corporate byline Abridge; sections explicitly distinguish Matt Troup’s clinical perspective from “How We Built Abridge Assistant: Janie Lee.”",
+          "access": "Public page opened and relevant body text inspected.",
+          "readFor": "Read Lee’s four design decisions and distinguish them from Troup’s clinical account."
+        }
+      ],
+      "lessons": [
+        {
+          "id": "janie-domain-rubrics",
+          "title": "Put domain experts inside the quality loop",
+          "kind": "Decision study",
+          "finding": "The product team should not invent specialist acceptance criteria alone.",
+          "evidence": "Lee describes clinician review, calibrated model judges and evaluation needs that vary by specialty and task.",
+          "tradeoff": "Expert participation costs time and capacity; generic scoring is easier but can miss consequential errors.",
+          "limits": "An operating account, not independent clinical-safety evidence.",
+          "exercise": "For a non-medical expert workflow, recruit a domain reviewer to label twenty synthetic outputs. Separate correctness, completeness, style and harmful omission. Measure disagreements before automating any score and define which failures block release.",
+          "sourceIds": [
+            "janie-latent-space"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        },
+        {
+          "id": "janie-written-clarity",
+          "title": "Pair prototypes with a written decision record",
+          "kind": "Decision study",
+          "finding": "Visual plausibility does not answer whether a product should exist or how it may use data.",
+          "evidence": "Lee says the team moved away from treating prototypes as sufficient because permissions, implementation and strategic rationale were missing.",
+          "tradeoff": "A written record adds effort but makes non-visual constraints reviewable.",
+          "limits": "She retains prototypes and does not prescribe long static documents.",
+          "exercise": "Take a convincing prototype. Add a one-page record covering problem priority, data rights, implementation burden, alternatives, differentiation and a stop condition. Ask a reviewer to identify a requirement the prototype concealed.",
+          "sourceIds": [
+            "janie-latent-space"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        },
+        {
+          "id": "janie-encounter-budget",
+          "title": "Attach inference economics to a service unit",
+          "kind": "Decision study",
+          "finding": "Budget around the delivered workflow rather than a detached token target.",
+          "evidence": "Lee describes a per-clinical-encounter budget, with mature products optimized for latency, quality and cost while new products retain room to explore.",
+          "tradeoff": "Shared budgets force tradeoffs across features and experimentation.",
+          "limits": "No budget amount, margin or optimal allocation is disclosed; do not infer profitability.",
+          "exercise": "For a fictional document-processing service, model cost per completed job including retries, review and failure recovery. Compare two feature bundles under the same budget and a minimum quality threshold. Show sensitivity to long-tail cases.",
+          "sourceIds": [
+            "janie-supercompanies-2026"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        },
+        {
+          "id": "janie-context-continuity",
+          "title": "Preserve context through a complete workflow",
+          "kind": "Decision study",
+          "finding": "Reduce repeated setup as users move from understanding to producing an artifact.",
+          "evidence": "Lee’s launch section describes chart and institutional context, consistent interfaces and carrying a conversation into a draft handoff.",
+          "tradeoff": "Continuity reduces effort but makes stale or mis-scoped context more consequential.",
+          "limits": "A healthcare implementation depends on specialized governance and integrations; generic chat is not equivalent.",
+          "exercise": "Map a fictional maintenance inspection from evidence retrieval through recommendation to handoff. Track which facts persist, who may see them and when they become stale. Measure repeated entry and correction effort, not only response speed.",
+          "sourceIds": [
+            "janie-assistant-2026"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        },
+        {
+          "id": "janie-visible-evaluation",
+          "title": "Expose enough evidence to support professional review",
+          "kind": "Decision study",
+          "finding": "Simplicity should not remove the reviewer’s ability to inspect grounding.",
+          "evidence": "The named section describes visible work steps, cited sources and clinician-built evaluation before and after release.",
+          "tradeoff": "Visible evidence can increase confidence while creating review burden or false reassurance.",
+          "limits": "A displayed step is not proof of correctness; source relevance and factual support must be checked.",
+          "exercise": "Build a review checklist for a source-based recommendation: claim, source passage, currency, contradiction, uncertainty and required human decision. Test a polished answer with a misleading citation and verify that the checklist catches it.",
+          "sourceIds": [
+            "janie-assistant-2026"
+          ],
+          "evidenceStrength": "Primary account; interpretation and exercise are analyst-created."
+        }
+      ],
+      "writingTechniques": [
+        {
+          "title": "Make a change of mind specific",
+          "observation": "Lee names the constraints prototypes missed, then revises the rule.",
+          "practice": "Write a short reversal memo: previous belief, observed failure, revised rule, remaining use of the old approach.",
+          "sourceIds": [
+            "janie-latent-space"
+          ],
+          "kind": "Analyst observation of spoken argument in an interview"
+        },
+        {
+          "title": "Choose an operational unit",
+          "observation": "The budget discussion ties cost to an encounter and distinguishes experimentation from mature-product optimization.",
+          "practice": "Explain an economic constraint using one delivered unit, its quality floor and the variables that can change.",
+          "sourceIds": [
+            "janie-supercompanies-2026"
+          ],
+          "kind": "Analyst observation of spoken explanation"
+        },
+        {
+          "title": "Pair practitioner need with product response",
+          "observation": "The launch separates a clinician’s account from Lee’s implementation principles.",
+          "practice": "Write two short sections: a practitioner’s task and the design choices responding to it. Keep speaker and author attribution explicit.",
+          "sourceIds": [
+            "janie-assistant-2026"
+          ],
+          "kind": "Analyst observation of the cited text"
+        }
+      ],
+      "counterexamples": [
+        {
+          "claimToTest": "Faster prototyping removes the need for written requirements.",
+          "analysis": "A prototype can hide rights and rollout constraints. Pair experience demonstrations with concise, reviewable decision records.",
+          "sourceIds": [
+            "janie-latent-space"
+          ],
+          "kind": "Analyst counterexample or boundary condition, not a reported experiment"
+        },
+        {
+          "claimToTest": "One quality score can optimize every workflow.",
+          "analysis": "Style, factual completeness, safety and economic value can move differently. Choose task-specific criteria and do not trade away a mandatory quality floor to improve average cost.",
+          "sourceIds": [
+            "janie-supercompanies-2026"
+          ],
+          "kind": "Analyst counterexample or boundary condition, not a reported experiment"
+        }
+      ],
+      "capstone": {
+        "title": "Build an evidence-first release packet",
+        "deliverable": "A prototype, one-page decision record, evaluation set and per-job cost model for a fictional expert-workflow assistant.",
+        "steps": [
+          "Use synthetic, non-sensitive data and a reversible task.",
+          "Have a domain reviewer define acceptable and unacceptable outputs.",
+          "Document constraints invisible in the prototype, including rights and downstream use.",
+          "Test ordinary cases, missing evidence, conflicting sources and a rare costly failure.",
+          "Set quality gates, per-job budget, rollout stages and rollback ownership."
+        ],
+        "evaluation": [
+          "The domain reviewer can explain why each release gate matters.",
+          "No average metric hides an unacceptable failure class.",
+          "The written record answers why this problem deserves investment.",
+          "Cost includes human verification, retries and unsuccessful jobs.",
+          "Clinical examples are treated as product-learning material, not medical advice or deployment authorization."
+        ],
+        "attribution": "Original learning exercise created for this collection, not prescribed or endorsed by the person studied."
+      },
+      "learningPath": [
+        "janie-latent-space",
+        "janie-assistant-2026",
+        "janie-supercompanies-2026"
+      ],
+      "provenanceNotes": [
+        "Verified on the Cosign product nominations roster on 2026-11-05.",
+        "The Latent Space interview has two guests. Lee’s statements are distinguished from Asawa’s comments, including his progressive-rollout discussion.",
+        "The launch is corporately published with named sections; attribution does not imply sole authorship of all surrounding material.",
+        "Healthcare claims are not independently validated. Exercises deliberately use fictional non-medical workflows and synthetic data."
+      ]
+    }
+  ],
+  "crossCaseApplications": [
+    {
+      "title": "Minimal harness, explicit governance",
+      "analysis": "Compare a personal tool’s reduced core with a shared enterprise agent’s authority model. Simplicity and governance answer different questions. Design both rather than importing either product’s defaults wholesale.",
+      "sources": [
+        "mario-pi-2025",
+        "emrecan-independent-2026"
+      ]
+    },
+    {
+      "title": "Context is not one undifferentiated memory",
+      "analysis": "Separate user preferences, project facts, organizational policy and uncertain inference. Test permission, provenance, currency and correction at each boundary.",
+      "sources": [
+        "josh-personal-2026",
+        "anique-memory-interview-2026",
+        "janie-assistant-2026"
+      ]
+    },
+    {
+      "title": "Fast construction, deliberate release",
+      "analysis": "Review capacity, written constraints and administrator readiness are distinct bottlenecks. A team may accelerate prototyping while investing more deliberately in the evidence needed for release.",
+      "sources": [
+        "mario-slow-2026",
+        "janie-latent-space",
+        "emrecan-cieden"
+      ]
+    },
+    {
+      "title": "A product story should map to a test",
+      "analysis": "Use the customer narrative to align functions, then require an observable end-to-end outcome and honest failure explanation. Treat persuasive writing as a hypothesis about value, not proof.",
+      "sources": [
+        "anique-loom-depth",
+        "josh-personal-2026"
+      ]
+    }
+  ]
+}

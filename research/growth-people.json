@@ -4,7 +4,7 @@
   "reviewedAt": "2026-11-05",
   "rosterUrl": "https://cosign.co/awards/growth",
   "methodology": {
-    "scope": "Eight substantive profiles, one discovery profile, and an explicit ledger for the 50 names visible on the growth roster. This is a curated subset, not exhaustive research on every nominee.",
+    "scope": "12 substantive profiles, 1 discovery profile, and an explicit ledger for the 50 names visible on the growth roster. This is a curated subset, not exhaustive research on every nominee.",
     "selection": "Prioritized accessible primary work, specificity of decisions, diversity of growth mechanisms and usefulness for product practice. This is not a ranking of professional merit.",
     "sourcePolicy": "Original author essays and first-person interviews are preferred. Transcript mirrors and publisher recaps are labeled. No full copyrighted source is reproduced.",
     "claimPolicy": "Reported outcomes are attributed to speakers; no causal claim is inferred solely from a before-and-after anecdote. Recommendations and exercises are original analysis.",
@@ -41,7 +41,12 @@
             "Reported results are historical internal observations, not independently audited universal effects."
           ],
           "supportingUrl": null,
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": "Gaurav Vohra",
+          "speakers": [],
+          "publisher": "Gaurav Vohra’s Substack",
+          "attribution": "Published under Vohra’s byline; the page credits an earlier First Round Review publication.",
+          "host": null
         },
         {
           "id": "gv-waitlist",
@@ -58,7 +63,12 @@
           "evidenceLocator": "Sections: Supply Constraints; Waitlist Costs; Superhuman highlights and lowlights.",
           "caveats": [],
           "supportingUrl": null,
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": "Gaurav Vohra",
+          "speakers": [],
+          "publisher": "Gaurav Vohra’s Substack",
+          "attribution": "Vohra’s authored essay and practitioner account; team execution is not attributed solely to him.",
+          "host": null
         },
         {
           "id": "gv-aha",
@@ -77,7 +87,12 @@
             "Contains sponsorship. Thresholds and reported invitation contribution belong to Superhuman’s context."
           ],
           "supportingUrl": null,
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": "Gaurav Vohra",
+          "speakers": [],
+          "publisher": "Gaurav Vohra’s Substack",
+          "attribution": "Vohra’s authored essay and practitioner account; team execution is not attributed solely to him.",
+          "host": null
         },
         {
           "id": "gv-taste",
@@ -96,7 +111,12 @@
             "A practice framework, not a measured intervention proving that taste causes growth."
           ],
           "supportingUrl": null,
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": "Gaurav Vohra",
+          "speakers": [],
+          "publisher": "Gaurav Vohra’s Substack",
+          "attribution": "Vohra’s authored essay and practitioner account; team execution is not attributed solely to him.",
+          "host": null
         }
       ],
       "decisions": [
@@ -231,7 +251,12 @@
             "A practitioner’s definition of PMF, not a universally agreed standard."
           ],
           "supportingUrl": null,
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": "Casey Winters",
+          "speakers": [],
+          "publisher": "Casey Accidental",
+          "attribution": "Winters’s authored essay, including his accounts of team decisions; sole execution credit is not inferred.",
+          "host": null
         },
         {
           "id": "cw-feature",
@@ -248,7 +273,12 @@
           "evidenceLocator": "Sections: Feature/Product Fit Checklist; deleted Pinterest features; Grubhub and Related Pins cases.",
           "caveats": [],
           "supportingUrl": null,
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": "Casey Winters",
+          "speakers": [],
+          "publisher": "Casey Accidental",
+          "attribution": "Winters’s authored essay, including his accounts of team decisions; sole execution credit is not inferred.",
+          "host": null
         },
         {
           "id": "cw-second",
@@ -267,7 +297,12 @@
             "Company comparisons are interpretive, not controlled evidence."
           ],
           "supportingUrl": null,
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": "Casey Winters",
+          "speakers": [],
+          "publisher": "Casey Accidental",
+          "attribution": "Winters’s authored essay, including his accounts of team decisions; sole execution credit is not inferred.",
+          "host": null
         }
       ],
       "decisions": [
@@ -399,7 +434,12 @@
           "evidenceLocator": "Sections: launch checklist; defining messaging; launch assets; Ship, measure, learn.",
           "caveats": [],
           "supportingUrl": null,
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": "Luke Harries",
+          "speakers": [],
+          "publisher": "harries.co",
+          "attribution": "Harries’s authored guide and operating opinions, not an independently validated experiment or official platform specification.",
+          "host": null
         },
         {
           "id": "lh-hire",
@@ -416,7 +456,12 @@
           "evidenceLocator": "Sections: first growth hire; hiring process; channel specialists; agencies.",
           "caveats": [],
           "supportingUrl": null,
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": "Luke Harries",
+          "speakers": [],
+          "publisher": "harries.co",
+          "attribution": "Harries’s authored guide and operating opinions, not an independently validated experiment or official platform specification.",
+          "host": null
         },
         {
           "id": "lh-seo",
@@ -435,7 +480,12 @@
             "Search-platform specifics and tooling thresholds may date; not independently validated ranking factors."
           ],
           "supportingUrl": null,
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": "Luke Harries",
+          "speakers": [],
+          "publisher": "harries.co",
+          "attribution": "Harries’s authored guide and operating opinions, not an independently validated experiment or official platform specification.",
+          "host": null
         }
       ],
       "decisions": [
@@ -570,7 +620,12 @@
             "Commercial collaboration with June; broad numeric headline is not established by a published study."
           ],
           "supportingUrl": null,
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": "Elena Verna",
+          "speakers": [],
+          "publisher": "Elena’s Growth Scoop",
+          "attribution": "Verna’s authored essay, published in commercial collaboration with June.",
+          "host": null
         },
         {
           "id": "ev-dropbox",
@@ -589,7 +644,12 @@
             "A 2024 snapshot, not a current organizational chart."
           ],
           "supportingUrl": null,
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": "Elena Verna",
+          "speakers": [],
+          "publisher": "Elena’s Growth Scoop",
+          "attribution": "Verna’s authored essay; historical accounts and opinions remain attributed to her.",
+          "host": null
         },
         {
           "id": "ev-cliches",
@@ -608,7 +668,12 @@
             "Examples and percentages are satire, not measured case-study results."
           ],
           "supportingUrl": null,
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": "Elena Verna",
+          "speakers": [],
+          "publisher": "Elena’s Growth Scoop",
+          "attribution": "Verna’s satirical essay; illustrative numerical jokes are not company experiment findings.",
+          "host": null
         }
       ],
       "decisions": [
@@ -742,7 +807,15 @@
             "Transcript mirror timestamps differ from publisher chapter times. Spoken outcomes are self-reported."
           ],
           "supportingUrl": "https://github.com/ChatPRD/lennys-podcast-transcripts/blob/main/episodes/nikita-bier/transcript.md",
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": null,
+          "speakers": [
+            "Nikita Bier",
+            "Lenny Rachitsky"
+          ],
+          "publisher": "Lenny’s Podcast",
+          "attribution": "Bier is the guest and Rachitsky the host. Selected speech was reviewed through a third-party transcript mirror.",
+          "host": "Lenny Rachitsky"
         },
         {
           "id": "nb-thread",
@@ -762,7 +835,12 @@
             "Do not adopt unsafe examples, privacy-invasive tactics or coercive engagement patterns."
           ],
           "supportingUrl": null,
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": "Nikita Bier",
+          "speakers": [],
+          "publisher": "Twitter/X thread, mirrored by Thread Reader App",
+          "attribution": "Bier’s authored thread as reproduced by the mirror. Direct X retrieval was unavailable.",
+          "host": null
         }
       ],
       "decisions": [
@@ -886,7 +964,15 @@
             "Reported 20% lift refers to several changes over a period, not one isolated design."
           ],
           "supportingUrl": "https://github.com/ChatPRD/lennys-podcast-transcripts/blob/main/episodes/lauryn-isford/transcript.md",
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": null,
+          "speakers": [
+            "Lauryn Isford",
+            "Lenny Rachitsky"
+          ],
+          "publisher": "Lenny’s Podcast",
+          "attribution": "Isford is the interview-time name of Lauryn Motamedi; Rachitsky is the host. Selected speech was reviewed through a third-party transcript mirror.",
+          "host": "Lenny Rachitsky"
         },
         {
           "id": "lm-multiplayer",
@@ -905,7 +991,12 @@
             "Some third-party figures and predictions are not measured results from her own work."
           ],
           "supportingUrl": null,
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": "Lauryn Isford",
+          "speakers": [],
+          "publisher": "Adam Fishman’s newsletter",
+          "attribution": "Guest essay by Isford, now identified on the roster as Lauryn Motamedi; not Fishman’s operating account.",
+          "host": null
         },
         {
           "id": "lm-pls",
@@ -924,7 +1015,14 @@
             "Commercial publisher recap; relationship and results reflect the 2022 account."
           ],
           "supportingUrl": null,
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": null,
+          "speakers": [
+            "Lauryn Isford"
+          ],
+          "publisher": "Pocus",
+          "attribution": "Pocus’s editorial recap of an AMA with Isford. Its wording is not treated as her verbatim speech; individual editorial byline not verified.",
+          "host": null
         }
       ],
       "decisions": [
@@ -1044,7 +1142,15 @@
             "A 2023 interview. Illustrative figures are not Ramp’s actual unit economics."
           ],
           "supportingUrl": "https://github.com/ChatPRD/lennys-podcast-transcripts/blob/main/episodes/sri-batchu/transcript.md",
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": null,
+          "speakers": [
+            "Sri Batchu",
+            "Lenny Rachitsky"
+          ],
+          "publisher": "Lenny’s Podcast",
+          "attribution": "Batchu is the guest and Rachitsky the host. Selected speech was reviewed through a third-party transcript mirror.",
+          "host": "Lenny Rachitsky"
         },
         {
           "id": "sb-why",
@@ -1063,7 +1169,12 @@
             "Retrospective attribution and company comparisons are not controlled evidence; current valuation and revenue claims were not independently audited."
           ],
           "supportingUrl": null,
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": "Sri Batchu",
+          "speakers": [],
+          "publisher": "Operator Journal",
+          "attribution": "Batchu’s authored retrospective; team accomplishments are not attributed solely to him.",
+          "host": null
         }
       ],
       "decisions": [
@@ -1185,7 +1296,12 @@
             "Projected run rate is not realized annual revenue."
           ],
           "supportingUrl": null,
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": "Greg Isenberg",
+          "speakers": [],
+          "publisher": "Late Checkout",
+          "attribution": "Isenberg’s authored narrative or essay. Reported outcomes and recommendations remain his claims.",
+          "host": null
         },
         {
           "id": "gi-community",
@@ -1204,7 +1320,12 @@
             "A heuristic framework, not validation that community necessarily produces revenue."
           ],
           "supportingUrl": null,
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": "Greg Isenberg",
+          "speakers": [],
+          "publisher": "Late Checkout",
+          "attribution": "Isenberg’s authored narrative or essay. Reported outcomes and recommendations remain his claims.",
+          "host": null
         },
         {
           "id": "gi-impression",
@@ -1223,7 +1344,12 @@
             "Personal anecdote and self-promotion; no counterfactual evidence for the causal effect of posting."
           ],
           "supportingUrl": null,
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": "Greg Isenberg",
+          "speakers": [],
+          "publisher": "Late Checkout",
+          "attribution": "Isenberg’s authored narrative or essay. Reported outcomes and recommendations remain his claims.",
+          "host": null
         }
       ],
       "decisions": [
@@ -1344,7 +1470,14 @@
             "Show-note claims are not an independent performance audit."
           ],
           "supportingUrl": "https://podscan.fm/podcasts/ahrefs-podcast/episodes/how-to-build-a-21b-brand-with-a-team-of-10-gammas-playbook",
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": null,
+          "speakers": [
+            "Kristin Fracchia"
+          ],
+          "publisher": "Ahrefs Podcast",
+          "attribution": "Fracchia is the guest. Only the publisher title, description and chapter list were reviewed; interviewer identity and full speech were not verified in this review.",
+          "host": null
         },
         {
           "id": "kf-brandformance",
@@ -1362,7 +1495,14 @@
             "Numbers and methods require checking against the interview before detailed application."
           ],
           "supportingUrl": null,
-          "reviewedAt": "2026-11-05"
+          "reviewedAt": "2026-11-05",
+          "author": null,
+          "speakers": [
+            "Kristin Fracchia"
+          ],
+          "publisher": "Apple Podcasts syndicated episode listing",
+          "attribution": "Publisher-supplied episode description mentioning Fracchia. The original recording and interviewer identity were not reviewed.",
+          "host": null
         }
       ],
       "decisions": [],
@@ -1376,6 +1516,775 @@
           "rubric": [
             "Uses timestamps from the actual recording.",
             "Does not turn show notes into verified claims."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kyle-norton",
+      "name": "Kyle Norton",
+      "category": "growth",
+      "lens": "Customer economics, revenue operations and leadership horizons",
+      "whyStudy": "His accounts make commercial growth a system of customer fit, incentives, operational support and future capacity, rather than simply adding sellers.",
+      "coverage": {
+        "status": "substantive",
+        "artifactCount": 2,
+        "note": "Two publisher-hosted first-person interview texts reviewed. The TestBox publication date was not verified. Roles and business plans refer to the interview periods, not current employment or achieved targets."
+      },
+      "artifacts": [
+        {
+          "id": "kn-gtm",
+          "title": "Lessons in Scaling GTM with Kyle Norton",
+          "url": "https://www.testbox.com/episodes/lessons-in-scaling-gtm",
+          "publishedAt": null,
+          "kind": "first-person interview",
+          "author": null,
+          "speakers": [
+            "Kyle Norton",
+            "James Kaikis"
+          ],
+          "publisher": "TestBox / The New GTM Playbook",
+          "attribution": "Norton is the guest; Kaikis is the interviewer. The publisher supplies the introduction and selected quotations.",
+          "coverage": "Substantive publisher transcript reviewed, including enablement, centralized research, compensation and onboarding.",
+          "summary": "Customer outcomes can change how a revenue leader designs incentives and internal operations.",
+          "writingTechniques": [
+            "Names an apparently standard practice, then explains the context where it breaks.",
+            "Connects an operational detail to the employee’s real job."
+          ],
+          "evidenceLocator": "Transcript: high-probability practices; early enablement; centralized BDR lead research; compensation and rejected customer cohorts.",
+          "caveats": [
+            "Self-reported operating outcomes with no underlying dataset.",
+            "Publication date is unverified; software and organizational examples are historical.",
+            "No claim that every product should use this ownership or compensation model."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        },
+        {
+          "id": "kn-scaling",
+          "title": "Q&A: Kyle Norton on Scaling Yourself",
+          "url": "https://topline.beehiiv.com/p/q-a-kyle-norton-on-scaling-yourself",
+          "publishedAt": "2025-12-04",
+          "kind": "first-person written Q&A",
+          "author": "Asad Zaman",
+          "speakers": [
+            "Kyle Norton",
+            "Asad Zaman"
+          ],
+          "publisher": "Topline",
+          "attribution": "Zaman authored the framing and questions; Norton supplied the attributed answers.",
+          "coverage": "Main Q&A text reviewed. Unrelated newsletter recommendations and footer commentary are not used.",
+          "summary": "Leadership scale changes the time horizon, size of bets and need for cross-functional coordination.",
+          "writingTechniques": [
+            "Explains an abstract role change through successive delegation stages.",
+            "Uses a concrete office investment to reveal a decision’s competing assumptions."
+          ],
+          "evidenceLocator": "Sections: From Coaching Calls To Growth Horizons; Fear Is A Planning Problem; Conviction At Scale.",
+          "caveats": [
+            "Revenue figures for later years are plans or aspirations, not verified results.",
+            "Personal confidence is not evidence that a plan will succeed."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "kn-d1",
+          "title": "Centralize repetitive preparation",
+          "sourceIds": [
+            "kn-gtm"
+          ],
+          "context": "Sales representatives spent time on research and routing.",
+          "choice": "Move lead preparation and task allocation into a shared operational system.",
+          "tradeoff": "Consistency and time savings come with dependence on data quality and central tooling.",
+          "reportedOutcome": "Norton estimates substantial daily time savings; no time study is published.",
+          "evidenceLimit": "A scalable workflow still needs consent, data controls, correction and escalation.",
+          "transferQuestion": "Which preparatory task should become a reliable shared service rather than repeated individual work?"
+        },
+        {
+          "id": "kn-d2",
+          "title": "Reject revenue with weak customer fit",
+          "sourceIds": [
+            "kn-gtm"
+          ],
+          "context": "Some closed customer cohorts did not meet the desired retention standard.",
+          "choice": "Raise the qualification threshold and reduce short-term compensation pressure on leaders.",
+          "tradeoff": "Give up some immediate bookings to protect downstream customer quality.",
+          "reportedOutcome": "He describes excluding a segment representing almost 40% of prior deals.",
+          "evidenceLimit": "This is deal share, not necessarily revenue share; the post-change retention effect is not quantified.",
+          "transferQuestion": "Would your incentives reward a sale that creates predictable downstream failure?"
+        },
+        {
+          "id": "kn-d3",
+          "title": "Build enablement before capacity breaks",
+          "sourceIds": [
+            "kn-gtm"
+          ],
+          "context": "More sellers do not automatically produce proportional revenue.",
+          "choice": "Invest in enablement and revenue operations before onboarding becomes a bottleneck.",
+          "tradeoff": "Earlier overhead can improve execution but must fit the organization’s actual scale.",
+          "reportedOutcome": "Presented as an operating lesson, not a measured causal lift.",
+          "evidenceLimit": "Training satisfaction is not proof of changed behavior or improved customer outcomes.",
+          "transferQuestion": "What capability needs a long lead time before the next hiring wave?"
+        },
+        {
+          "id": "kn-d4",
+          "title": "Separate current execution from future capacity",
+          "sourceIds": [
+            "kn-scaling"
+          ],
+          "context": "The business needed both near-term delivery and later growth options.",
+          "choice": "Use operating priorities alongside longer-horizon investments, moving a launched POS product into the core plan.",
+          "tradeoff": "Exploration consumes resources before predictable returns exist.",
+          "reportedOutcome": "Norton describes the planning transition; subsequent revenue projections remain unverified targets.",
+          "evidenceLimit": "Do not turn a confident forecast into evidence of realized growth.",
+          "transferQuestion": "Which future constraint must be addressed now even though it will not improve this quarter?"
+        },
+        {
+          "id": "kn-d5",
+          "title": "Make the large organizational bet explicit",
+          "sourceIds": [
+            "kn-scaling"
+          ],
+          "context": "A Toronto office narrowed a previously broad recruiting pool.",
+          "choice": "Bet that local coaching benefits would justify hiring constraints and office costs.",
+          "tradeoff": "Closer learning and coordination versus talent access and fixed expense.",
+          "reportedOutcome": "The Q&A describes the bet, not an evaluated result.",
+          "evidenceLimit": "This is not evidence that office-based teams outperform remote teams.",
+          "transferQuestion": "What competing assumptions would you need to test before making a structural change?"
+        }
+      ],
+      "synthesis": "A growth plan must make the customer-quality threshold, capability lead time and cost of coordination visible. None can be inferred from a hiring spreadsheet alone.",
+      "exercises": [
+        {
+          "id": "kn-e1",
+          "title": "Redesign a handoff around customer value",
+          "prompt": "For a fictional B2B service, map the promises made before purchase and the work required after purchase. Identify one mismatch and a shared success criterion.",
+          "deliverable": "A pre-sale/post-sale handoff contract and one guardrail.",
+          "rubric": [
+            "Does not count a signed contract as delivered value.",
+            "Assigns responsibility without making one role own every task.",
+            "Protects customer consent and information boundaries."
+          ]
+        },
+        {
+          "id": "kn-e2",
+          "title": "Compare two compensation incentives",
+          "prompt": "Using synthetic examples, show how a bookings-only incentive and a retained-customer incentive could change behavior. Include a harmful behavior each plan might create.",
+          "deliverable": "A two-scenario incentive memo.",
+          "rubric": [
+            "Labels invented numbers.",
+            "Includes delays and factors outside the employee’s control.",
+            "Does not recommend a legal compensation change without appropriate review."
+          ]
+        },
+        {
+          "id": "kn-e3",
+          "title": "Write a two-horizon plan",
+          "prompt": "For a hypothetical growing team, separate next-quarter outcomes from a capability needed a year later. Name dependencies, a checkpoint and a reason to stop.",
+          "deliverable": "A one-page plan with current and future work.",
+          "rubric": [
+            "Distinguishes a forecast from a commitment.",
+            "Includes coordination costs.",
+            "Identifies which assumption is least certain."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luc-levesque",
+      "name": "Luc Levesque",
+      "category": "growth",
+      "lens": "Growth capability, feedback systems and explicit leadership expectations",
+      "whyStudy": "Pairs a growth practitioner’s channel reasoning with authored accounts of management systems that make expectations and feedback easier to discuss.",
+      "coverage": {
+        "status": "substantive",
+        "artifactCount": 3,
+        "note": "Two complete authored essay texts and substantial first-person interview sections reviewed. Embedded blueprint/template images were not independently inspected. Historical advice is not a current search-platform specification."
+      },
+      "artifacts": [
+        {
+          "id": "ll-lenny",
+          "title": "Leveraging growth advisors, hiring well, mastering SEO, and honing your craft",
+          "url": "https://www.lennysnewsletter.com/p/leveraging-growth-advisors-hiring",
+          "publishedAt": "2023-06-15",
+          "kind": "first-person interview",
+          "author": null,
+          "speakers": [
+            "Luc Levesque",
+            "Lenny Rachitsky"
+          ],
+          "publisher": "Lenny’s Podcast",
+          "attribution": "Levesque is the guest and Rachitsky the interviewer. A third-party transcript mirror was used for selected sections.",
+          "coverage": "Publisher title and description verified; transcript sections approximately 04–09, 18–36 and 42–60 minutes reviewed.",
+          "summary": "Channel expertise works best when an internal operator can turn it into durable capability.",
+          "writingTechniques": [
+            "Contrasts outcomes with activity, then grounds the distinction in a review meeting.",
+            "Divides SEO situations by their content-production mechanism before giving advice."
+          ],
+          "evidenceLocator": "Transcript: impact versus industriousness; pre-PMF acquisition; advisor knowledge transfer; two types of sites; hiring internal SEO capability.",
+          "caveats": [
+            "Advice describes 2023 conditions and practitioner experience.",
+            "Search timing and ranking explanations are not independently validated platform facts.",
+            "Unspecified client uplifts cannot be independently checked."
+          ],
+          "supportingUrl": "https://github.com/ChatPRD/lennys-podcast-transcripts/blob/main/episodes/luc-levesque/transcript.md",
+          "reviewedAt": "2026-11-05"
+        },
+        {
+          "id": "ll-monthly",
+          "title": "How monthly performance reviews changed the way I lead teams",
+          "url": "https://luclevesque.com/blogs/luc-levesques-blog/how-monthly-performance-reviews-changed-the-way-i-lead-teams-forever-employee-review-template-included",
+          "publishedAt": "2014-05-03",
+          "kind": "author essay",
+          "author": "Luc Levesque",
+          "speakers": [],
+          "publisher": "Luc Levesque’s website",
+          "attribution": "Levesque describes his own team-management practice.",
+          "coverage": "Complete article text reviewed; embedded sample images not independently inspected.",
+          "summary": "A short self-review creates a continuing record rather than relying on annual recollection.",
+          "writingTechniques": [
+            "Begins with an employee objection, then reconstructs the process change.",
+            "Shows a small template in text and explains what the discussion resolves."
+          ],
+          "evidenceLocator": "Passages: employee challenge to annual review; monthly self-review; year-end aggregation.",
+          "caveats": [
+            "A 2014 team account without independent performance or fairness evaluation.",
+            "Arithmetic aggregation of ratings needs separate validation; it is not automatically an appropriate evaluation method."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        },
+        {
+          "id": "ll-blueprint",
+          "title": "Leader Blueprint: How To Help New Employees Be Rockstars, A New Approach",
+          "url": "https://luclevesque.com/blogs/luc-levesques-blog/leader-blueprint-how-to-help-new-employees-be-rockstars-a-new-approach",
+          "publishedAt": "2015-01-02",
+          "kind": "author essay",
+          "author": "Luc Levesque",
+          "speakers": [],
+          "publisher": "Luc Levesque’s website",
+          "attribution": "Levesque describes creating and discussing his own leadership blueprint.",
+          "coverage": "Complete article text reviewed; linked template and embedded images not inspected.",
+          "summary": "An explicit account of working preferences can start a useful conversation with new colleagues.",
+          "writingTechniques": [
+            "Makes an invisible coordination problem concrete with a brief document.",
+            "Adds an update that corrects a plausible but harmful misreading of the advice."
+          ],
+          "evidenceLocator": "Main essay and update: discuss the blueprint one-on-one rather than only emailing it.",
+          "caveats": [
+            "A leader’s preferences must not become unquestionable rules or substitutes for fair job expectations.",
+            "The essay’s numerical claim about nonverbal communication is not validated here and is not adopted."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "ll-d1",
+          "title": "Evaluate impact rather than visible effort",
+          "sourceIds": [
+            "ll-lenny"
+          ],
+          "context": "A strategy presentation did not settle whether work was changing outcomes.",
+          "choice": "Connect reviews and plans to the intended result.",
+          "tradeoff": "Outcome focus can clarify priorities but must account for uncertainty and delayed effects.",
+          "reportedOutcome": "Levesque recounts the management lesson, not a measured culture intervention.",
+          "evidenceLimit": "Avoid judging individuals solely by noisy outcomes outside their control.",
+          "transferQuestion": "What evidence would show useful progress beyond the volume of activity?"
+        },
+        {
+          "id": "ll-d2",
+          "title": "Keep an internal owner for external expertise",
+          "sourceIds": [
+            "ll-lenny"
+          ],
+          "context": "An advisor or agency can supply knowledge that the company cannot execute or retain.",
+          "choice": "Pair expert help with an internal operator and explicit learning transfer.",
+          "tradeoff": "Slower initial capability building can reduce permanent dependence.",
+          "reportedOutcome": "Presented as a preferred staffing model, not a comparative experiment.",
+          "evidenceLimit": "The right structure depends on budget, risk and the specificity of the bottleneck.",
+          "transferQuestion": "What should the team be able to do independently when the engagement ends?"
+        },
+        {
+          "id": "ll-d3",
+          "title": "Match search work to the content system",
+          "sourceIds": [
+            "ll-lenny"
+          ],
+          "context": "A few editorial pages differ from a marketplace producing many useful pages.",
+          "choice": "Distinguish content creation from optimization of an existing large surface.",
+          "tradeoff": "Different mechanisms imply different bottlenecks and learning periods.",
+          "reportedOutcome": "He contrasts site types; no universal timetable is established.",
+          "evidenceLimit": "Never infer profitable acquisition from search traffic alone.",
+          "transferQuestion": "Does the product naturally generate useful public information, or must the company create it?"
+        },
+        {
+          "id": "ll-d4",
+          "title": "Capture feedback before memory distorts it",
+          "sourceIds": [
+            "ll-monthly"
+          ],
+          "context": "An employee identified omissions in an annual review.",
+          "choice": "Introduce brief monthly self-reviews and discussions.",
+          "tradeoff": "More frequent attention reduces recall dependence but adds process and potential rating pressure.",
+          "reportedOutcome": "Levesque reports easier reviews and fewer surprises; no controlled measure is supplied.",
+          "evidenceLimit": "Employee experience, fairness and administrative cost require separate evaluation.",
+          "transferQuestion": "What lightweight record would make an important later decision less dependent on memory?"
+        },
+        {
+          "id": "ll-d5",
+          "title": "Discuss expectations instead of merely distributing them",
+          "sourceIds": [
+            "ll-blueprint"
+          ],
+          "context": "New colleagues had to infer a leader’s preferences by trial and error.",
+          "choice": "Write a short blueprint and explain it in a one-on-one conversation.",
+          "tradeoff": "Explicitness can reduce uncertainty, but a one-sided manual can reinforce power imbalance.",
+          "reportedOutcome": "The author reports positive reactions without systematic evaluation.",
+          "evidenceLimit": "Treat the document as revisable and invite reciprocal preferences.",
+          "transferQuestion": "Which expectation is currently implicit, and how could the other person safely challenge it?"
+        }
+      ],
+      "synthesis": "The strongest reusable pattern is explicit reasoning: name the outcome, identify the operating mechanism, and make knowledge and expectations discussable.",
+      "exercises": [
+        {
+          "id": "ll-e1",
+          "title": "Write a two-way working agreement",
+          "prompt": "Draft a one-page working agreement for a fictional collaboration. Separate required outcomes, negotiable preferences and questions for the other person.",
+          "deliverable": "A document plus a five-question conversation guide.",
+          "rubric": [
+            "Does not turn personality quirks into performance standards.",
+            "Invites correction and reciprocal needs.",
+            "Names a review date."
+          ]
+        },
+        {
+          "id": "ll-e2",
+          "title": "Design a feedback record",
+          "prompt": "Create a short monthly reflection for a hypothetical project with evidence, uncertainty, learning and requested support.",
+          "deliverable": "A reusable template and one synthetic example.",
+          "rubric": [
+            "Avoids false numerical precision.",
+            "Records context rather than only a rating.",
+            "Uses minimal necessary personal information."
+          ]
+        },
+        {
+          "id": "ll-e3",
+          "title": "Scope an advisory engagement",
+          "prompt": "For a fictional acquisition bottleneck, define the expert question, internal owner, knowledge-transfer artifact and exit criterion.",
+          "deliverable": "A one-page engagement brief.",
+          "rubric": [
+            "Does not assume advice substitutes for execution.",
+            "Defines an observable capability transfer.",
+            "Separates research goals from guaranteed outcomes."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "george-bonaci",
+      "name": "George Bonaci",
+      "category": "growth",
+      "lens": "Measurement, delegated judgment and AI-assisted growth operations",
+      "whyStudy": "A useful case in separating a provocative growth narrative from the experiment it describes. The supporting team report makes visibility-versus-conversion limits unusually explicit.",
+      "coverage": {
+        "status": "substantive",
+        "artifactCount": 3,
+        "note": "Substantial publisher transcript sections, a full publisher recap and a complete team-authored experiment report reviewed. The experiment report is by Grace Cummins, not Bonaci. The 20VC interview remains a separate preview-only lead."
+      },
+      "artifacts": [
+        {
+          "id": "gb-exitfive",
+          "title": "How Ramp Is Rebuilding Marketing Around AI Agents",
+          "url": "https://exit-5.webflow.io/podcast/how-ramp-is-rebuilding-marketing-around-ai-agents",
+          "publishedAt": "2026-05-21",
+          "kind": "first-person interview",
+          "author": null,
+          "speakers": [
+            "George Bonaci",
+            "Dave Gerhardt"
+          ],
+          "publisher": "The Dave Gerhardt Show / Exit Five",
+          "attribution": "Bonaci is the guest and Gerhardt the host. Claims and stories are attributed to their respective speakers.",
+          "coverage": "Publisher transcript sections approximately 03–17 and 32–42 minutes reviewed; chapter timestamps differ from transcript timestamps.",
+          "summary": "Bonaci describes shared AI infrastructure and measurement that goes beyond last-click attribution.",
+          "writingTechniques": [
+            "Qualifies a provocative position with its operational constraint.",
+            "Credits a teammate’s judgment in a case where his initial instinct was wrong."
+          ],
+          "evidenceLocator": "Transcript: 03:28 creative-team credit; 12:22–14:41 shared systems; 32:52 reach and engagement; 39:45–42:07 measurement.",
+          "caveats": [
+            "Automated transcript contains recognition errors.",
+            "Claims of autonomous operation are descriptions, not an endorsement of unrestricted permissions.",
+            "Anecdotal speed and performance claims are not independently audited."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        },
+        {
+          "id": "gb-sciencelab",
+          "title": "How Ramp Runs Growth Like a Science Lab",
+          "url": "https://news.bulldozer-collective.com/p/how-ramp-runs-growth-like-a-science",
+          "publishedAt": "2026-08-20",
+          "kind": "publisher interview recap",
+          "author": "Jordan Chenevier-Truchet",
+          "speakers": [
+            "George Bonaci",
+            "Jordan Chenevier-Truchet"
+          ],
+          "publisher": "Conquête / Bulldozer Collective",
+          "attribution": "Chenevier-Truchet’s written takeaways from an interview, not a verbatim transcript or Bonaci-authored essay.",
+          "coverage": "Complete public recap reviewed; underlying audio not reviewed.",
+          "summary": "The recap describes fast experiments, channel scaling and AI-search work, often in compressed claims.",
+          "writingTechniques": [
+            "The host organizes varied ideas into numbered operating lessons.",
+            "Compressed success language is useful material for a critical evidence audit."
+          ],
+          "evidenceLocator": "Recap points 2–6: experiment timing, scaling, agent incentives, data and AEO.",
+          "caveats": [
+            "The recap confusingly says ICE is missing confidence although confidence is already in ICE; do not copy this formulation.",
+            "Its short testing horizons and success labels should not become universal rules."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        },
+        {
+          "id": "gb-agent-experiment",
+          "title": "We Tested Marketing Incentives to AI Agents. Here’s What Happened.",
+          "url": "https://builders.ramp.com/post/marketing-to-ai-agents",
+          "publishedAt": "2026-04-30",
+          "kind": "team-authored supporting experiment report",
+          "author": "Grace Cummins",
+          "speakers": [],
+          "publisher": "Ramp Builders",
+          "attribution": "Cummins authored the team report. It supports and qualifies the experiment discussed by Bonaci; sole ownership or authorship is not attributed to him.",
+          "coverage": "Complete extracted text reviewed. Embedded charts were not visually inspected. Publication date/byline verified through the indexed engineering.ramp.com version.",
+          "summary": "The team reports offer mentions while explicitly separating them from downstream action.",
+          "writingTechniques": [
+            "Cummins separates hypothesis stages and exposes a tracking error.",
+            "Reports how observations changed over time rather than presenting only one favorable snapshot."
+          ],
+          "evidenceLocator": "Sections: The experiment; Three things we wish we’d known; Did the agents tell their humans?; Why this matters.",
+          "caveats": [
+            "No raw dataset, full prompt set or independent replication reviewed.",
+            "Bot targeting errors, caching, repeated queries and later publicity complicate inference.",
+            "Observed model differences describe this test window, not fixed platform capabilities."
+          ],
+          "supportingUrl": "https://engineering.ramp.com/post/marketing-to-ai-agents",
+          "reviewedAt": "2026-11-05"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "gb-d1",
+          "title": "Let expertise challenge the manager’s taste",
+          "sourceIds": [
+            "gb-exitfive"
+          ],
+          "context": "Bonaci initially doubted a teammate’s creative campaign.",
+          "choice": "Allow the teammate’s conviction and expertise to carry the bet.",
+          "tradeoff": "Delegation can reveal ideas the leader would reject, while requiring budget and risk boundaries.",
+          "reportedOutcome": "He says the teammate proved him wrong; no isolated revenue effect is supplied.",
+          "evidenceLimit": "This is a leadership anecdote, not a rule to approve every strongly held opinion.",
+          "transferQuestion": "What evidence would justify delegating a decision despite your personal preference?"
+        },
+        {
+          "id": "gb-d2",
+          "title": "Build shared context before automating isolated tasks",
+          "sourceIds": [
+            "gb-exitfive"
+          ],
+          "context": "Different growth teams needed overlapping knowledge.",
+          "choice": "Combine central infrastructure with team-specific adaptation.",
+          "tradeoff": "Reuse improves consistency but shared errors and excess permissions can propagate.",
+          "reportedOutcome": "Bonaci describes the operating model, without a comparative productivity study.",
+          "evidenceLimit": "Permission boundaries, evaluation and human approval are additional requirements, not validated by the interview.",
+          "transferQuestion": "Which context should be shared, and which data or actions must remain restricted?"
+        },
+        {
+          "id": "gb-d3",
+          "title": "Measure indirect effects instead of abandoning rigor",
+          "sourceIds": [
+            "gb-exitfive"
+          ],
+          "context": "Direct mail and events can affect later behavior without a tracked click.",
+          "choice": "Specify the expected effect and observation window before spending.",
+          "tradeoff": "Broader measurement captures possible halo effects but increases attribution uncertainty.",
+          "reportedOutcome": "He proposes incrementality testing and agreed longer horizons.",
+          "evidenceLimit": "Reach and engagement still do not establish incremental profitable growth.",
+          "transferQuestion": "What comparison would distinguish campaign impact from customers who would convert anyway?"
+        },
+        {
+          "id": "gb-d4",
+          "title": "Keep each stage of an experiment’s claim separate",
+          "sourceIds": [
+            "gb-agent-experiment",
+            "gb-sciencelab"
+          ],
+          "context": "A recap describes an agent-incentive test as successful.",
+          "choice": "Read the team report’s separate stages: retrieval, mention and action.",
+          "tradeoff": "A narrower conclusion is less dramatic but more useful for investment decisions.",
+          "reportedOutcome": "The team report says mentions grew, while human or agent action had not yet occurred.",
+          "evidenceLimit": "These are reported observations from the publication window, not a claim that no later conversions occurred.",
+          "transferQuestion": "What exact behavior must happen before you can honestly say this experiment worked?"
+        },
+        {
+          "id": "gb-d5",
+          "title": "Check instrumentation before explaining performance",
+          "sourceIds": [
+            "gb-agent-experiment"
+          ],
+          "context": "One variant initially missed major assistants because of bot-category targeting.",
+          "choice": "Inspect how treatment reached each intended platform.",
+          "tradeoff": "Instrumentation checks consume time but protect against false conclusions.",
+          "reportedOutcome": "The report discloses the error and uneven content surfacing.",
+          "evidenceLimit": "This weakens clean causal comparison between formats; it does not prove one format is universally superior.",
+          "transferQuestion": "Could an apparent treatment failure actually be a delivery or measurement failure?"
+        }
+      ],
+      "synthesis": "A bigger or more fashionable bet does not relax the need to define success. Separate the operator’s idea, the team’s execution, the measured behavior and the commercial consequence.",
+      "exercises": [
+        {
+          "id": "gb-e1",
+          "title": "Audit a success claim against its source",
+          "prompt": "Compare the science-lab recap with Cummins’s experiment report. Build a ladder from exposure to retrieval, mention, action and economic value.",
+          "deliverable": "A source-linked claim ledger with supported, unresolved and overstated conclusions.",
+          "rubric": [
+            "Credits Cummins and the team.",
+            "Separates visibility from conversion.",
+            "Preserves the observation window."
+          ]
+        },
+        {
+          "id": "gb-e2",
+          "title": "Design a safe expert-assistance workflow",
+          "prompt": "For a fictional internal workflow, specify reusable context, task-specific judgment, access boundaries and the actions requiring approval.",
+          "deliverable": "A workflow specification and five failure tests.",
+          "rubric": [
+            "Does not upload real confidential data.",
+            "Includes traceable sources and uncertainty.",
+            "Includes an audit trail and rollback or escalation."
+          ]
+        },
+        {
+          "id": "gb-e3",
+          "title": "Measure an indirect marketing effect",
+          "prompt": "Use a hypothetical direct-mail campaign to define a comparison group, outcome window, total cost and guardrails.",
+          "deliverable": "An incrementality test brief.",
+          "rubric": [
+            "Separates direct attribution from causal effect.",
+            "Includes spillover and selection risks.",
+            "Does not treat a memorable anecdote as ROI."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kieran-flanagan",
+      "name": "Kieran Flanagan",
+      "category": "growth",
+      "lens": "Product-channel fit, experiment sequencing and hands-on growth leadership",
+      "whyStudy": "Connects acquisition strategy to product behavior and shows how growth work earns organizational permission for larger bets.",
+      "coverage": {
+        "status": "substantive",
+        "artifactCount": 3,
+        "note": "One complete publisher-edited interview transcript reviewed; substantial sections of one authored essay and one publisher-hosted interview reviewed. Audio and embedded charts were not independently inspected. Historical roles and platform claims are not current-state assertions."
+      },
+      "artifacts": [
+        {
+          "id": "kfl-product-future",
+          "title": "Product is the Future of Growth - Here's Why",
+          "url": "https://www.reforge.com/blog/freemium-product-future-of-growth",
+          "publishedAt": "2018-03-05",
+          "kind": "author essay",
+          "coverage": "Extracted text reviewed from opening through The Double Impact of Live Chat in Onboarding; extraction ends at the minimum-viable-test question. Later material, if any, not reviewed.",
+          "summary": "Describes HubSpot’s transition from incremental product-qualified-lead experiments to more resource-intensive conversion and onboarding interventions.",
+          "writingTechniques": [
+            "Organizes the argument as an escalating sequence of decisions.",
+            "Uses an explicit hypothesis, operating detail and reported result to make experiments legible."
+          ],
+          "evidenceLocator": "Building a Product-Qualified Lead Playbook to Get Early Wins; What You Need to Know About Taking Big Bets; Increasing Conversions by 50%.",
+          "caveats": [
+            "Historical operator account; experiment protocols and uncertainty estimates are absent. The dashboard illustration is explicitly dummy data."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05",
+          "author": "Kieran Flanagan",
+          "speakers": [],
+          "host": null,
+          "publisher": "Reforge",
+          "attribution": "Authored first-person essay credited to Kieran Flanagan on the source page. Writing-technique observations concern his essay; reported outcomes are his historical account."
+        },
+        {
+          "id": "kfl-intercom-plg",
+          "title": "HubSpot’s Kieran Flanagan on product-led growth",
+          "url": "https://www.intercom.com/blog/podcasts/hubspots-vp-of-marketing-and-growth-kieran-flanagan-on-product-led-growth",
+          "publishedAt": "2019-02-28",
+          "kind": "publisher-hosted first-person interview transcript",
+          "coverage": "Complete lightly edited transcript reviewed, including concluding career discussion. Audio not reviewed.",
+          "summary": "Distinguishes product-channel fit from repeating a successful marketing playbook and explains cross-functional growth work.",
+          "writingTechniques": [
+            "Explains a principle through a successful case and a counterexample.",
+            "Admits mistakes, then identifies the changed behavior rather than presenting a flawless career."
+          ],
+          "evidenceLocator": "Defining product-channel fit; Baking growth levers into your product; The best way to measure growth.",
+          "caveats": [
+            "Publisher editing separates this from verbatim audio. Historical organizational descriptions are not present-day facts."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05",
+          "author": null,
+          "speakers": [
+            "Kieran Flanagan",
+            "Amanda Connolly"
+          ],
+          "host": "Amanda Connolly",
+          "publisher": "Intercom",
+          "attribution": "Source page credits Amanda Connolly and labels the conversation as a lightly edited transcript. Claims attributed to Flanagan come from answers labeled Kieran, not publisher introduction, takeaway list, headings or interviewer questions. Communication-technique observations concern his transcribed answers rather than authorship of the page."
+        },
+        {
+          "id": "kfl-exitfive-operator",
+          "title": "The Future of B2B Marketing with Kieran Flanagan",
+          "url": "https://exitfive.com/podcast/the-future-of-b2b-marketing-with-kieran-flanagan/",
+          "publishedAt": "2026-01-05",
+          "kind": "publisher-hosted first-person interview transcript",
+          "coverage": "Substantial selected transcript sections reviewed: 00:01:35–00:21:47 and 00:35:41–00:48:26. Full audio and remaining sections not reviewed. Date is publisher page date, not independently verified recording date.",
+          "summary": "Discusses time-bounded missions, leadership involvement and deliberate communication practice.",
+          "writingTechniques": [
+            "Names a compact contrast, then explains what it changes in everyday work.",
+            "Uses candid failure stories to expose the cost of a leadership preference."
+          ],
+          "evidenceLocator": "00:04:30 mission horizon; 00:13:10–00:17:11 push/pull leadership and direct feedback; 00:36:29–00:37:56 podcast practice.",
+          "caveats": [
+            "Transcript contains obvious transcription errors; timestamps follow transcript labels, not the inconsistent show-note index. AI predictions are opinions, not verified outcomes."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05",
+          "author": null,
+          "speakers": [
+            "Kieran Flanagan",
+            "Dave Gerhardt"
+          ],
+          "host": "Dave Gerhardt",
+          "publisher": "Exit Five",
+          "attribution": "Page show notes identify Dave as the interviewer; transcript labels the participants Dave Gerhardt and Kieran Flanagan, and Dave introduces himself by name at 00:00:00. Flanagan claims and communication observations refer to his labeled transcript answers, not host remarks or show-note prose. No claim that Flanagan authored this page."
+        }
+      ],
+      "decisions": [
+        {
+          "id": "kfl-d1",
+          "title": "Sequence easy wins before expensive bets",
+          "sourceIds": [
+            "kfl-product-future"
+          ],
+          "context": "A new growth effort needed credibility.",
+          "choice": "Start with tractable PQL experiments, then expand after returns diminish.",
+          "tradeoff": "Quick learning can postpone structural work.",
+          "reportedOutcome": "He describes early results earning support for larger experiments.",
+          "evidenceLimit": "Retrospective account, not a controlled test of sequencing.",
+          "transferQuestion": "What small test would establish enough evidence to justify a larger investment?"
+        },
+        {
+          "id": "kfl-d2",
+          "title": "Offer alternative sales interactions",
+          "sourceIds": [
+            "kfl-product-future"
+          ],
+          "context": "Upgrade interest led to a callback form.",
+          "choice": "Test chat, scheduling and calling options.",
+          "tradeoff": "More service capacity was required.",
+          "reportedOutcome": "He reports 50% higher conversions, then another 20% from in-app scheduling.",
+          "evidenceLimit": "Relative improvements; baseline and uncertainty unspecified.",
+          "transferQuestion": "Where does purchase intent encounter an unnecessary wait?"
+        },
+        {
+          "id": "kfl-d3",
+          "title": "Change acquisition with the product",
+          "sourceIds": [
+            "kfl-intercom-plg"
+          ],
+          "context": "The existing inbound playbook underperformed for freemium CRM.",
+          "choice": "Emphasize transactional search rather than assume educational content would convert similarly.",
+          "tradeoff": "Narrower intent coverage may sacrifice broad awareness.",
+          "reportedOutcome": "He describes adapting the playbook; no numerical uplift supplied.",
+          "evidenceLimit": "Not proof educational content never works for CRM.",
+          "transferQuestion": "What purchase behavior makes this channel appropriate?"
+        },
+        {
+          "id": "kfl-d4",
+          "title": "Give engineering a problem to solve",
+          "sourceIds": [
+            "kfl-intercom-plg"
+          ],
+          "context": "Marketing requests prematurely specified solutions.",
+          "choice": "Articulate the problem and learn implementation constraints.",
+          "tradeoff": "More discovery before execution.",
+          "reportedOutcome": "He describes changing his collaboration approach.",
+          "evidenceLimit": "No measured performance effect.",
+          "transferQuestion": "Can the request explain user friction without prescribing an interface?"
+        },
+        {
+          "id": "kfl-d5",
+          "title": "Declare where leadership will intervene",
+          "sourceIds": [
+            "kfl-exitfive-operator"
+          ],
+          "context": "He wanted hands-on involvement without reviewing everything.",
+          "choice": "Name quarterly areas of deep involvement and invite escalation elsewhere.",
+          "tradeoff": "Autonomy depends on people surfacing issues; he acknowledges gaps.",
+          "reportedOutcome": "An operating practice, not a quantified improvement.",
+          "evidenceLimit": "May fail where escalation is unsafe or unclear.",
+          "transferQuestion": "Does the team know which decisions it owns and when to escalate?"
+        }
+      ],
+      "synthesis": "Original synthesis: channel choice, product behavior and team operating rules form one system. Study not only which experiment won, but what evidence justified its scope and who could act on the result.",
+      "exercises": [
+        {
+          "id": "kfl-e1",
+          "title": "Design an experiment escalation ladder",
+          "prompt": "For a hypothetical collaboration product, propose one low-cost diagnostic, one medium-size intervention and one structural bet. State how each result changes the next decision.",
+          "deliverable": "A three-step plan with cost, decision rule, expected learning and guardrail metrics.",
+          "rubric": [
+            "Measures a user or business outcome, not activity alone.",
+            "Includes a stop condition and a plausible negative result.",
+            "Does not mistake an easy test for the highest-value long-term strategy."
+          ]
+        },
+        {
+          "id": "kfl-e2",
+          "title": "Challenge a borrowed channel playbook",
+          "prompt": "Compare two hypothetical products serving the same buyer but different jobs. Draft their purchase journeys and explain why one familiar acquisition tactic might work differently.",
+          "deliverable": "Two short journey maps and a channel-fit hypothesis for each.",
+          "rubric": [
+            "Distinguishes problem education from active buying intent.",
+            "Names evidence that would overturn the channel choice.",
+            "Includes servicing cost and retained use, not only signup volume."
+          ]
+        },
+        {
+          "id": "kfl-e3",
+          "title": "Rewrite an engineering request",
+          "prompt": "Rewrite “add a pop-up to increase upgrades” into a problem brief. Include the affected cohort, observed difficulty, business hypothesis, constraints and unanswered questions.",
+          "deliverable": "A 200-word brief with two solution candidates left open.",
+          "rubric": [
+            "Separates evidence from assumption.",
+            "Leaves room for engineering and design judgment.",
+            "Protects comprehension and voluntary choice."
+          ]
+        },
+        {
+          "id": "kfl-e4",
+          "title": "Practice a concise decision story",
+          "prompt": "Record a two-minute explanation of a hypothetical failed experiment. Explain expectation, observation, revised belief and next test. Rewrite it after a listener identifies what was unclear.",
+          "deliverable": "Before-and-after scripts plus three concrete revisions.",
+          "rubric": [
+            "Uses one concrete contrast and no invented results.",
+            "Explains a tradeoff rather than only naming a framework.",
+            "Treats disagreement as information, not disloyalty."
           ]
         }
       ]
@@ -1468,14 +2377,14 @@
     },
     {
       "name": "Luc Levesque",
-      "status": "roster-only",
-      "personId": null,
+      "status": "substantive",
+      "personId": "luc-levesque",
       "source": "https://cosign.co/awards/growth"
     },
     {
       "name": "Kyle Norton",
-      "status": "roster-only",
-      "personId": null,
+      "status": "substantive",
+      "personId": "kyle-norton",
       "source": "https://cosign.co/awards/growth"
     },
     {
@@ -1498,14 +2407,14 @@
     },
     {
       "name": "Kieran Flanagan",
-      "status": "roster-only",
-      "personId": null,
+      "status": "substantive",
+      "personId": "kieran-flanagan",
       "source": "https://cosign.co/awards/growth"
     },
     {
       "name": "George Bonaci",
-      "status": "roster-only",
-      "personId": null,
+      "status": "substantive",
+      "personId": "george-bonaci",
       "source": "https://cosign.co/awards/growth"
     },
     {
@@ -1774,6 +2683,50 @@
         "ev-cliches"
       ],
       "analysis": "Feature adoption, invitations, low CAC and free-to-paid conversion each describe only part of the system. Check retained value, total economic contribution and user trust before declaring success."
+    },
+    {
+      "id": "incentives-versus-customer-quality",
+      "title": "Commercial incentives can reward the wrong customers",
+      "personIds": [
+        "kyle-norton",
+        "sri-batchu",
+        "gaurav-vohra"
+      ],
+      "sourceIds": [
+        "kn-gtm",
+        "sb-ramp",
+        "gv-aha"
+      ],
+      "analysis": "More bookings, cheaper acquisition and more invitations can each look successful while missing downstream value. Norton’s qualification decision, Batchu’s efficiency reasoning and Vohra’s invitation example ask different questions about one system. Define customer fit and economic consequences before optimizing a local number."
+    },
+    {
+      "id": "visibility-versus-conversion",
+      "title": "A successful mention is not a successful acquisition",
+      "personIds": [
+        "george-bonaci",
+        "greg-isenberg"
+      ],
+      "sourceIds": [
+        "gb-agent-experiment",
+        "gb-sciencelab",
+        "gi-65"
+      ],
+      "analysis": "Cummins’s team report distinguishes offer mentions from downstream action, while a recap uses a broad success label. Isenberg’s inexpensive ad anecdote similarly separates poorly if reach, incremental customers and profit are collapsed. Use a claim ladder and retain observation windows; do not treat first-stage evidence as proof of the entire business model."
+    },
+    {
+      "id": "expertise-versus-dependence",
+      "title": "Use outside expertise to build internal judgment",
+      "personIds": [
+        "luc-levesque",
+        "luke-harries",
+        "kieran-flanagan"
+      ],
+      "sourceIds": [
+        "ll-lenny",
+        "lh-hire",
+        "kfl-intercom-plg"
+      ],
+      "analysis": "Levesque emphasizes an internal owner, Harries tests execution capability, and Flanagan describes bringing a problem rather than a prescribed solution to engineering. The shared lesson is to make expertise actionable without substituting another person’s playbook for local understanding."
     }
   ],
   "readingPaths": [
@@ -1820,6 +2773,18 @@
         "ev-cliches"
       ],
       "output": "A concise argument with definitions, evidence, caveats and a useful decision."
+    },
+    {
+      "id": "operating-judgment",
+      "title": "Leading a growth system",
+      "sourceIds": [
+        "kn-gtm",
+        "kn-scaling",
+        "ll-blueprint",
+        "kfl-exitfive-operator",
+        "gb-exitfive"
+      ],
+      "output": "A customer-quality rule, a two-horizon plan and explicit decision/approval boundaries."
     }
   ],
   "additionalSources": [
@@ -1844,7 +2809,7 @@
     }
   ],
   "limitations": [
-    "Eight profiles have multiple substantive artifacts, but evidence density varies. A two-source case is not equivalent to a complete career assessment.",
+    "Substantive profiles have multiple reviewed artifacts, but source types and evidence density vary. Supporting team reports and publisher recaps are not necessarily the nominee’s own prose. A two-source case is not a complete career assessment.",
     "No original experiment datasets, internal documents or private metrics were available.",
     "Published operating accounts contain selection, survivorship and promotional bias.",
     "Images, charts and videos were not visually reviewed unless stated; this dataset makes no visual-composition claims about them.",

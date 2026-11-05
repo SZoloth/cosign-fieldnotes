@@ -1,0 +1,519 @@
+{
+  "schemaVersion": "1.0",
+  "discipline": "Design",
+  "researchedAt": "2026-11-05",
+  "title": "Design research expansion: feedback, prototypes, and evolving interfaces",
+  "editorialNote": "Public-source educational analysis only. These four people appear on the Cosign Design nomination roster. Summaries are original; dates distinguish publication from project year where needed. No demos, libraries, or generated output were executed. Alternatives and costs are editorial analysis unless explicitly described.",
+  "people": [
+    {
+      "id": "benji-taylor",
+      "name": "Benji Taylor",
+      "discipline": "Design",
+      "focus": [
+        "Interaction architecture",
+        "Visual feedback",
+        "Creative tooling"
+      ],
+      "keyIdea": "Preserve the connection between what a person sees, what they mean, and what the system changes.",
+      "artifacts": [
+        {
+          "title": "Family Values",
+          "url": "https://benji.org/family-values",
+          "date": "2024-07-08",
+          "author": "Benji Taylor; Family team work with named contributors",
+          "sourceType": "First-person product design essay with demonstrations",
+          "confidence": "high for stated rationale; outcome claims untested",
+          "summary": "Explains Family’s contextual trays, spatial continuity, and selective emphasis. The account credits the team and describes a conscious tradeoff between craft and launch speed."
+        },
+        {
+          "title": "Annotating for agents",
+          "url": "https://benji.org/annotating",
+          "date": "2026-01-16",
+          "author": "Benji Taylor",
+          "sourceType": "Personal prototype essay",
+          "confidence": "high",
+          "summary": "Describes the information lost when visual feedback becomes vague text, then proposes capturing an element’s technical context alongside a short annotation."
+        },
+        {
+          "title": "Agentation",
+          "url": "https://benji.org/agentation",
+          "date": "2026-01-21",
+          "author": "Benji Taylor, with Dennis Jin and Alex Vanderzon credited",
+          "sourceType": "First-person launch essay and interactive feature tour",
+          "confidence": "high",
+          "summary": "Shows the annotation loop used to build its own demonstrations, with different levels of output detail for different debugging problems."
+        },
+        {
+          "title": "Liveline",
+          "url": "https://benji.org/liveline",
+          "date": "2026-02-16",
+          "author": "Benji Taylor / Liveline project",
+          "sourceType": "First-party component explanation and documentation",
+          "confidence": "high for documented behavior; performance not verified",
+          "summary": "Presents a live-chart component with a small starting API, coordinated interpolation, loading and empty states, and stress cases for irregular updates."
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "Use contextual trays for transient actions rather than turning each step into a full-screen destination.",
+          "alternative": "Expose every feature at once or replace the whole screen for each action.",
+          "tradeoff": "Maintaining context reduces displacement; constrained trays can hide depth and must still make the current step and exit clear.",
+          "evidenceUrls": [
+            "https://benji.org/family-values"
+          ],
+          "status": "Documented Family team choice; tradeoff analysis"
+        },
+        {
+          "decision": "Reserve stronger surprise for less frequent moments, while keeping repeated actions efficient.",
+          "alternative": "Give every interaction the same expressive intensity.",
+          "tradeoff": "Novelty can make rare events memorable, but repeated flourishes can become a tax. Frequency is a hypothesis to test, not proof of delight.",
+          "evidenceUrls": [
+            "https://benji.org/family-values"
+          ],
+          "status": "Documented design heuristic, not a measured universal curve"
+        },
+        {
+          "decision": "Export visual annotations as portable text containing selectors and element context.",
+          "alternative": "Require a proprietary editor or ask users to describe visual targets from memory.",
+          "tradeoff": "Portable grounding reduces ambiguity, but selectors and captured page content can be unstable or sensitive; review what leaves the page.",
+          "evidenceUrls": [
+            "https://benji.org/annotating"
+          ],
+          "status": "Documented prototype architecture; privacy and maintenance costs are analysis"
+        },
+        {
+          "decision": "Offer progressively richer diagnostic context instead of one maximal output format.",
+          "alternative": "Always send either a short note or the complete DOM/style context.",
+          "tradeoff": "Small edits stay concise while difficult animation issues receive more evidence. Extra detail also increases noise and potential exposure.",
+          "evidenceUrls": [
+            "https://benji.org/agentation"
+          ],
+          "status": "Documented output-mode choice; cost analysis"
+        },
+        {
+          "decision": "Animate related chart elements together, while expanding the range immediately to avoid clipping new data.",
+          "alternative": "Animate the line alone or smooth every change identically.",
+          "tradeoff": "Coordinated motion can improve continuity, but interpolation can delay the displayed value and distort perceived volatility if scales are exaggerated.",
+          "evidenceUrls": [
+            "https://benji.org/liveline"
+          ],
+          "status": "Documented rendering behavior; interpretation risks are analysis"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "technique": "Explain principles through a controlled subtraction.",
+          "evidence": "Family Values removes selected transitions for side-by-side comparison, letting readers inspect the claimed loss of continuity.",
+          "sourceUrl": "https://benji.org/family-values"
+        },
+        {
+          "technique": "Make the demonstration evidence of the workflow.",
+          "evidence": "The Agentation tour explains that its examples were refined using the feature being demonstrated, then describes the repeated annotation loop.",
+          "sourceUrl": "https://benji.org/agentation"
+        },
+        {
+          "technique": "Follow the minimal example with hostile conditions.",
+          "evidence": "Liveline starts with its small API, then shows irregular arrivals, spikes, and sharp reversals rather than only calm sample data.",
+          "sourceUrl": "https://benji.org/liveline"
+        }
+      ],
+      "exercise": {
+        "task": "Take one multi-step workflow and create two versions: full-screen steps and contextual overlays. Give an agent or collaborator three visual corrections using only prose, then repeat with explicit element grounding. Stress one animated value with delayed and bursty data.",
+        "deliverable": "A comparison recording, six feedback messages, and a failure log separating navigation clarity, target ambiguity, and misleading animation.",
+        "evaluation": [
+          "Can people explain where they are and reverse the previous step?",
+          "Count clarification requests before and after grounded feedback.",
+          "Review annotations for private text before sharing.",
+          "Distinguish real values from interpolated presentation.",
+          "Test repeated use and reduced motion, not just the first impression."
+        ]
+      },
+      "limitations": [
+        "Family’s interactions are team work, and the essay is a rationale rather than an independent usability study.",
+        "Trustworthy financial interfaces require more than visual continuity; this is not a wallet security review or product endorsement.",
+        "Agentation and Liveline pages can evolve after their displayed publication dates.",
+        "No annotation tool or chart was installed or benchmarked; frame-rate claims remain first-party claims."
+      ],
+      "coverage": "Four primary artifacts read. Decisions span mobile navigation, feedback representation, diagnostic context, and live-data presentation. Attribution follows the essays’ bylines and named collaborators, not quotations within interactive demonstrations."
+    },
+    {
+      "id": "paul-bakaus",
+      "name": "Paul Bakaus",
+      "discipline": "Design",
+      "focus": [
+        "Human–AI iteration",
+        "Design vocabulary",
+        "Tool packaging"
+      ],
+      "keyIdea": "A useful creative tool should make judgment easier to exercise, not merely produce more plausible output.",
+      "artifacts": [
+        {
+          "title": "Impeccable by Design",
+          "url": "https://www.paulbakaus.com/impeccable-by-design/",
+          "date": "2026-07-02",
+          "author": "Paul Bakaus",
+          "sourceType": "Founder’s first-person thesis essay",
+          "confidence": "high for authorship and stated strategy",
+          "summary": "Argues for human-directed iteration inside the working product, distinguishing removal of repetitive patterns from the development of taste."
+        },
+        {
+          "title": "Carving Shaders Out of Claude Code",
+          "url": "https://www.paulbakaus.com/carving-shaders-out-of-claude-code/",
+          "date": "2026-03-26",
+          "author": "Paul Bakaus",
+          "sourceType": "First-person project and process account",
+          "confidence": "high for reported choices; outcomes self-reported",
+          "summary": "Documents dependency-free shader packaging, reference-driven exploration, repeated visual correction, and a separate performance pass."
+        },
+        {
+          "title": "The Curse of 'Cursor for X'",
+          "url": "https://www.paulbakaus.com/the-curse-of-cursor-for-x/",
+          "date": "2025-11-27",
+          "author": "Paul Bakaus",
+          "sourceType": "Opinion essay about creative-tool design",
+          "confidence": "high for authorship; broad claims are arguments",
+          "summary": "Proposes that creative software should expose the vocabulary and structure of a medium, helping users improve judgment rather than only generate output."
+        },
+        {
+          "title": "Impeccable repository and README",
+          "url": "https://github.com/pbakaus/impeccable",
+          "date": null,
+          "author": "Paul Bakaus and project contributors",
+          "sourceType": "First-party project documentation",
+          "confidence": "high for inspected documentation; untested implementation",
+          "summary": "Documents targeted design commands, persistent project context, deterministic checks, and browser iteration. Its operation and security boundaries require separate review."
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "Package shaders as standalone, dependency-free HTML files.",
+          "alternative": "Require a specific frontend framework or a multi-package integration.",
+          "tradeoff": "Embedding and agent inspection become simpler, while duplicated source and local customization can complicate updates.",
+          "evidenceUrls": [
+            "https://www.paulbakaus.com/carving-shaders-out-of-claude-code/"
+          ],
+          "status": "Documented packaging decision; maintenance tradeoff analysis"
+        },
+        {
+          "decision": "Separate visual exploration, correction, and performance optimization into distinct passes.",
+          "alternative": "Treat the first compelling rendering as finished.",
+          "tradeoff": "Specialized passes expose different failures, but increase iteration cost and can require reworking visually successful effects.",
+          "evidenceUrls": [
+            "https://www.paulbakaus.com/carving-shaders-out-of-claude-code/"
+          ],
+          "status": "Documented personal process; cost analysis"
+        },
+        {
+          "decision": "Keep human intent in a live iteration loop rather than optimizing only for one-shot generation.",
+          "alternative": "Automate toward a generic quality benchmark and minimize human steering.",
+          "tradeoff": "Contextual judgment can preserve a point of view, but requires attention and does not scale like an unattended batch.",
+          "evidenceUrls": [
+            "https://www.paulbakaus.com/impeccable-by-design/"
+          ],
+          "status": "Documented product thesis, not independently validated superiority"
+        },
+        {
+          "decision": "Use deterministic checks for inspectable patterns alongside judgment-based critique.",
+          "alternative": "Make every quality judgment an opaque model score.",
+          "tradeoff": "Reproducible checks aid diagnosis but may punish intentional exceptions or miss the composition as a whole. Passing rules does not establish good design.",
+          "evidenceUrls": [
+            "https://github.com/pbakaus/impeccable"
+          ],
+          "status": "Documented project architecture; limitations are analysis"
+        },
+        {
+          "decision": "Design tools to expose professional concepts as users work.",
+          "alternative": "Hide all structure behind an output-only prompt.",
+          "tradeoff": "Learning can build durable agency, but explanation can slow expert work or distract someone who only needs a result.",
+          "evidenceUrls": [
+            "https://www.paulbakaus.com/the-curse-of-cursor-for-x/"
+          ],
+          "status": "Proposed design principle, not a measured product result"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "technique": "Distinguish the easy first result from the difficult finishing work.",
+          "evidence": "The shader account contrasts simple early effects with a demanding example, then decomposes the iteration process.",
+          "sourceUrl": "https://www.paulbakaus.com/carving-shaders-out-of-claude-code/"
+        },
+        {
+          "technique": "Separate an attractive proxy from the real objective.",
+          "evidence": "Impeccable by Design distinguishes eliminating recognizable clichés from amplifying a person’s intent.",
+          "sourceUrl": "https://www.paulbakaus.com/impeccable-by-design/"
+        },
+        {
+          "technique": "Use a novice/expert contrast to reveal missing vocabulary.",
+          "evidence": "The Cursor-for-X essay contrasts vague creative requests with more specific direction, making its educational claim concrete.",
+          "sourceUrl": "https://www.paulbakaus.com/the-curse-of-cursor-for-x/"
+        }
+      ],
+      "exercise": {
+        "task": "Choose an interface you own and write a small vocabulary of precise design moves. Compare broad feedback with targeted feedback, then review the result using both three explicit checks and a human task walkthrough. Add a short explanation that teaches one concept without blocking the task.",
+        "deliverable": "Two iteration logs, a minimal review rubric, one justified exception to a rule, and a before/after record.",
+        "evaluation": [
+          "Does each design term correspond to an observable change?",
+          "Can a second reviewer reproduce the explicit checks?",
+          "What useful result would a rigid rule reject?",
+          "Did the learner gain a concept they can reuse?",
+          "Separate time saved on generation from time spent judging and repairing."
+        ]
+      },
+      "limitations": [
+        "The essays are a founder’s advocacy and personal project reports, not independent comparative evaluations.",
+        "Claims about artistic quality, model vision, and adoption are contextual or time-sensitive.",
+        "The current README documents an optional live-edit fallback that can launch an agent with approval and sandbox protections disabled. A reading recommendation is not an endorsement of that configuration; review execution and data-sharing behavior before any use.",
+        "The project has multiple contributors, and the documentation is a mutable snapshot rather than a pinned release audit.",
+        "No commands, hooks, shaders, or generated pages were run for this research."
+      ],
+      "coverage": "Three full bylined essays and the project README read. The displayed article dates are used rather than one-day-offset crawler timestamps. Repository claims are reported as documented behavior, with a specific operational caution."
+    },
+    {
+      "id": "nate-parrott",
+      "name": "Nate Parrott",
+      "discipline": "Design",
+      "focus": [
+        "Exploratory prototyping",
+        "Direct manipulation",
+        "AI product framing"
+      ],
+      "keyIdea": "Build just enough to test the product hypothesis, then preserve direct control where iteration becomes precise.",
+      "artifacts": [
+        {
+          "title": "Beyond Prototyping",
+          "url": "https://www.aidesignfieldguide.com/articles/nate-parrott",
+          "date": "2026-03",
+          "author": "Nate Parrott, interviewed by Ryan Mather and Robin Chen",
+          "sourceType": "Original interview, conducted in summer 2025",
+          "confidence": "high for attributed answers; historical capability assumptions",
+          "summary": "Discusses the abandoned 42 Pages project, AI-assisted making, direct manipulation, and the conditions under which a new interface should replace chat."
+        },
+        {
+          "title": "How the product designer who built Claude Design uses it to explore ideas before building them",
+          "url": "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them",
+          "date": "2026-07-24",
+          "author": "Nate Parrott",
+          "sourceType": "Bylined first-person product/process essay on employer’s site",
+          "confidence": "high for attribution; live article includes later updates",
+          "summary": "Explains an HTML-based prototype, reusable brand context, and expansion from product mockups to visual communication after observing internal use."
+        },
+        {
+          "title": "Ball",
+          "url": "https://github.com/nate-parrott/ball",
+          "date": null,
+          "author": "Nate Parrott; credits Nate Heagy and Wessley Roche",
+          "sourceType": "Original project repository and README",
+          "confidence": "high for documented concept; code not executed",
+          "summary": "A deliberately small macOS toy that can be dragged and flicked from the Dock. Its documentation credits the earlier inspiration and Dock-position implementation reference."
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "Stop pursuing 42 Pages when the prototype no longer supported the original product thesis.",
+          "alternative": "Keep polishing a familiar manual-design interface because substantial work had already been invested.",
+          "tradeoff": "Stopping avoids sunk-cost escalation, but a capability-dependent rejection may become worth revisiting as models improve.",
+          "evidenceUrls": [
+            "https://www.aidesignfieldguide.com/articles/nate-parrott"
+          ],
+          "status": "Documented retrospective; tradeoff analysis"
+        },
+        {
+          "decision": "Treat chat as a baseline to beat on a specific task rather than reject it categorically.",
+          "alternative": "Build a custom interface merely to look different from chat.",
+          "tradeoff": "Familiar flexibility is valuable, while repeated structured operations can justify dedicated controls.",
+          "evidenceUrls": [
+            "https://www.aidesignfieldguide.com/articles/nate-parrott"
+          ],
+          "status": "Documented position from summer 2025, not universal prescription"
+        },
+        {
+          "decision": "Use HTML and reusable brand context, then broaden the product framing when colleagues used it for more than mockups.",
+          "alternative": "Restrict the tool to the initial design-prototyping category.",
+          "tradeoff": "A general visual medium enables unplanned uses but risks a less focused product and uneven output types.",
+          "evidenceUrls": [
+            "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+          ],
+          "status": "Documented first-person development account"
+        },
+        {
+          "decision": "Use direct editing and purpose-built controls for fine adjustments.",
+          "alternative": "Prompt again for every small alignment, color, or timing change.",
+          "tradeoff": "Manual control can reduce ambiguity, but users must understand the controls and the system must reconcile edits with later generation.",
+          "evidenceUrls": [
+            "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+          ],
+          "status": "Documented practice; reconciliation cost is analysis"
+        },
+        {
+          "decision": "Keep Ball narrowly focused on a playful physical interaction.",
+          "alternative": "Expand a small toy into a broad utility or customization platform.",
+          "tradeoff": "A clear scope makes the experience easy to grasp, while intentionally offering little conventional utility. This interpretation comes from the README, not a claimed business strategy.",
+          "evidenceUrls": [
+            "https://github.com/nate-parrott/ball"
+          ],
+          "status": "Observed project scope; editorial interpretation"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "technique": "Make a failed hypothesis part of the explanation.",
+          "evidence": "In the interview, Parrott describes why he stopped a project and questions whether he needed to build so much to learn the lesson.",
+          "sourceUrl": "https://www.aidesignfieldguide.com/articles/nate-parrott"
+        },
+        {
+          "technique": "Connect a product’s origin to an unexpected observed use.",
+          "evidence": "The Claude Design essay moves from a personal prototyping bottleneck to colleagues using the tool for visual communication.",
+          "sourceUrl": "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them"
+        },
+        {
+          "technique": "Demonstrate the intended tone through compact, concrete verbs.",
+          "evidence": "Ball’s README describes dragging, flicking, and bouncing instead of making a large productivity claim, then credits its sources.",
+          "sourceUrl": "https://github.com/nate-parrott/ball"
+        }
+      ],
+      "exercise": {
+        "task": "Choose a speculative AI feature and identify the one belief that would kill it if false. Test that belief with the smallest usable prototype. Compare chat with one direct control, and recruit another person to try using it for a purpose you did not prescribe.",
+        "deliverable": "A hypothesis, a low-cost prototype, a stop/continue decision, and a record of any unexpected use.",
+        "evaluation": [
+          "Did you test demand or merely demonstrate technical possibility?",
+          "What did you avoid building?",
+          "What specific failure does the custom control solve?",
+          "Which conclusion would change after a model upgrade?",
+          "Can the prototype be used without its maker narrating every step?"
+        ]
+      },
+      "limitations": [
+        "The interview was published in March 2026 but conducted in summer 2025; its model observations belong to that earlier period.",
+        "The Claude Design article is first-party guidance and now contains later product updates despite its original July date; it is not a frozen launch specification.",
+        "Ball is evidence of a small authored project, not a claim about commercial success or a comprehensive design philosophy.",
+        "Interview editing belongs to the interviewers as well as the speaker. No product or code was tested."
+      ],
+      "coverage": "Three primary artifacts read: an original interview, a bylined article, and a project README. The profile distinguishes explicit decisions from interpretation of a small project’s scope."
+    },
+    {
+      "id": "gavin-nelson",
+      "name": "Gavin Nelson",
+      "discipline": "Design",
+      "focus": [
+        "Mobile navigation",
+        "Interaction prototypes",
+        "Contextual collaboration"
+      ],
+      "keyIdea": "Solve the task within today’s constraints, while recognizing when growth makes the underlying navigation model the real problem.",
+      "artifacts": [
+        {
+          "title": "Linear Search",
+          "url": "https://www.gavin.social/work/linear-search",
+          "date": null,
+          "projectYear": "2025",
+          "author": "Gavin Nelson, describing collaboration with Linear’s desktop team",
+          "sourceType": "First-person portfolio case study",
+          "confidence": "high for stated role and rationale; results unmeasured",
+          "summary": "Documents a universal search overlay intended to reduce backtracking without a full navigation rewrite."
+        },
+        {
+          "title": "Linear Navigation",
+          "url": "https://www.gavin.social/work/linear-26",
+          "date": null,
+          "projectYear": "2025",
+          "author": "Gavin Nelson, describing Linear team work",
+          "sourceType": "First-person portfolio case study",
+          "confidence": "high for stated design decisions; outcomes unmeasured",
+          "summary": "Explains a later navigation rethink with reorderable tabs, a dynamic fourth position, and a prototype used to tune gesture-driven transitions."
+        },
+        {
+          "title": "Linear Documents",
+          "url": "https://www.gavin.social/work/linear-documents",
+          "date": null,
+          "projectYear": "2024",
+          "author": "Gavin Nelson, describing Linear team work",
+          "sourceType": "First-person portfolio case study",
+          "confidence": "high for stated scope and rationale; outcomes unmeasured",
+          "summary": "Addresses mobile notifications that could not be acted on, with a scoped reading/reply workflow and a unified commenting model."
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "Add universally reachable search before rewriting the entire navigation structure.",
+          "alternative": "Accept repeated backtracking or fund a full architectural redesign immediately.",
+          "tradeoff": "A targeted entry point can relieve pain quickly, but does not remove every limitation of the original hierarchy.",
+          "evidenceUrls": [
+            "https://www.gavin.social/work/linear-search"
+          ],
+          "status": "Documented scoped decision"
+        },
+        {
+          "decision": "Make part of the tab bar configurable to reflect different roles’ recurring work.",
+          "alternative": "Give everyone the same generic home hierarchy.",
+          "tradeoff": "Personal relevance increases while discoverability, defaults, and configuration become additional design responsibilities.",
+          "evidenceUrls": [
+            "https://www.gavin.social/work/linear-26"
+          ],
+          "status": "Documented navigation design; tradeoff analysis"
+        },
+        {
+          "decision": "Tune the expanding tab control in a SwiftUI playground and support touch-drag-release selection.",
+          "alternative": "Judge only static frames or require a separate tap for every step.",
+          "tradeoff": "High-fidelity exploration exposes gesture behavior, but the resulting interaction still needs accessible and discoverable alternatives.",
+          "evidenceUrls": [
+            "https://www.gavin.social/work/linear-26"
+          ],
+          "status": "Documented method and gesture choice; accessibility requirement is analysis"
+        },
+        {
+          "decision": "Ship document reading and replies before full mobile document creation and editing.",
+          "alternative": "Wait for desktop feature parity before making document notifications actionable.",
+          "tradeoff": "A smaller release closes the communication loop sooner while leaving authoring workflows incomplete.",
+          "evidenceUrls": [
+            "https://www.gavin.social/work/linear-documents"
+          ],
+          "status": "Documented team scope decision"
+        },
+        {
+          "decision": "Collect threads in a shared sheet, retain document context, and put replies beside the thread they target.",
+          "alternative": "Open a separate modal for each highlight and use one ambiguous global composer.",
+          "tradeoff": "Context and target clarity improve in the proposed model, but synchronized document/thread scrolling creates additional state and motion complexity.",
+          "evidenceUrls": [
+            "https://www.gavin.social/work/linear-documents"
+          ],
+          "status": "Documented design choices; implementation cost is analysis"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "technique": "State the forbidden scope before showing the solution.",
+          "evidence": "The Search case study explains why a full navigation rewrite was excluded, making the chosen overlay intelligible as a constrained decision.",
+          "sourceUrl": "https://www.gavin.social/work/linear-search"
+        },
+        {
+          "technique": "Connect a visible affordance to a specific kind of user variation.",
+          "evidence": "The Navigation case study explains role-dependent needs before describing the dynamic tab position and reordering.",
+          "sourceUrl": "https://www.gavin.social/work/linear-26"
+        },
+        {
+          "technique": "Describe the broken loop in user terms.",
+          "evidence": "The Documents case study starts with receiving a notification that cannot be opened or answered, then explains the minimum work needed to finish that journey.",
+          "sourceUrl": "https://www.gavin.social/work/linear-documents"
+        }
+      ],
+      "exercise": {
+        "task": "Choose a growing mobile workflow. First design a constrained improvement that leaves its navigation architecture intact. Then design a broader alternative around two distinct user roles. Include one notification-to-reply journey and prototype its gesture and state transitions.",
+        "deliverable": "Two navigation proposals, an explicit scope comparison, a working interaction prototype, and a notification/recovery test script.",
+        "evaluation": [
+          "Which pain is relieved now, and which is only deferred?",
+          "Can each role reach its frequent task without configuring anything?",
+          "Can users identify which item a reply targets?",
+          "Test deep links, interrupted gestures, large text, reduced motion, and non-gesture alternatives.",
+          "Does the smaller release actually complete a user job?"
+        ]
+      },
+      "limitations": [
+        "These are curated personal case studies, not independent usability studies or evidence of measured adoption gains.",
+        "The portfolio assigns project years but no exact publication dates, so date remains null.",
+        "Linear’s shipping products are team work; Nelson’s first-person explanations establish his reported contribution, not sole authorship.",
+        "Text and depicted interaction descriptions were reviewed, but prototypes were not run or accessibility-audited."
+      ],
+      "coverage": "Three distinct first-person case studies read. Together they show a constrained navigation intervention, a broader navigation redesign, and a scoped collaboration workflow. Their tradeoffs should be compared rather than collapsed into one timeless recommendation."
+    }
+  ]
+}

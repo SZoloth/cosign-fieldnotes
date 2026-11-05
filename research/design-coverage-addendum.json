@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0",
+  "researchedAt": "2026-11-05",
+  "title": "Design content expansion coverage",
+  "rosterSource": "https://cosign.co/awards/design",
+  "addedPeople": [
+    "Benji Taylor",
+    "Paul Bakaus",
+    "Nate Parrott",
+    "Gavin Nelson",
+    "Matt Perry",
+    "jhey"
+  ],
+  "addedFiles": [
+    "design-feedback-additions.json",
+    "design-motion-additions.json"
+  ],
+  "addedCounts": {
+    "people": 6,
+    "artifacts": 22,
+    "decisions": 30,
+    "writingTechniques": 18,
+    "exercises": 6
+  },
+  "aggregateFiles": [
+    "design-core.json",
+    "design-craft.json",
+    "design-supplementary.json",
+    "design-feedback-additions.json",
+    "design-motion-additions.json"
+  ],
+  "aggregateCounts": {
+    "people": 20,
+    "distinctArtifactUrls": 72,
+    "decisions": 86,
+    "writingTechniques": 60,
+    "exercises": 20
+  },
+  "coverage": "Twenty of the fifty visible design nominees now have multi-artifact research profiles. Thirty remain roster-only. This is a selected public-source study, not a ranking or complete study of every nominee.",
+  "method": "Read original essays, official case studies and project documentation, or original interviews. Prefer authors' syndication to unrelated summaries. Preserve unknown publication dates; project year is not a publication date. Interpretive tradeoffs, self-reported outcomes, team authorship, mutable documentation, and untested demos are labeled.",
+  "supersedes": "The aggregate counts in design-coverage.json describe the initial fourteen-profile batch. This addendum supplies the expanded twenty-profile counts without modifying those original research files.",
+  "contentOnly": true
+}

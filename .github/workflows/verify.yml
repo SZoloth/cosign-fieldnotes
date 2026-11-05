@@ -17,4 +17,5 @@ jobs:
       - name: Confirm generated collection matches research
         run: |
           node scripts/build-collection.mjs
-          git diff --exit-code -- dist/data/collection.json
+          node scripts/build-study-notes.mjs
+          git diff --exit-code -- dist/data/collection.json studies/
