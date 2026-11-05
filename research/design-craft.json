@@ -1,0 +1,442 @@
+{
+  "title": "Interaction craft: four practitioners, concrete decisions",
+  "researchedAt": "2026-11-05",
+  "scope": "Public-source learning notes. Selection is a study set, not a verified award result or ranking.",
+  "method": "Read primary essays and canonical project documentation. Source links were opened successfully. Descriptions of demos come from their authors; interactions and performance were not independently tested. Decisions distinguish documented choices from our interpretation of their costs.",
+  "people": [
+    {
+      "id": "rauno-freiberg",
+      "name": "Rauno Freiberg",
+      "focus": "Interaction reasoning, restrained motion, and visual implementation",
+      "artifacts": [
+        {
+          "title": "Invisible Details of Interaction Design",
+          "url": "https://rauno.me/craft/interaction-design",
+          "date": "2023-07",
+          "author": "Rauno Freiberg",
+          "sourceType": "Primary essay with personal prototypes and analysis of others' products",
+          "confidence": "High for his reported experiments; observational for explanations of Apple behavior",
+          "summary": "Studies gesture commitment, interruption, spatial consistency, and repetition. His bookmarking-tool example shows that removing motion can improve perceived speed."
+        },
+        {
+          "title": "Crafting the Next.js Website",
+          "url": "https://rauno.me/craft/nextjs",
+          "date": "2023-04",
+          "author": "Rauno Freiberg; website collaboration with Glenn (@glennui) and @almonk, with the design credited to Glenn",
+          "sourceType": "Primary implementation case study with code",
+          "confidence": "High; authorship boundaries are explicit in the introduction",
+          "summary": "Explains how a team shipped the static improvement first, then refined animation, focus states, and rendering details."
+        },
+        {
+          "title": "Designing Depth",
+          "url": "https://rauno.me/craft/depth",
+          "date": "2024-07",
+          "author": "Rauno Freiberg",
+          "sourceType": "Primary visual essay and Vercel marketing iteration",
+          "confidence": "High for his described iteration; Apple's intentions are explicitly hypothesized",
+          "summary": "Connects layered photographic composition to software hierarchy, then decomposes interface motion into ordered states."
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "Remove animation from the bookmarking tool's frequently repeated keyboard operations.",
+          "alternative": "Keep the animated active indicator and list mutations, merely shortening their timing.",
+          "tradeoff": "The documented result is greater perceived speed. Our interpretation: sacrifice an attractive demonstration to reduce friction during sustained use.",
+          "attribution": "Personal implementation decision reported by Rauno",
+          "evidenceUrls": ["https://rauno.me/craft/interaction-design"],
+          "sourceSection": "Frequency & Novelty"
+        },
+        {
+          "decision": "Animate the opacity of pre-styled shadow layers in the Next.js switchboard.",
+          "alternative": "Animate box-shadow itself.",
+          "tradeoff": "Avoids repeated painting described in the case study. Our interpretation: extra pseudo-element structure purchases more predictable motion on weaker devices.",
+          "attribution": "Rauno's implementation within a credited team project",
+          "evidenceUrls": ["https://rauno.me/craft/nextjs"],
+          "sourceSection": "Blinking Switchboard"
+        },
+        {
+          "decision": "Ship the improved static Next.js site before all animation refinements.",
+          "alternative": "Hold the entire redesign in an increasingly large pull request.",
+          "tradeoff": "The team delivered a useful intermediate state. Our interpretation: staged quality requires follow-through, but avoids making polish a prerequisite for any improvement.",
+          "attribution": "Team decision described by Rauno, not sole authorship",
+          "evidenceUrls": ["https://rauno.me/craft/nextjs"],
+          "sourceSection": "Introduction"
+        },
+        {
+          "decision": "Build depth in the Preview Deployments visual using blurred background, softened boundaries, and additional browser frames.",
+          "alternative": "Keep flat overlapping panels or add unrelated decorative objects.",
+          "tradeoff": "The added layers communicate the product's abundance of deployments. Our interpretation: visual richness earns its place when it reinforces the subject rather than competing with it.",
+          "attribution": "Rauno's described iteration on a Vercel marketing visual",
+          "evidenceUrls": ["https://rauno.me/craft/depth"],
+          "sourceSection": "Opening composition example"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "technique": "Turn an impression into a discriminating question",
+          "evidence": "The swipe section asks when an action should commit, then contrasts reversible exploration with destructive dismissal. The explanation depends on intent, not a blanket rule about fluidity.",
+          "sourceUrl": "https://rauno.me/craft/interaction-design"
+        },
+        {
+          "technique": "Expose the intermediate versions",
+          "evidence": "The depth essay shows a weak composition and successive revisions before discussing choreography. Readers can connect a particular edit to a particular improvement.",
+          "sourceUrl": "https://rauno.me/craft/depth"
+        },
+        {
+          "technique": "Disclose inference rather than impersonating the original designer",
+          "evidence": "The choreography discussion marks the suggested reason for delaying the keyboard as an assumption. Observable sequencing and proposed intent remain separate.",
+          "sourceUrl": "https://rauno.me/craft/depth"
+        }
+      ],
+      "exercise": {
+        "task": "Choose one keyboard-heavy flow and one direct-manipulation flow. Prototype each with and without motion, then use each repeatedly rather than judging a single playback.",
+        "deliverable": "Four short recordings and a decision note stating what motion communicates, where interruption works, and what was removed.",
+        "evaluation": "Can you recover from a mistaken action immediately? Does motion explain a relationship? Does the fiftieth repetition still help?"
+      },
+      "limitations": [
+        "These are three works, not a comprehensive assessment of his output.",
+        "Apple examples are analysis, not evidence that Rauno designed those interactions.",
+        "Browser-specific implementation advice from 2023 needs current compatibility testing.",
+        "The essays report craft judgments rather than controlled usability measurements."
+      ],
+      "coverage": "Three primary works read; publication months visible. High confidence in documented decisions and attribution. No source repository audit or hands-on demo testing."
+    },
+    {
+      "id": "emil-kowalski",
+      "name": "Emil Kowalski",
+      "focus": "Interruptible motion, gesture edge cases, and teachable component craft",
+      "artifacts": [
+        {
+          "title": "7 Practical Animation Tips",
+          "url": "https://emilkowal.ski/ui/7-practical-animation-tips",
+          "date": null,
+          "dateNote": "No publication date visible in the inspected page; reviewed 2026-11-05.",
+          "author": "Emil Kowalski",
+          "sourceType": "Primary instructional essay with paired interactive examples",
+          "confidence": "High for recommendations; their effectiveness is not independently measured here",
+          "summary": "Makes responsiveness concrete through easing comparisons, origin-aware scaling, tooltip timing, and repetition-sensitive animation choices."
+        },
+        {
+          "title": "Building a toast component",
+          "url": "https://emilkowal.ski/ui/building-a-toast-component",
+          "date": null,
+          "dateNote": "Article recalls building Sonner in 2023; that is not established as this page's publication date.",
+          "author": "Emil Kowalski",
+          "sourceType": "Primary Sonner implementation retrospective",
+          "confidence": "High; personal first-person account, not a repository audit",
+          "summary": "Connects retargetable animation to toast stacking, then covers a simple calling API and details such as pausing dismissal while the tab is hidden."
+        },
+        {
+          "title": "Building a drawer component",
+          "url": "https://emilkowal.ski/ui/building-a-drawer-component",
+          "date": null,
+          "dateNote": "No publication date visible in the inspected page; reviewed 2026-11-05.",
+          "author": "Emil Kowalski",
+          "sourceType": "Primary Vaul implementation case study",
+          "confidence": "High for described design process; historical implementation notes",
+          "summary": "Builds on Radix Dialog, then works through dragging, scrolling, virtual keyboards, multiple touches, and snap points."
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "Use retargetable CSS transitions for toasts whose positions change during rapid arrivals.",
+          "alternative": "Keep the initial CSS keyframe implementation.",
+          "tradeoff": "Existing toasts can transition toward new destinations instead of jumping. Our interpretation: an interaction that can be interrupted needs a state model, not only a polished entrance.",
+          "attribution": "Emil's Sonner implementation",
+          "evidenceUrls": ["https://emilkowal.ski/ui/building-a-toast-component"],
+          "sourceSection": "Animations"
+        },
+        {
+          "decision": "Update the drawer element's transform directly during dragging.",
+          "alternative": "Update an inherited CSS variable used for the transform.",
+          "tradeoff": "His investigation traced lag in larger drawers to descendant style recalculation. The choice localizes hot-path updates; it does not imply CSS variables are generally slow.",
+          "attribution": "Emil's Vaul implementation",
+          "evidenceUrls": ["https://emilkowal.ski/ui/building-a-drawer-component"],
+          "sourceSection": "Drag gesture"
+        },
+        {
+          "decision": "Allow drawer dragging only at the content's scroll boundary, with a short lockout after returning to the top.",
+          "alternative": "Immediately turn a fast upward scroll into a momentum-based dismissal gesture.",
+          "tradeoff": "The reported 100 ms guard prevents accidental closure. Our interpretation: a small delay protects intent at the boundary between two gesture meanings.",
+          "attribution": "Emil's Vaul implementation",
+          "evidenceUrls": ["https://emilkowal.ski/ui/building-a-drawer-component"],
+          "sourceSection": "Scrolling"
+        },
+        {
+          "decision": "Delay the first tooltip, but show subsequent tooltips in the group immediately without animation.",
+          "alternative": "Apply the same entrance delay and motion to every tooltip.",
+          "tradeoff": "Initial delay discourages accidental activation; subsequent immediacy supports intentional scanning. This is a contextual timing rule, not a call to make every tooltip instantaneous.",
+          "attribution": "Emil's recommendation, with behavior credited to existing component libraries",
+          "evidenceUrls": ["https://emilkowal.ski/ui/7-practical-animation-tips"],
+          "sourceSection": "Don't delay subsequent tooltips"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "technique": "Hold a variable constant in a comparison",
+          "evidence": "The easing demonstration keeps duration at 300 ms while comparing curves. This teaches readers to isolate perceived responsiveness from elapsed time.",
+          "sourceUrl": "https://emilkowal.ski/ui/7-practical-animation-tips"
+        },
+        {
+          "technique": "Teach through a reproducible failure",
+          "evidence": "The toast essay asks readers to add toasts quickly before presenting the replacement animation approach. The flaw becomes visible before the explanation.",
+          "sourceUrl": "https://emilkowal.ski/ui/building-a-toast-component"
+        },
+        {
+          "technique": "Retain the debugging surprise",
+          "evidence": "The drawer narrative explains why eliminating React rerenders did not eliminate lag, then identifies inherited-style recalculation as the missing cause.",
+          "sourceUrl": "https://emilkowal.ski/ui/building-a-drawer-component"
+        }
+      ],
+      "exercise": {
+        "task": "Build a three-toast stack and deliberately send ten notifications rapidly. Compare an entrance-only implementation with retargetable transitions; also test long content and backgrounding the tab.",
+        "deliverable": "Two recordings, a tiny state diagram, and a table of interruption, dismissal, visibility, and reduced-motion behavior.",
+        "evaluation": "No positional jumps, unread notifications are not silently lost, and removing motion still leaves clear status."
+      },
+      "limitations": [
+        "The animation tips' sub-300 ms guideline is not universal: the drawer case describes 500 ms motion for a different context.",
+        "Vaul's keyboard workaround admits a delayed viewport adjustment; native imitation carries real browser costs.",
+        "Emil credits Radix foundations and react-hot-toast API inspiration. These are not claims of inventing all underlying patterns.",
+        "No article publication dates were inferred from project launch dates."
+      ],
+      "coverage": "Three primary works read. High confidence in reported choices; unknown publication dates. Performance and accessibility were not independently tested."
+    },
+    {
+      "id": "shadcn",
+      "name": "shadcn",
+      "focus": "Editable defaults, component ownership, and code distribution as product design",
+      "artifacts": [
+        {
+          "title": "shadcn/ui Introduction",
+          "url": "https://ui.shadcn.com/docs",
+          "date": null,
+          "dateNote": "Living documentation, reviewed 2026-11-05.",
+          "author": "shadcn/ui project; page has no individual byline",
+          "sourceType": "Canonical project rationale",
+          "confidence": "High for project principles; moderate for individual authorship",
+          "summary": "Defines owned, editable component code, shared composition, and useful defaults as the product's organizing principles."
+        },
+        {
+          "title": "Theming",
+          "url": "https://ui.shadcn.com/docs/theming",
+          "date": null,
+          "dateNote": "Living documentation, reviewed 2026-11-05.",
+          "author": "shadcn/ui project; page has no individual byline",
+          "sourceType": "Canonical design-system documentation",
+          "confidence": "High for current documented behavior",
+          "summary": "Uses semantic surface/foreground token pairs so global themes can change without rewriting component classes."
+        },
+        {
+          "title": "Registry: Getting Started",
+          "url": "https://ui.shadcn.com/docs/registry/getting-started",
+          "date": null,
+          "dateNote": "Living documentation, reviewed 2026-11-05.",
+          "author": "shadcn/ui project; page has no individual byline",
+          "sourceType": "Canonical end-to-end authoring guide",
+          "confidence": "High for documented workflow; not executed in this study",
+          "summary": "Builds a registry from a small component, then covers composition, serving, discovery, installation, and publication."
+        },
+        {
+          "title": "registry-item.json specification",
+          "url": "https://ui.shadcn.com/docs/registry/registry-item-json",
+          "date": null,
+          "dateNote": "Living documentation, reviewed 2026-11-05.",
+          "author": "shadcn/ui project; page has no individual byline",
+          "sourceType": "Canonical distribution schema specification",
+          "confidence": "High for schema contracts; not pinned to a repository commit",
+          "summary": "Makes package dependencies, registry dependencies, file types, and destination paths explicit distribution data."
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "Deliver editable component source as the customization boundary.",
+          "alternative": "Require all customization through an installed package's public API, wrappers, and style overrides.",
+          "tradeoff": "The project explicitly prioritizes local control. Our interpretation: teams gain freedom but must own divergence, review, and incorporation of later upstream fixes.",
+          "attribution": "Documented project principle, not a verified sole-author decision",
+          "evidenceUrls": ["https://ui.shadcn.com/docs"],
+          "sourceSection": "Open Code"
+        },
+        {
+          "decision": "Use semantic color roles with paired foreground tokens.",
+          "alternative": "Encode literal color choices independently inside each component.",
+          "tradeoff": "Theme changes become centralized. Our interpretation: token names make intent legible, but a coherent token vocabulary and contrast testing remain the adopting team's responsibility.",
+          "attribution": "Documented project theming convention",
+          "evidenceUrls": ["https://ui.shadcn.com/docs/theming"],
+          "sourceSection": "Token Convention"
+        },
+        {
+          "decision": "Describe source distribution with explicit files, dependencies, and configurable destinations.",
+          "alternative": "Ask adopters to copy snippets and reconstruct hidden setup requirements manually.",
+          "tradeoff": "The schema makes installation repeatable across project layouts. Our interpretation: metadata becomes part of the product and must be maintained as carefully as component code.",
+          "attribution": "Documented registry architecture",
+          "evidenceUrls": ["https://ui.shadcn.com/docs/registry/registry-item-json"],
+          "sourceSection": "registryDependencies and files/target"
+        },
+        {
+          "decision": "Let larger registries compose multiple source manifests, then resolve them into a consumable catalog.",
+          "alternative": "Require one manually maintained, monolithic manifest.",
+          "tradeoff": "The guide supports local organization without pushing that complexity onto consumers. Our interpretation: authors must still understand relative paths and the distinction between authoring structure and distribution output.",
+          "attribution": "Documented current project architecture, not claimed as original launch behavior",
+          "evidenceUrls": ["https://ui.shadcn.com/docs/registry/getting-started"],
+          "sourceSection": "Using include; Static JSON files"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "technique": "Explain the category through a concrete frustration",
+          "evidence": "The introduction starts with conventional package use, then describes customization workarounds before introducing editable code. The architecture answers a recognizable problem.",
+          "sourceUrl": "https://ui.shadcn.com/docs"
+        },
+        {
+          "technique": "Make a convention executable",
+          "evidence": "The theming page pairs role definitions with tiny token and utility examples, then maps roles to real component uses.",
+          "sourceUrl": "https://ui.shadcn.com/docs/theming"
+        },
+        {
+          "technique": "Document the consumer's verification path",
+          "evidence": "The registry guide does not end at a successful build: it walks through listing, searching, inspecting, and installing what was produced.",
+          "sourceUrl": "https://ui.shadcn.com/docs/registry/getting-started"
+        }
+      ],
+      "exercise": {
+        "task": "Create one editable status component with semantic light/dark tokens and an explicit dependency manifest. Adapt it to two visibly different brands, then simulate an upstream accessibility fix.",
+        "deliverable": "Two variants, a source diff, a registry item draft, and a one-paragraph update policy.",
+        "evaluation": "Can another developer understand ownership, change the theme without searching every class, and merge the fix without losing local behavior?"
+      },
+      "limitations": [
+        "This is project-level evidence. Current documentation does not establish that shadcn personally wrote every page or made every later decision.",
+        "Editable code does not automatically guarantee accessibility after customization.",
+        "The study did not measure adoption, maintenance cost, or performance, and does not use popularity as proof of quality.",
+        "The current registry docs may differ substantially from the original release; no launch chronology is claimed."
+      ],
+      "coverage": "Four canonical documentation artifacts read, plus repository README for provenance. Strong architectural evidence; weaker personal authorship evidence. Live docs are not commit-pinned.",
+      "additionalSources": [
+        {"title": "shadcn/ui source repository", "url": "https://github.com/shadcn-ui/ui", "note": "README and project provenance inspected; source implementation not audited."},
+        {"title": "Registry introduction", "url": "https://ui.shadcn.com/docs/registry", "note": "Confirms distribution scope extends beyond React components."}
+      ]
+    },
+    {
+      "id": "devon-govett",
+      "name": "Devon Govett",
+      "focus": "Inclusive interaction architecture and explaining the hidden complexity of UI primitives",
+      "artifacts": [
+        {
+          "title": "Taming the dragon: Accessible drag and drop",
+          "url": "https://react-aria.adobe.com/blog/drag-and-drop",
+          "date": "2022-11-16",
+          "author": "Devon Govett; describes React Aria/React Spectrum team work",
+          "sourceType": "Bylined primary implementation case study",
+          "confidence": "High for authorship and reported architecture",
+          "summary": "Combines native drag interoperability with keyboard and screen-reader interaction, then explains why a higher-level API was added."
+        },
+        {
+          "title": "Date and Time Pickers for All",
+          "url": "https://react-aria.adobe.com/blog/date-and-time-pickers-for-all",
+          "date": "2022-06-21",
+          "author": "Devon Govett; explicitly credits Adobe design, accessibility, internationalization, and product teams",
+          "sourceType": "Bylined primary design and engineering case study",
+          "confidence": "High; team attribution is explicit",
+          "summary": "Shows how locale ambiguity changes input design, and separates date-entry tasks from calendar-browsing tasks."
+        },
+        {
+          "title": "Building a Button Part 1: Press Events",
+          "url": "https://react-aria.adobe.com/blog/building-a-button-part-1",
+          "date": "2020-08-12",
+          "author": "Devon Govett; React Spectrum/Aria/Stately team work",
+          "sourceType": "Bylined primary engineering explanation",
+          "confidence": "High for the historical rationale; browser-specific details require current validation",
+          "summary": "Derives a unified press abstraction from touch cancellation, duplicate events, keyboard repetition, and virtual screen-reader activation."
+        },
+        {
+          "title": "Scrolling is All You Need: Building a Swipeable Sheet",
+          "url": "https://react-aria.adobe.com/blog/sheet",
+          "date": "2026-10-08",
+          "author": "Devon Govett; credits Nikolas Schröter for usePreventScroll improvements",
+          "sourceType": "Bylined primary component architecture case study",
+          "confidence": "High for reported design; cross-browser behavior not independently tested",
+          "summary": "Uses native scrolling, snap points, and view timelines for sheet gestures, with explicit handling of nested content and software keyboards."
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "Retain native HTML drag-and-drop interoperability while adding accessible interaction modes.",
+          "alternative": "Use a self-contained custom drag system or provide only a separate copy/paste workaround.",
+          "tradeoff": "Native inter-app and file transfer remains possible despite browser quirks. Keyboard drag mode limits navigation to valid targets. Our interpretation: parity is treated as core architecture, not a later escape hatch.",
+          "attribution": "Team architecture explained by Devon",
+          "evidenceUrls": ["https://react-aria.adobe.com/blog/drag-and-drop"],
+          "sourceSection": "Interactions; Challenges"
+        },
+        {
+          "decision": "Use individually labeled date segments rather than parsing an unrestricted text field.",
+          "alternative": "Accept ambiguous free-form date strings and try to infer the user's format.",
+          "tradeoff": "Locale determines field order, and mobile users get numeric entry. Our interpretation: constrained entry gives up free-form expressiveness in exchange for less ambiguity and clearer screen-reader context.",
+          "attribution": "Explicit multi-team design decision described by Devon",
+          "evidenceUrls": ["https://react-aria.adobe.com/blog/date-and-time-pickers-for-all"],
+          "sourceSection": "Date fields"
+        },
+        {
+          "decision": "Expose a unified press lifecycle rather than treating click as the whole interaction.",
+          "alternative": "Independently wire pointer, keyboard, and click handlers in every component.",
+          "tradeoff": "Normalization avoids duplicate activation and preserves cancellation, including virtual clicks from assistive technology. Our interpretation: complexity moves into a reusable primitive instead of disappearing.",
+          "attribution": "React Aria team implementation explained by Devon",
+          "evidenceUrls": ["https://react-aria.adobe.com/blog/building-a-button-part-1"],
+          "sourceSection": "Virtual press events; Unified press events"
+        },
+        {
+          "decision": "Drive the sheet with native overflow scrolling, scroll snapping, and view-timeline animation.",
+          "alternative": "Implement every touch movement and momentum calculation in JavaScript.",
+          "tradeoff": "The article reports off-main-thread gestures and native physics. Our interpretation: platform primitives replace custom gesture code, but introduce non-obvious geometry, nested-scroll policy, and compatibility requirements.",
+          "attribution": "React Aria team architecture explained by Devon",
+          "evidenceUrls": ["https://react-aria.adobe.com/blog/sheet"],
+          "sourceSection": "Setting up the viewport; Gesture-synced animations"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "technique": "Start with the apparently trivial object, then reveal its test matrix",
+          "evidence": "The button essay moves from a native element to mouse, touch, keyboard, and virtual activation, using concrete failure sequences to justify abstraction.",
+          "sourceUrl": "https://react-aria.adobe.com/blog/building-a-button-part-1"
+        },
+        {
+          "technique": "Use an ambiguous example to establish the requirement",
+          "evidence": "A numeric date that can mean either February or March makes locale parsing uncertainty tangible before the segmented-field solution is introduced.",
+          "sourceUrl": "https://react-aria.adobe.com/blog/date-and-time-pickers-for-all"
+        },
+        {
+          "technique": "Make invisible implementation state inspectable",
+          "evidence": "The sheet article exposes timeline progress, opacity, radius, and the clipped scroller area in its teaching demo. The reader can connect the illusion to its mechanism.",
+          "sourceUrl": "https://react-aria.adobe.com/blog/sheet"
+        }
+      ],
+      "exercise": {
+        "task": "Design a two-list transfer interaction for mouse, keyboard, and screen reader use. Write the valid-target and cancellation rules before styling it.",
+        "deliverable": "A state diagram, an announcement script, and recordings of all three input paths, including an invalid drop and a canceled operation.",
+        "evaluation": "Every path must accomplish the same task, preserve predictable focus, explain the available destination, and avoid accidental duplicate actions."
+      },
+      "limitations": [
+        "Bylined explanations are Devon's writing; the component systems are collaborative work.",
+        "The 2020 and 2022 posts are historical accounts, not current browser-support matrices.",
+        "A library's accessibility claims still need testing in the consuming product and with actual users.",
+        "The sheet article does not establish a universal performance win over Vaul or every JavaScript approach; no comparative benchmark was run."
+      ],
+      "coverage": "Four bylined primary works read, all with visible dates. High confidence in documented rationale and team attribution. No assistive-technology test or repository audit performed."
+    }
+  ],
+  "crossStudy": [
+    {
+      "title": "Time is part of an interaction's meaning",
+      "lesson": "Compare Rauno's removed keyboard animation with Emil's immediate subsequent tooltips. Ask whether a delay serves intent in this exact repeated action rather than treating motion as a universal quality signal.",
+      "sourceUrls": ["https://rauno.me/craft/interaction-design", "https://emilkowal.ski/ui/7-practical-animation-tips"]
+    },
+    {
+      "title": "A newer platform can change the implementation answer",
+      "lesson": "Study Emil's Vaul gesture/scroll arbitration beside React Aria's October 2026 native-scroll sheet. Their common problem is clear; the available browser mechanisms and historical constraints differ. This is a comparison of reasoning, not a winner declaration.",
+      "sourceUrls": ["https://emilkowal.ski/ui/building-a-drawer-component", "https://react-aria.adobe.com/blog/sheet"]
+    },
+    {
+      "title": "Design an adoption path, not only a component",
+      "lesson": "shadcn's registry guide tests discovery through installation; Devon's drag-and-drop account describes adding high-level operations when the low-level API required too much boilerplate. Both make the easiest useful path a design concern.",
+      "sourceUrls": ["https://ui.shadcn.com/docs/registry/getting-started", "https://react-aria.adobe.com/blog/drag-and-drop"]
+    }
+  ]
+}

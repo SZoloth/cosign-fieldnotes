@@ -1,0 +1,691 @@
+{
+  "schemaVersion": "1.0",
+  "discipline": "Design",
+  "researchedAt": "2026-11-05",
+  "status": "Ready: six core profiles; complementary craft profiles are maintained in craft.json",
+  "editorialNote": "Original educational analysis of public sources. Descriptions of decisions distinguish documented choices from interpretation. Sources remain the property of their respective authors; inclusion implies no endorsement.",
+  "people": [
+    {
+      "id": "ryo-lu",
+      "name": "Ryo Lu",
+      "discipline": "Design",
+      "focus": "Composable product systems, contextual AI, and human agency",
+      "keyIdea": "Make AI useful through the product's existing objects and contexts, while preserving the user's ability to understand and reshape the system.",
+      "artifacts": [
+        {
+          "title": "The design thinking behind Notion AI",
+          "url": "https://www.notion.com/blog/the-design-thinking-behind-notion-ai",
+          "date": "2023-09-21",
+          "author": "Ryo Lu",
+          "sourceType": "First-person product design essay",
+          "confidence": "high",
+          "summary": "A historical account of integrating AI horizontally across Notion's blocks, packaging common tasks, and changing available actions according to the current page and selection."
+        },
+        {
+          "title": "ryOS",
+          "url": "https://github.com/ryokun6/ryos",
+          "date": null,
+          "author": "Ryo Lu / ryOS contributors",
+          "sourceType": "Public source repository and README",
+          "confidence": "high",
+          "summary": "A desktop-like environment with a persistent virtual filesystem, multiple applications, and an assistant. Read the architecture as an inspectable product artifact, not as proof that its interaction model is superior."
+        },
+        {
+          "title": "augmenting human intellect",
+          "url": "https://ryo.lu/journal/augmenting-human-intellect",
+          "date": "2026-10-29",
+          "author": "Ryo Lu",
+          "sourceType": "Personal essay",
+          "confidence": "high",
+          "summary": "Argues for AI tools that increase people's understanding, expression, and control, rather than measuring progress solely by unattended output."
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "Package common AI actions while retaining a customizable underlying system.",
+          "alternative": "Expose only an unrestricted prompt or only fixed single-purpose features.",
+          "tradeoff": "Defaults lower the entry cost; customization preserves flexibility but adds concepts and maintenance.",
+          "evidenceUrls": [
+            "https://www.notion.com/blog/the-design-thinking-behind-notion-ai"
+          ],
+          "status": "Documented product decision"
+        },
+        {
+          "decision": "Use page and selection state to prioritize drafting, continuing, extracting, or editing.",
+          "alternative": "Show the same global AI menu everywhere.",
+          "tradeoff": "Context reduces repeated explanation; context mistakes can hide the action a person wants.",
+          "evidenceUrls": [
+            "https://www.notion.com/blog/the-design-thinking-behind-notion-ai"
+          ],
+          "status": "Documented product decision; downside is analysis"
+        },
+        {
+          "decision": "Give the assistant shared application and file context inside a persistent environment.",
+          "alternative": "Make chat the only place work exists.",
+          "tradeoff": "Stable objects can support continuity; a desktop metaphor introduces navigation and coordination costs.",
+          "evidenceUrls": [
+            "https://github.com/ryokun6/ryos"
+          ],
+          "status": "Observed artifact structure; tradeoff is analysis"
+        },
+        {
+          "decision": "Evaluate empowerment through what the person can understand and change.",
+          "alternative": "Optimize only the volume of work performed without the person.",
+          "tradeoff": "Meaningful participation may require interaction time that a pure automation metric would count as overhead.",
+          "evidenceUrls": [
+            "https://ryo.lu/journal/augmenting-human-intellect"
+          ],
+          "status": "Author's stated design position"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "technique": "Move from foundational model to concrete states.",
+          "evidence": "The Notion essay first explains blocks, then walks through empty pages, populated pages, selections, and database use.",
+          "sourceUrl": "https://www.notion.com/blog/the-design-thinking-behind-notion-ai"
+        },
+        {
+          "technique": "Use historical contrast to sharpen a present choice.",
+          "evidence": "The augmentation essay links earlier human-computer ideas to a current distinction between participating in thought and waiting for output.",
+          "sourceUrl": "https://ryo.lu/journal/augmenting-human-intellect"
+        },
+        {
+          "technique": "Turn an abstraction into inspectable structure.",
+          "evidence": "The ryOS README enumerates applications, persistent storage, and project directories rather than describing the product only with a slogan.",
+          "sourceUrl": "https://github.com/ryokun6/ryos"
+        }
+      ],
+      "exercise": {
+        "task": "Choose a repeated workflow. Define five durable object types and three meaningful states for each. Design contextual AI actions for two states, plus an escape hatch for a custom request.",
+        "deliverable": "An object map, two interactive screens, and a decision log explaining which context the AI receives.",
+        "evaluation": [
+          "Can another person predict the action from the selected object?",
+          "Can they compare, revise, and undo the result?",
+          "Can they explain what changed without reopening a transcript?"
+        ]
+      },
+      "limitations": [
+        "The Notion article describes a 2023 design, not the current product specification.",
+        "The ryOS repository was read, not installed or functionally tested.",
+        "The augmentation essay is a normative argument, not an empirical outcome study."
+      ],
+      "coverage": "Three primary artifacts reviewed: one product essay, one repository README, one personal essay. Product decisions and analyst interpretations are labeled."
+    },
+    {
+      "id": "amelia-wattenberger",
+      "name": "Amelia Wattenberger",
+      "discipline": "Design",
+      "focus": "Explorable explanations, human-AI interfaces, and tools for thought",
+      "keyIdea": "Use AI to create manipulable models of a problem, not merely more prose for the user to review.",
+      "artifacts": [
+        {
+          "title": "Why Chatbots Are Not the Future",
+          "url": "https://wattenberger.com/thoughts/boo-chatbots/",
+          "date": null,
+          "author": "Amelia Wattenberger",
+          "sourceType": "Interactive essay",
+          "confidence": "high",
+          "summary": "Identifies weak affordances, repeated context entry, isolated answers, and forced generation-review switching as limitations of plain chat."
+        },
+        {
+          "title": "Code was our medium for thought",
+          "url": "https://wattenberger.com/thoughts/code-is-a-medium-for-thought/",
+          "date": null,
+          "author": "Amelia Wattenberger",
+          "sourceType": "Interactive essay and embedded prototype",
+          "confidence": "high",
+          "summary": "Explores the loss of mental models when code production accelerates beyond understanding, and proposes editable playgrounds for reasoning about a product."
+        },
+        {
+          "title": "Chat is AI's command line",
+          "url": "https://wattenberger.com/thoughts/ai-is-still-in-its-terminal-era/",
+          "date": null,
+          "author": "Amelia Wattenberger",
+          "sourceType": "Interactive essay",
+          "confidence": "high",
+          "summary": "Uses a travel-planning example to explore direct manipulation, dependent updates, undo, and visible work state alongside conversational direction."
+        },
+        {
+          "title": "Code Atlas",
+          "url": "https://githubnext.com/projects/code-atlas/",
+          "date": "2023-06",
+          "author": "Amelia Wattenberger, credited by GitHub Next",
+          "sourceType": "First-party research prototype write-up",
+          "confidence": "high",
+          "summary": "A prototype represents model-generated solutions as executable connected code blocks and editable inputs. The project page explicitly labels it an early exploration."
+        },
+        {
+          "title": "Bridging the hard and the soft",
+          "url": "https://wattenberger.com/thoughts/hard-and-soft/",
+          "date": null,
+          "author": "Amelia Wattenberger",
+          "sourceType": "Interactive conceptual essay",
+          "confidence": "high",
+          "summary": "Develops a framework for combining dependable structure with adaptive content and workflows at multiple scales."
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "Keep a persistent editable working artifact instead of producing detached answers.",
+          "alternative": "Append a fresh full response for each requested change.",
+          "tradeoff": "Continuity makes changes easier to inspect; it requires a coherent editing and version model.",
+          "evidenceUrls": [
+            "https://wattenberger.com/thoughts/boo-chatbots/"
+          ],
+          "status": "Author's proposed interaction direction"
+        },
+        {
+          "decision": "Expose inputs and intermediate structure as an editable workflow.",
+          "alternative": "Return a polished answer without a model the person can manipulate.",
+          "tradeoff": "A visible model supports debugging and learning; generated structure can still be wrong and needs validation.",
+          "evidenceUrls": [
+            "https://githubnext.com/projects/code-atlas/"
+          ],
+          "status": "Documented research prototype decision"
+        },
+        {
+          "decision": "Let direct edits update dependent constraints and keep work status beside the object.",
+          "alternative": "Translate every small adjustment into another textual instruction.",
+          "tradeoff": "This suits spatial and relational tasks but can be expensive to generalize across arbitrary requests.",
+          "evidenceUrls": [
+            "https://wattenberger.com/thoughts/ai-is-still-in-its-terminal-era/"
+          ],
+          "status": "Demonstrated design proposal"
+        },
+        {
+          "decision": "Combine fixed modules with flexible generated elements instead of treating rigidity and adaptability as a binary.",
+          "alternative": "Either hard-code the complete workflow or generate the whole interface.",
+          "tradeoff": "Boundaries can provide reliable behavior; the designer must decide where variation remains understandable.",
+          "evidenceUrls": [
+            "https://wattenberger.com/thoughts/hard-and-soft/"
+          ],
+          "status": "Author's conceptual framework"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "technique": "Make the reader experience the argument.",
+          "evidence": "The newer essays place controls and editable examples next to claims about manipulation and exploration.",
+          "sourceUrl": "https://wattenberger.com/thoughts/ai-is-still-in-its-terminal-era/"
+        },
+        {
+          "technique": "Show a causal sequence rather than only a conclusion.",
+          "evidence": "The code essay walks through research, implementation, observation, and revision before explaining what that cycle taught the developer.",
+          "sourceUrl": "https://wattenberger.com/thoughts/code-is-a-medium-for-thought/"
+        },
+        {
+          "technique": "Carry one metaphor across several scales.",
+          "evidence": "Hard and soft materials frame distinctions between content, components, modules, and whole workflows.",
+          "sourceUrl": "https://wattenberger.com/thoughts/hard-and-soft/"
+        }
+      ],
+      "exercise": {
+        "task": "Take one AI-generated plan. Build a small editable model with three controls, dependencies, undo, and one intentionally invalid state. Compare it with a chat-only version.",
+        "deliverable": "A working explorable explanation and a short comparison using the same task.",
+        "evaluation": [
+          "Can a learner predict a change before making it?",
+          "Can they locate and correct the invalid assumption?",
+          "Does the interface preserve understanding after several revisions?"
+        ]
+      },
+      "limitations": [
+        "The essays are arguments and prototypes, not controlled comparisons establishing that chat always loses.",
+        "Code Atlas is a 2023 early-stage exploration; its claims about contemporary model limitations must be read historically.",
+        "The interactive pages were inspected through their published text and controls, not comprehensively usability-tested."
+      ],
+      "coverage": "Five primary artifacts reviewed, spanning critique, prototype, historical analogy, and a structural design framework. Unknown publication dates are left unspecified."
+    },
+    {
+      "id": "karri-saarinen",
+      "name": "Karri Saarinen",
+      "discipline": "Design",
+      "focus": "Product coherence, design leadership, and the human-agent workbench",
+      "keyIdea": "A coherent product provides the context for powerful tools; generating a plausible interface is not the same as resolving the problem.",
+      "artifacts": [
+        {
+          "title": "A design reset (part I)",
+          "url": "https://linear.app/now/a-design-reset",
+          "date": "2024-03-27",
+          "author": "Karri Saarinen",
+          "sourceType": "First-person company essay",
+          "confidence": "high",
+          "summary": "Makes the case for addressing accumulated design debt through a coordinated reset tied to the product's direction."
+        },
+        {
+          "title": "How we redesigned the Linear UI (part II)",
+          "url": "https://linear.app/now/how-we-redesigned-the-linear-ui",
+          "date": "2024-03-28",
+          "author": "Karri Saarinen and three coauthors; sections have individual bylines",
+          "sourceType": "Multi-author product case study",
+          "confidence": "high",
+          "summary": "Documents concept exploration and implementation of a redesign. Saarinen's section explains why navigation changes were excluded to control scope and risk."
+        },
+        {
+          "title": "Design for the AI age",
+          "url": "https://linear.app/now/design-for-the-ai-age",
+          "date": "2025-04-07",
+          "author": "Karri Saarinen",
+          "sourceType": "First-person product strategy essay",
+          "confidence": "high",
+          "summary": "Argues for a structured application as a workbench where people direct, inspect, and approve agent work."
+        },
+        {
+          "title": "Output isn't design",
+          "url": "https://linear.app/now/output-isn-t-design",
+          "date": "2026-04-17",
+          "author": "Karri Saarinen",
+          "sourceType": "First-person design essay",
+          "confidence": "high",
+          "summary": "Distinguishes producing form from understanding context and resolving conflicting needs, constraints, and edge cases."
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "Exclude navigation redesign from an otherwise broad UI reset.",
+          "alternative": "Change application chrome and information architecture together.",
+          "tradeoff": "Lower engineering and habit-disruption risk at the cost of leaving a known problem for later.",
+          "evidenceUrls": [
+            "https://linear.app/now/how-we-redesigned-the-linear-ui"
+          ],
+          "status": "Documented decision in Saarinen's section"
+        },
+        {
+          "decision": "Explore complete screens and flows before converging on a visual direction.",
+          "alternative": "Resolve isolated components without testing their fit across the product.",
+          "tradeoff": "Cross-product coherence requires more exploration; it can surface relationships missed by local optimization.",
+          "evidenceUrls": [
+            "https://linear.app/now/how-we-redesigned-the-linear-ui"
+          ],
+          "status": "Documented exploration method"
+        },
+        {
+          "decision": "Tie a design reset to a larger product shift and leadership commitment.",
+          "alternative": "Treat it as discretionary visual polish.",
+          "tradeoff": "Strategic sponsorship enables cross-team changes but concentrates influence and requires explicit scope safeguards.",
+          "evidenceUrls": [
+            "https://linear.app/now/a-design-reset"
+          ],
+          "status": "Author's management recommendation; downside is analysis"
+        },
+        {
+          "decision": "Keep agent operation inside a structured work environment.",
+          "alternative": "Rely on generic conversation and disconnected exports.",
+          "tradeoff": "Persistent context and review fit repeated workflows; a dedicated workbench may be excessive for one-off questions.",
+          "evidenceUrls": [
+            "https://linear.app/now/design-for-the-ai-age"
+          ],
+          "status": "Author's product direction"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "technique": "Split rationale from execution.",
+          "evidence": "The redesign series separates why a reset matters from how the team approached the actual work.",
+          "sourceUrl": "https://linear.app/now/a-design-reset"
+        },
+        {
+          "technique": "Use a concrete spatial metaphor to explain an abstract system.",
+          "evidence": "The workbench makes the relationship between application context, AI tools, and human review easier to picture.",
+          "sourceUrl": "https://linear.app/now/design-for-the-ai-age"
+        },
+        {
+          "technique": "Define the mistaken assumption before offering the distinction.",
+          "evidence": "Output isn't design begins with production-centric tool promises, then reframes design around fit between form and context.",
+          "sourceUrl": "https://linear.app/now/output-isn-t-design"
+        }
+      ],
+      "exercise": {
+        "task": "Audit a mature workflow for design debt. Propose a reset, then explicitly exclude one tempting but high-risk change. Draw three complete flows, including an edge case.",
+        "deliverable": "A one-page reset proposal, a scope exclusion, three linked flows, and a risk register.",
+        "evaluation": [
+          "Is the change tied to a user or product need rather than fashion?",
+          "What existing habit is protected?",
+          "Can the team explain why the excluded change was deferred?"
+        ]
+      },
+      "limitations": [
+        "The redesign case study is multi-author; implementation details must not all be attributed to Saarinen.",
+        "The essays reflect a founder-led product organization and do not prove the same process fits every company.",
+        "Recommendations about redesign cadence or short-term metrics are the author's perspective, not universal empirical laws."
+      ],
+      "coverage": "Four primary artifacts reviewed, with individual authorship distinguished from the multi-author case study."
+    },
+    {
+      "id": "steve-ruiz",
+      "name": "Steve Ruiz",
+      "discipline": "Design",
+      "focus": "Canvas interaction engineering, measurable details, and shared human-AI surfaces",
+      "keyIdea": "Make invisible interaction behavior observable, then encode intentional tolerances and stable rules.",
+      "artifacts": [
+        {
+          "title": "Text is not enough",
+          "url": "https://tldraw.dev/blog/text-is-not-enough",
+          "date": "2026-03-30",
+          "author": "Steve Ruiz",
+          "sourceType": "First-person product demonstration",
+          "confidence": "high",
+          "summary": "Shows where an editable canvas can supplement chat for visual and abstract reasoning; explicitly acknowledges that chat works well for many tasks."
+        },
+        {
+          "title": "An exhaustive review of design tool hover areas",
+          "url": "https://tldraw.dev/blog/a-review-of-design-tool-hover-areas",
+          "date": "2026-04-07",
+          "author": "Steve Ruiz",
+          "sourceType": "First-person comparative investigation",
+          "confidence": "high",
+          "summary": "Maps cursor behavior across a grid to expose hidden resize and rotation hit areas in design tools, making conventions measurable rather than assumed."
+        },
+        {
+          "title": "Debugging a physical race condition with modifier keys",
+          "url": "https://tldraw.dev/blog/adding-delays-to-modifier-keys",
+          "date": "2026-02-06",
+          "author": "Steve Ruiz and Ani Krishnan",
+          "sourceType": "Coauthored implementation case study",
+          "confidence": "high",
+          "summary": "Explains why nominally simultaneous keyboard and mouse releases can cancel a drag modifier and describes a short release tolerance."
+        },
+        {
+          "title": "Engineering imperfection with draw shapes",
+          "url": "https://tldraw.dev/blog/engineering-imperfection-with-draw-shapes",
+          "date": "2026-02-06",
+          "author": "Steve Ruiz",
+          "sourceType": "Implementation essay with examples",
+          "confidence": "high",
+          "summary": "Uses seeded pseudorandomness and geometry-aware constraints to give shapes a hand-drawn character without unstable render-to-render jitter."
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "Visualize interaction hit areas with a systematic sampling tool.",
+          "alternative": "Infer conventions by cautiously moving a pointer and relying on memory.",
+          "tradeoff": "Instrumentation makes discrepancies visible but captures only the sampled platform, state, and time.",
+          "evidenceUrls": [
+            "https://tldraw.dev/blog/a-review-of-design-tool-hover-areas"
+          ],
+          "status": "Documented investigation method"
+        },
+        {
+          "decision": "Delay modifier release by 150 ms in the described drag interaction.",
+          "alternative": "Immediately apply every key-up event regardless of user intent.",
+          "tradeoff": "Tolerance avoids accidental last-moment cancellation; too much delay would feel sticky.",
+          "evidenceUrls": [
+            "https://tldraw.dev/blog/adding-delays-to-modifier-keys"
+          ],
+          "status": "Coauthored documented implementation decision"
+        },
+        {
+          "decision": "Seed imperfections from stable shape IDs.",
+          "alternative": "Generate new random offsets on every render.",
+          "tradeoff": "Stable variation preserves identity through edits; it requires deterministic handling of geometry and seeds.",
+          "evidenceUrls": [
+            "https://tldraw.dev/blog/engineering-imperfection-with-draw-shapes"
+          ],
+          "status": "Documented implementation decision"
+        },
+        {
+          "decision": "Make visual explanations editable by both human and agent.",
+          "alternative": "Exchange screenshots or textual descriptions without a shared model.",
+          "tradeoff": "Direct reference improves steering for visual work; an extra canvas can be unnecessary for simple exchanges.",
+          "evidenceUrls": [
+            "https://tldraw.dev/blog/text-is-not-enough"
+          ],
+          "status": "Documented product capability; tradeoff is analysis"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "technique": "Begin with a tiny observable failure and trace its mechanism.",
+          "evidence": "The modifier article starts with an effect disappearing at release, explains event ordering, and only then presents the timeout.",
+          "sourceUrl": "https://tldraw.dev/blog/adding-delays-to-modifier-keys"
+        },
+        {
+          "technique": "Use the naive implementation as a foil.",
+          "evidence": "The imperfection essay shows why fresh random values fail before introducing stable seeded variation.",
+          "sourceUrl": "https://tldraw.dev/blog/engineering-imperfection-with-draw-shapes"
+        },
+        {
+          "technique": "Make a comparison reproducible in concept.",
+          "evidence": "The hover investigation states its grid-sampling method before presenting tool-by-tool observations.",
+          "sourceUrl": "https://tldraw.dev/blog/a-review-of-design-tool-hover-areas"
+        }
+      ],
+      "exercise": {
+        "task": "Find an interaction that fails under rapid or imprecise input. Instrument it, collect an event trace, and compare immediate response with a small intent-preserving tolerance.",
+        "deliverable": "A reproducible failing case, an event timeline, and two working variants with a justified threshold.",
+        "evaluation": [
+          "Does the change fix the failure without blocking intentional reversal?",
+          "Can the failure be reproduced rather than merely described?",
+          "Have keyboard and pointer paths both been tested?"
+        ]
+      },
+      "limitations": [
+        "The modifier article is coauthored with Ani Krishnan.",
+        "The reported 150 ms value is specific to the described interaction, not a universal timing rule.",
+        "The hover survey is a snapshot of sampled tools, not evidence about all versions or platforms.",
+        "No claim is made that canvases should replace chat everywhere."
+      ],
+      "coverage": "Four primary artifacts reviewed, combining interaction research, two technical case studies, and an AI work-surface demonstration."
+    },
+    {
+      "id": "brian-lovin",
+      "name": "Brian Lovin",
+      "discipline": "Design",
+      "focus": "Fast experiments, critique, and evidence-producing AI workflows",
+      "keyIdea": "Make a workflow produce evidence of its own quality, and document what actually changed your mind.",
+      "artifacts": [
+        {
+          "title": "Give your agent a laboratory",
+          "url": "https://brianlovin.com/writing/give-your-agent-a-laboratory-jH5ryjC",
+          "date": "2026-01-14",
+          "author": "Brian Lovin",
+          "sourceType": "First-person workflow essay",
+          "confidence": "high",
+          "summary": "Reframes vague requests as instrumented loops with baselines, hypotheses, tests, visual comparison, and reports."
+        },
+        {
+          "title": "Give your agent a laboratory, pt. II",
+          "url": "https://brianlovin.com/writing/give-your-agent-a-laboratory-pt-ii-KjFnCW9",
+          "date": "2026-03-10",
+          "author": "Brian Lovin",
+          "sourceType": "First-person engineering experiment report",
+          "confidence": "high",
+          "summary": "Describes experiments on newsletter extraction and audio transcription. Reported cost and speed results are specific to his implementation and benchmark."
+        },
+        {
+          "title": "Design critique for fun and profit",
+          "url": "https://brianlovin.com/writing/design-critique-for-fun-and-profit-7wDWkhw",
+          "date": "2022-02-05",
+          "author": "Brian Lovin",
+          "sourceType": "First-person commercial experiment retrospective",
+          "confidence": "high",
+          "summary": "Explains revisions to pricing, scope, and positioning after delivering early critique projects, including reputational concerns and distribution advantages."
+        },
+        {
+          "title": "My playbook for shipping side projects",
+          "url": "https://brianlovin.com/writing/my-playbook-for-shipping-side-projects-n0Qmhqt",
+          "date": "2021-01-30",
+          "author": "Brian Lovin",
+          "sourceType": "First-person practice essay",
+          "confidence": "high",
+          "summary": "Proposes explicit shipping thresholds, ongoing communication, and clear onboarding for people arriving without launch context."
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "Require an observable baseline and verification loop before optimization.",
+          "alternative": "Ask an agent to make an application faster or prettier without measurable acceptance criteria.",
+          "tradeoff": "Instrumentation costs time but helps distinguish improvement from persuasive claims.",
+          "evidenceUrls": [
+            "https://brianlovin.com/writing/give-your-agent-a-laboratory-jH5ryjC"
+          ],
+          "status": "Author's recommended workflow"
+        },
+        {
+          "decision": "Benchmark combinations rather than assume which processing step will help.",
+          "alternative": "Choose a library or model through intuition alone.",
+          "tradeoff": "Search can expose surprising options, but a weak benchmark can optimize the wrong outcome.",
+          "evidenceUrls": [
+            "https://brianlovin.com/writing/give-your-agent-a-laboratory-pt-ii-KjFnCW9"
+          ],
+          "status": "Reported experimentation; caution is analysis"
+        },
+        {
+          "decision": "Reframe critique around a useful deliverable rather than a fixed hourly promise.",
+          "alternative": "Sell a narrowly timed visual cleanup regardless of what the product needs.",
+          "tradeoff": "Outcome framing supports depth but requires careful scope and expectations.",
+          "evidenceUrls": [
+            "https://brianlovin.com/writing/design-critique-for-fun-and-profit-7wDWkhw"
+          ],
+          "status": "Documented revision following early customers"
+        },
+        {
+          "decision": "Give direct-to-article visitors contextual onboarding.",
+          "alternative": "Assume every reader saw the homepage or launch announcement.",
+          "tradeoff": "A conditional introduction aids newcomers while avoiding repeated interruption for returning visitors.",
+          "evidenceUrls": [
+            "https://brianlovin.com/writing/my-playbook-for-shipping-side-projects-n0Qmhqt"
+          ],
+          "status": "Documented Staff Design change"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "technique": "Use before-and-after requests to teach a mental model.",
+          "evidence": "The laboratory essay contrasts vague requests with phased, testable workflows.",
+          "sourceUrl": "https://brianlovin.com/writing/give-your-agent-a-laboratory-jH5ryjC"
+        },
+        {
+          "technique": "Publish the correction, not just the apparent success.",
+          "evidence": "The critique retrospective explains what he changed about pricing, scope, and tone after the initial launch.",
+          "sourceUrl": "https://brianlovin.com/writing/design-critique-for-fun-and-profit-7wDWkhw"
+        },
+        {
+          "technique": "Connect a general recommendation to a specific product repair.",
+          "evidence": "The side-project essay grounds its warning about context-free visitors in the conditional banner added to Staff Design.",
+          "sourceUrl": "https://brianlovin.com/writing/my-playbook-for-shipping-side-projects-n0Qmhqt"
+        }
+      ],
+      "exercise": {
+        "task": "Choose a small product defect. Define a baseline and a quality rubric before asking an agent to improve it. Require three hypotheses and an evidence-backed comparison.",
+        "deliverable": "A benchmark or visual test set, a before/after report, and a short retrospective about one rejected approach.",
+        "evaluation": [
+          "Can someone reproduce the claimed improvement?",
+          "Does the rubric cover failure cases rather than only the happy path?",
+          "Are human judgments separated from measured results?"
+        ]
+      },
+      "limitations": [
+        "The reports are first-person accounts; underlying benchmarks were not independently reproduced.",
+        "The audio speed and cost findings must not be generalized to other speech, languages, models, or billing systems.",
+        "The consulting experiment benefited from an existing audience and does not establish a universal pricing strategy."
+      ],
+      "coverage": "Four first-person artifacts reviewed, including two workflow reports, a critique retrospective, and a side-project practice essay."
+    },
+    {
+      "id": "josh-puckett",
+      "name": "Josh Puckett",
+      "discipline": "Design",
+      "focus": "Live interface tuning, browser detail, and transmitting craft judgment",
+      "keyIdea": "Shorten the loop between a felt mismatch and a directly adjustable parameter, and preserve the reasons behind craft decisions.",
+      "artifacts": [
+        {
+          "title": "DialKit",
+          "url": "https://www.dialkit.dev/",
+          "date": null,
+          "author": "Josh Puckett, credited on the product page",
+          "sourceType": "Original tool, documentation, and interactive examples",
+          "confidence": "high",
+          "summary": "A live control surface for tuning interface parameters, spring or easing behavior, and timelines. Documentation distinguishes development use from optional production exposure."
+        },
+        {
+          "title": "Seamless Backgrounds on Mobile Safari",
+          "url": "https://joshpuckett.me/seamless-mobile-safari",
+          "date": "2026-10",
+          "author": "Josh Puckett",
+          "sourceType": "First-person implementation essay",
+          "confidence": "high",
+          "summary": "Explains a fixed-edge color technique for browser chrome and documents why a theme-color tag alone did not satisfy the author's desired effect."
+        },
+        {
+          "title": "On Being An Elder",
+          "url": "https://joshpuckett.me/on-being-an-elder",
+          "date": "2026-08",
+          "author": "Josh Puckett",
+          "sourceType": "Personal practice essay",
+          "confidence": "high",
+          "summary": "Argues that experienced practitioners should preserve judgment and mistakes, create opportunities, remain available, and keep learning."
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "Expose meaningful visual parameters through live controls.",
+          "alternative": "Repeatedly edit code or reprompt to compare small visual adjustments.",
+          "tradeoff": "Immediate exploration encourages comparisons, but poorly chosen knobs can distract from the underlying product problem.",
+          "evidenceUrls": [
+            "https://www.dialkit.dev/"
+          ],
+          "status": "Observed tool design; tradeoff is analysis"
+        },
+        {
+          "decision": "Hide the tuning interface in production by default.",
+          "alternative": "Ship development controls into every end-user experience.",
+          "tradeoff": "The development environment stays powerful without adding accidental production complexity; deliberate public demos can opt in.",
+          "evidenceUrls": [
+            "https://www.dialkit.dev/"
+          ],
+          "status": "Documented default"
+        },
+        {
+          "decision": "Use separately controlled solid top and bottom edge colors for the targeted Safari effect.",
+          "alternative": "Rely only on one theme-color value.",
+          "tradeoff": "It supports different edge colors but cannot faithfully extend arbitrary imagery or a horizontally varying gradient.",
+          "evidenceUrls": [
+            "https://joshpuckett.me/seamless-mobile-safari"
+          ],
+          "status": "Documented implementation choice and limitation"
+        },
+        {
+          "decision": "Teach the judgment behind a practice rather than preserve the practice as an unquestionable rule.",
+          "alternative": "Transmit seniority as authority or copy historical techniques without context.",
+          "tradeoff": "Reasons and mistakes take more work to document, but help later practitioners adapt rather than imitate.",
+          "evidenceUrls": [
+            "https://joshpuckett.me/on-being-an-elder"
+          ],
+          "status": "Author's stated position"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "technique": "Anticipate the obvious solution and show its boundary.",
+          "evidence": "The Safari article raises the theme-color alternative before explaining why it did not meet the specific requirement.",
+          "sourceUrl": "https://joshpuckett.me/seamless-mobile-safari"
+        },
+        {
+          "technique": "Pair minimal examples with named limitations.",
+          "evidence": "The Safari article progresses from default behavior to a simple fix, dynamic colors, and an explicit limitations section.",
+          "sourceUrl": "https://joshpuckett.me/seamless-mobile-safari"
+        },
+        {
+          "technique": "Translate a value into concrete responsibilities.",
+          "evidence": "The elder essay uses action-led sections and specific mentoring experiences instead of leaving its argument at a general appeal to generosity.",
+          "sourceUrl": "https://joshpuckett.me/on-being-an-elder"
+        }
+      ],
+      "exercise": {
+        "task": "Take one modal or transition and expose only four meaningful controls. Save three variants, then write the reasoning behind the preferred one and one platform limitation.",
+        "deliverable": "A small live tuning demo, three named presets, and a 250-word decision note.",
+        "evaluation": [
+          "Do the controls correspond to meaningful perceptual differences?",
+          "Does the chosen result still work with reduced motion and keyboard interaction?",
+          "Could another designer reproduce the judgment from the note?"
+        ]
+      },
+      "limitations": [
+        "DialKit documentation was read; the tool was not installed or benchmarked.",
+        "The Safari behavior is browser-version-dependent and should be rechecked on target devices.",
+        "The elder essay provides values and examples, not evidence of measured organizational outcomes."
+      ],
+      "coverage": "Three primary artifacts reviewed: an original tool, a browser implementation essay, and a reflective practice essay."
+    }
+  ]
+}

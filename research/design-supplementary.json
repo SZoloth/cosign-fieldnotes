@@ -1,0 +1,466 @@
+{
+  "schemaVersion": "1.0",
+  "discipline": "Design",
+  "researchedAt": "2026-11-05",
+  "editorialNote": "Original educational analysis of public primary sources. Documented decisions and editorial inferences are distinguished. Interview and team work are not represented as sole-authored essays. No prototypes were executed or accessibility-audited.",
+  "people": [
+    {
+      "id": "emmet-connolly",
+      "name": "Emmet Connolly",
+      "discipline": "Design",
+      "focus": [
+        "Product principles",
+        "AI interfaces",
+        "Conversational systems"
+      ],
+      "keyIdea": "A principle is useful when it resolves a real tradeoff; an interface is useful when its modality matches the task.",
+      "artifacts": [
+        {
+          "title": "Introducing Intercom’s product principles",
+          "url": "https://www.intercom.com/blog/product-principles",
+          "date": "2022-02-09",
+          "author": "Emmet Connolly",
+          "sourceType": "Bylined company essay",
+          "confidence": "high",
+          "summary": "Explains how explicit principles preserve shared judgment as an organization grows, and why a principle should have a plausible opposite."
+        },
+        {
+          "title": "Principles of bot design",
+          "url": "https://www.intercom.com/blog/principles-bot-design",
+          "date": "2016-05-18",
+          "author": "Emmet Connolly",
+          "sourceType": "Bylined historical design essay",
+          "confidence": "high",
+          "summary": "A pre-LLM proposal for clear bot identity, bounded interactions, structured choices, and human escape routes. Its capability assumptions belong to 2016."
+        },
+        {
+          "title": "Off Script: Designing the future with AI",
+          "url": "https://www.intercom.com/blog/videos/off-script-ep04-emmet-connolly-future-of-product-design-with-ai",
+          "date": "2024-07-11",
+          "author": "Emmet Connolly, speaking; introduction by Davin O’Dwyer",
+          "sourceType": "Official video and lightly edited transcript",
+          "confidence": "high",
+          "summary": "Argues that AI can change product categories and interface forms. A billing-address example shows why a compact form can outperform a sequence of chat questions."
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "Codify decision intent rather than make process the final authority.",
+          "alternative": "Require an identical workflow for every project.",
+          "tradeoff": "Principles allow adaptation but demand judgment; process is easier to audit and can protect novices. The tradeoff is editorial analysis of his argument.",
+          "evidenceUrls": [
+            "https://www.intercom.com/blog/product-principles"
+          ],
+          "status": "Documented organizational preference; tradeoff analysis"
+        },
+        {
+          "decision": "Test a proposed principle by writing its plausible opposite.",
+          "alternative": "Adopt agreeable slogans that cannot resolve disagreement.",
+          "tradeoff": "A sharp preference makes tradeoffs explicit but can be wrong in another company or phase.",
+          "evidenceUrls": [
+            "https://www.intercom.com/blog/product-principles"
+          ],
+          "status": "Documented method"
+        },
+        {
+          "decision": "Give bots a clear identity and an escape route to a human.",
+          "alternative": "Imitate human behavior or keep the user inside automation at all costs.",
+          "tradeoff": "Transparency and recovery can reduce frustration, but human escalation requires operational capacity. His narrow-interaction advice is historical, not a current model limit.",
+          "evidenceUrls": [
+            "https://www.intercom.com/blog/principles-bot-design"
+          ],
+          "status": "Documented 2016 recommendations; contemporary application is analysis"
+        },
+        {
+          "decision": "Use a structured form inside an AI interaction when fields are the efficient representation.",
+          "alternative": "Ask for each address field in a separate chat turn.",
+          "tradeoff": "A widget reduces turn-taking but requires a safe rendering system and may constrain unexpected input. These implementation consequences are analysis.",
+          "evidenceUrls": [
+            "https://www.intercom.com/blog/videos/off-script-ep04-emmet-connolly-future-of-product-design-with-ai"
+          ],
+          "status": "Documented 2024 scenario; not a reported controlled experiment"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "technique": "Turn an abstract claim into a falsifiable editing test.",
+          "evidence": "The product-principles essay contrasts empty agreement with a preference whose opposite is reasonable, so the reader can evaluate their own wording.",
+          "sourceUrl": "https://www.intercom.com/blog/product-principles"
+        },
+        {
+          "technique": "Make advice operational and revisable.",
+          "evidence": "The bot essay names concrete behaviors and closes by admitting that future capabilities or experience may invalidate its rules.",
+          "sourceUrl": "https://www.intercom.com/blog/principles-bot-design"
+        },
+        {
+          "technique": "Act out the slow version before showing the alternative.",
+          "evidence": "In the AI transcript, the billing-address conversation exposes turn-taking overhead before introducing a form. This is presentation technique, not evidence of sole-authored prose.",
+          "sourceUrl": "https://www.intercom.com/blog/videos/off-script-ep04-emmet-connolly-future-of-product-design-with-ai"
+        }
+      ],
+      "exercise": {
+        "task": "Choose a customer-service workflow. Write three principles with reasonable opposites, then build both a chat-only and a mixed form/chat version of its most tedious step.",
+        "deliverable": "A two-prototype comparison, an escalation map, and a one-page principle document separating enduring user needs from capability-dependent assumptions.",
+        "evaluation": [
+          "Can each principle choose between two credible alternatives?",
+          "Compare task completion, correction cost, and number of turns.",
+          "Show users what is automated and how to recover.",
+          "Identify which conclusions would change if model reliability improved."
+        ]
+      },
+      "limitations": [
+        "The 2016 bot essay predates modern LLMs; its interaction constraints should not be presented as timeless.",
+        "These are first-party arguments and examples, not independent performance evaluations.",
+        "The 2024 piece is an edited spoken transcript with a separate introduction, not an essay written solely by Connolly."
+      ],
+      "coverage": "Three primary artifacts read: two bylined essays and one official transcript. The contrast across 2016 and 2024 illustrates evolving interface choices without assuming an undocumented personal change of mind."
+    },
+    {
+      "id": "raphael-salaja",
+      "name": "Raphael Salaja",
+      "discipline": "Design",
+      "focus": [
+        "Motion",
+        "Design engineering",
+        "AI-assisted craft"
+      ],
+      "keyIdea": "The finishing pass is a system-level judgment: remove, align, and test repeated use rather than accept locally plausible details.",
+      "artifacts": [
+        {
+          "title": "What the Model Misses",
+          "url": "https://www.raphaelsalaja.com/library/what-the-model-misses",
+          "date": "2026-09-14",
+          "author": "Raphael Salaja",
+          "sourceType": "Personal essay with before-and-after demonstration",
+          "confidence": "high",
+          "summary": "Uses an AI-generated card to show how individually plausible choices can become inconsistent when assembled. The proposed finishing pass removes decoration, aligns tokens, and makes state copy specific."
+        },
+        {
+          "title": "On Copying",
+          "url": "https://www.raphaelsalaja.com/library/on-copying",
+          "date": "2026-06-18",
+          "author": "Raphael Salaja",
+          "sourceType": "Personal essay and interactive learning example",
+          "confidence": "high",
+          "summary": "Recommends privately reconstructing a small interaction to discover its spacing, timing, and structure, while distinguishing learning from passing someone else’s work off as original."
+        },
+        {
+          "title": "A Note on Timing",
+          "url": "https://www.raphaelsalaja.com/library/a-note-on-timing",
+          "date": "2026-01-19",
+          "author": "Raphael Salaja",
+          "sourceType": "Personal essay with controlled motion comparisons",
+          "confidence": "high",
+          "summary": "Separates duration from curve and distance, then relates timing to repetition, travel, and whether an element is entering or leaving."
+        },
+        {
+          "title": "Cambio",
+          "url": "https://cambio.raphaelsalaja.com/",
+          "date": null,
+          "author": "Raphael Salaja / Cambio project",
+          "sourceType": "First-party component documentation",
+          "confidence": "high",
+          "summary": "Documents a dialog-based morphing component built on Base UI and Motion, with shared presets, local overrides, dismissal controls, and reduced-motion behavior."
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "Delete unnecessary decoration before tuning the remaining system.",
+          "alternative": "Keep every generated flourish and polish each independently.",
+          "tradeoff": "Subtraction can improve coherence and repeated use, while excessive removal can erase helpful feedback or identity.",
+          "evidenceUrls": [
+            "https://www.raphaelsalaja.com/library/what-the-model-misses"
+          ],
+          "status": "Documented personal editing process; tradeoff analysis"
+        },
+        {
+          "decision": "Reconstruct one small interaction and vary one parameter at a time.",
+          "alternative": "Copy an entire product or collect visual references without implementing them.",
+          "tradeoff": "A narrow exercise reveals causal relationships but does not teach the original product’s broader constraints.",
+          "evidenceUrls": [
+            "https://www.raphaelsalaja.com/library/on-copying"
+          ],
+          "status": "Documented learning method"
+        },
+        {
+          "decision": "Shorten motion as frequency rises, and consider faster exits than entrances.",
+          "alternative": "Apply one default duration to all transitions.",
+          "tradeoff": "Less waiting serves expert repetition; excessive speed can hide state relationships or impair perception. Test the actual task instead of treating his values as universal constants.",
+          "evidenceUrls": [
+            "https://www.raphaelsalaja.com/library/a-note-on-timing"
+          ],
+          "status": "Documented heuristics; validation remains necessary"
+        },
+        {
+          "decision": "Combine a shared motion preset with component-level overrides and reduced-motion handling.",
+          "alternative": "Make every morphing interaction bespoke.",
+          "tradeoff": "Defaults promote consistency while overrides preserve context; too many exceptions can fragment the system. Composition on accessible primitives is a starting point, not a completed audit.",
+          "evidenceUrls": [
+            "https://cambio.raphaelsalaja.com/"
+          ],
+          "status": "Documented API choices; tradeoff analysis"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "technique": "Compare the same object before and after a specific editing pass.",
+          "evidence": "The model-output essay makes subtraction and consistency visible in one card rather than relying on general claims about taste.",
+          "sourceUrl": "https://www.raphaelsalaja.com/library/what-the-model-misses"
+        },
+        {
+          "technique": "Separate variables so readers can perceive a difference.",
+          "evidence": "The timing essay holds the interaction comparable while changing duration, then asks readers to consider repeated use.",
+          "sourceUrl": "https://www.raphaelsalaja.com/library/a-note-on-timing"
+        },
+        {
+          "technique": "Turn observation into a reproducible practice with an ethical boundary.",
+          "evidence": "The copying essay proceeds from close observation to a small reconstruction and explicitly distinguishes study from uncredited publication.",
+          "sourceUrl": "https://www.raphaelsalaja.com/library/on-copying"
+        }
+      ],
+      "exercise": {
+        "task": "Choose one generated component you own. Record five repetitions, remove nonessential decoration, align its spacing and motion, and rewrite vague state copy. Compare three durations while keeping the curve fixed.",
+        "deliverable": "A before/after recording, a token table, and a decision log explaining every deletion and retained animation.",
+        "evaluation": [
+          "Can another person identify the current state without explanation?",
+          "Does the fifth repetition still feel responsive?",
+          "Does interruption work, and is reduced motion usable?",
+          "Can every flourish justify its cost or intentional expressive purpose?"
+        ]
+      },
+      "limitations": [
+        "The motion examples and numeric values are heuristics, not universal performance or accessibility thresholds.",
+        "Cambio’s documented reduced-motion and primitive choices were read but not exercised with assistive technology.",
+        "The critique of generated output is an argued example, not a study of all models or prompts."
+      ],
+      "coverage": "Three full personal essays and one project documentation site read. Analysis focuses on repeatable methods rather than attributing broad industry outcomes."
+    },
+    {
+      "id": "samuel-kraft",
+      "name": "Samuel Kraft",
+      "discipline": "Design",
+      "focus": [
+        "Interface implementation",
+        "Responsive motion",
+        "State architecture"
+      ],
+      "keyIdea": "Useful craft emerges when the data model, navigation state, and animation lifecycle agree.",
+      "artifacts": [
+        {
+          "title": "Styling Radix UI with CSS",
+          "url": "https://samuelkraft.com/blog/radix-ui-styling-with-css",
+          "date": "2021-12-15",
+          "author": "Samuel Kraft",
+          "sourceType": "Bylined implementation tutorial",
+          "confidence": "high",
+          "summary": "Shows how behavior primitives and CSS styling can be combined, then extracts repeated wrapper code into a helper for a design-system API."
+        },
+        {
+          "title": "Responsive Animations with Framer Motion",
+          "url": "https://samuelkraft.com/blog/responsive-animation-framer-motion",
+          "date": "2021-06-10",
+          "author": "Samuel Kraft",
+          "sourceType": "Bylined tutorial; updated 2023-08-15",
+          "confidence": "high",
+          "summary": "Compares JavaScript media-query hooks with CSS-variable-driven variants, including server-rendering considerations. Credits Sam Selikoff for the CSS-variable approach."
+        },
+        {
+          "title": "Building a mapping platform with React and Mapbox GL",
+          "url": "https://samuelkraft.com/blog/trailroutes",
+          "date": "2021-04-20",
+          "author": "Samuel Kraft",
+          "sourceType": "First-person project case study",
+          "confidence": "high",
+          "summary": "Documents Trail Routes from route-data choices through map layers, URL-driven selection, and an animated sidebar’s final hidden state."
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "Separate accessible interaction behavior from visual styling, then abstract repeated wrappers.",
+          "alternative": "Reimplement each primitive or duplicate styling glue.",
+          "tradeoff": "Reuse reduces repeated behavior work; wrappers must preserve the library’s evolving component and ref contracts.",
+          "evidenceUrls": [
+            "https://samuelkraft.com/blog/radix-ui-styling-with-css"
+          ],
+          "status": "Documented implementation approach; current compatibility is unverified"
+        },
+        {
+          "decision": "Choose between media-query hooks and CSS-variable animation values based on rendering constraints.",
+          "alternative": "Use one viewport-independent animation everywhere.",
+          "tradeoff": "JavaScript offers explicit state; CSS can avoid waiting for client-side measurement in server-rendered interfaces. Neither replaces testing breakpoint changes during an animation.",
+          "evidenceUrls": [
+            "https://samuelkraft.com/blog/responsive-animation-framer-motion"
+          ],
+          "status": "Documented comparison; additional test recommendation is analysis"
+        },
+        {
+          "decision": "Use curated GPX data after the Strava route feed proved hard to categorize.",
+          "alternative": "Keep a live API as the primary content source.",
+          "tradeoff": "Curation gives control and predictable metadata but creates maintenance work and can become stale.",
+          "evidenceUrls": [
+            "https://samuelkraft.com/blog/trailroutes"
+          ],
+          "status": "Documented project decision; tradeoff analysis"
+        },
+        {
+          "decision": "Derive selected map layers from URL state and explicitly finish the sidebar’s hidden state.",
+          "alternative": "Update only in click handlers and leave an invisible sidebar in layout.",
+          "tradeoff": "Navigation and visual state become consistent at the cost of more lifecycle handling.",
+          "evidenceUrls": [
+            "https://samuelkraft.com/blog/trailroutes"
+          ],
+          "status": "Documented implementation decisions"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "technique": "Earn an abstraction by first showing the duplication it removes.",
+          "evidence": "The Radix tutorial progresses from direct styling to repeated wrappers before introducing a shared helper.",
+          "sourceUrl": "https://samuelkraft.com/blog/radix-ui-styling-with-css"
+        },
+        {
+          "technique": "Compare solutions against a concrete environmental constraint.",
+          "evidence": "The responsive-motion tutorial makes server rendering a reason to choose an approach, rather than declaring one technique always superior.",
+          "sourceUrl": "https://samuelkraft.com/blog/responsive-animation-framer-motion"
+        },
+        {
+          "technique": "Explain the rejected route and the observed bug.",
+          "evidence": "The map case study includes both the abandoned data source and the invisible sidebar’s layout problem, making the finished design less mysterious.",
+          "sourceUrl": "https://samuelkraft.com/blog/trailroutes"
+        }
+      ],
+      "exercise": {
+        "task": "Build a small catalog with a selectable map or diagram. Make selection URL-addressable, adapt its motion across two breakpoints, and ensure hidden panels no longer affect layout.",
+        "deliverable": "A runnable prototype plus a test matrix for direct links, reload, back/forward, resize, and interrupted transitions.",
+        "evaluation": [
+          "Do direct navigation and clicking produce the same state?",
+          "Does server-rendered content avoid a distracting initial jump?",
+          "Are offscreen controls actually unfocusable or appropriately hidden?",
+          "Which data deserves curation, and who keeps it current?"
+        ]
+      },
+      "limitations": [
+        "The code dates from 2021–2023. Verify current React, Radix, Motion, and Mapbox APIs rather than copying snippets unchanged.",
+        "The published wrappers and snippets are teaching examples, not a current production-ready package.",
+        "The route-metadata discussion is not an accuracy study; elevation computation and preprocessing details require independent validation."
+      ],
+      "coverage": "Three primary tutorials/case studies read. Historical code is treated as evidence of reasoning, not a recommendation of exact current implementation."
+    },
+    {
+      "id": "katie-dill",
+      "name": "Katie Dill",
+      "discipline": "Design",
+      "focus": [
+        "Quality operations",
+        "Product storytelling",
+        "Design leadership"
+      ],
+      "keyIdea": "Quality must survive the complete customer journey, not only the review presentation or the best-looking screen.",
+      "artifacts": [
+        {
+          "title": "Craft and beauty: The business value of form in function",
+          "url": "https://stripe.com/gb/sessions/2024/craft-and-beauty-the-business-value-of-form-in-function",
+          "date": "2024",
+          "author": "Katie Dill, with panelists Karri Saarinen and Yuhki Yamashita",
+          "sourceType": "Official Stripe Sessions transcript",
+          "confidence": "high",
+          "summary": "Dill connects visual clarity, product structure, and end-to-end experience. Her email example combines changes in copy, hierarchy, and journey design; it does not isolate beauty as a causal variable."
+        },
+        {
+          "title": "Inside How Stripe Crafts Quality Products",
+          "url": "https://creatoreconomy.so/p/how-stripe-crafts-quality-products-katie-dill",
+          "date": "2024-10-06",
+          "author": "Katie Dill, interviewed and published by Peter Yang",
+          "sourceType": "Original written interview",
+          "confidence": "high",
+          "summary": "Describes friction logs, reviews of 15 essential journeys, and a mix of customer, operational, and qualitative quality measures."
+        },
+        {
+          "title": "How Stripe Built Their New Website",
+          "url": "https://www.ycombinator.com/library/Nz-how-stripe-built-their-new-website",
+          "date": "2026-04-22",
+          "author": "Katie Dill, interviewed by Aaron Epstein; Stripe team work",
+          "sourceType": "Original YC video interview; transcript retrieved from the linked YouTube video",
+          "confidence": "high for retrieved interview; not independently tested",
+          "summary": "Explains why a broader product portfolio required a clearer homepage story, and how overlays let visitors explore offerings without leaving the page.",
+          "relatedUrls": [
+            "https://www.youtube.com/watch?v=ypzNhwpmOD4"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "Assess the whole journey across product, email, discovery, and support.",
+          "alternative": "Optimize individual screens in isolation.",
+          "tradeoff": "Cross-surface review catches handoff failures but requires coordination beyond one team’s immediate ownership.",
+          "evidenceUrls": [
+            "https://stripe.com/gb/sessions/2024/craft-and-beauty-the-business-value-of-form-in-function"
+          ],
+          "status": "Documented Stripe practice; tradeoff analysis"
+        },
+        {
+          "decision": "Review the working experience and combine several quality signals instead of relying on a polished deck or single score.",
+          "alternative": "Let the presenter’s explanation and one metric stand in for user experience.",
+          "tradeoff": "Direct use removes some framing bias, while internal reviewers still need outside-user evidence.",
+          "evidenceUrls": [
+            "https://creatoreconomy.so/p/how-stripe-crafts-quality-products-katie-dill"
+          ],
+          "status": "Documented practices; caveat follows interview’s limits"
+        },
+        {
+          "decision": "Use progressive disclosure through homepage overlays rather than immediately sending every visitor to a product page.",
+          "alternative": "Expand the homepage indefinitely or route users away at their first exploratory click.",
+          "tradeoff": "Preserves browsing context but adds modal complexity and creates additional accessibility/navigation obligations.",
+          "evidenceUrls": [
+            "https://www.ycombinator.com/library/Nz-how-stripe-built-their-new-website",
+            "https://www.youtube.com/watch?v=ypzNhwpmOD4"
+          ],
+          "status": "Documented team choice explained by Dill; tradeoff analysis"
+        },
+        {
+          "decision": "Delay a self-directed homepage launch to improve a prominent animation sequence.",
+          "alternative": "Ship the rough sequence, simplify it, or remove it.",
+          "tradeoff": "Brand expression received extra time because the team judged the delay tolerable; this is not a rule to postpone user-critical releases.",
+          "evidenceUrls": [
+            "https://www.youtube.com/watch?v=ypzNhwpmOD4"
+          ],
+          "status": "Documented contextual decision, not general delivery advice"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "technique": "Connect an abstract quality claim to layers of a familiar physical object.",
+          "evidence": "The Sessions talk uses a house to connect underlying structure with visible finish. The metaphor teaches dependency rather than just decoration.",
+          "sourceUrl": "https://stripe.com/gb/sessions/2024/craft-and-beauty-the-business-value-of-form-in-function"
+        },
+        {
+          "technique": "Translate a value into repeatable operating behavior.",
+          "evidence": "The written interview moves from quality as an ideal to recurring journey reviews and complementary evidence. Interview structure also reflects Peter Yang’s editing.",
+          "sourceUrl": "https://creatoreconomy.so/p/how-stripe-crafts-quality-products-katie-dill"
+        },
+        {
+          "technique": "Explain the business change before showing the redesign.",
+          "evidence": "The YC discussion grounds the homepage decisions in a broader product offering, then walks through the resulting interface. This is spoken explanation of team work.",
+          "sourceUrl": "https://www.youtube.com/watch?v=ypzNhwpmOD4"
+        }
+      ],
+      "exercise": {
+        "task": "Walk one customer journey from discovery through completion and recovery without a presenter’s explanation. Include at least one surface owned by another team. Redesign the highest-impact handoff and compare two disclosure patterns.",
+        "deliverable": "A friction log, a journey map, one prototype, and a small quality scorecard combining task success, user sentiment, and observed defects.",
+        "evaluation": [
+          "Can a new user understand the next step without coaching?",
+          "Which issue crosses an ownership boundary?",
+          "Does the redesign improve a measured outcome rather than only a review impression?",
+          "State the opportunity cost and reason for any extra polish time."
+        ]
+      },
+      "limitations": [
+        "Business lift figures are company-reported and combine multiple changes; they do not establish that aesthetics alone caused improvement.",
+        "Interviews and talks are not sole-authored essays, and Stripe’s product/site work belongs to a team.",
+        "No live homepage usability, performance, or accessibility test was conducted.",
+        "The video’s publication date is corroborated by its episode metadata; the Sessions page identifies 2024 without an exact day."
+      ],
+      "coverage": "Three primary artifacts: an official talk transcript, an original written interview, and an original YC video with retrieved transcript. Analysis attributes only Dill’s explanations, not all panelists’ statements or sole credit for Stripe work."
+    }
+  ]
+}

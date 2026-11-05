@@ -1,0 +1,7 @@
+import {readFileSync} from 'node:fs';
+import assert from 'node:assert/strict';
+const data=JSON.parse(readFileSync(new URL('../dist/data/collection.json',import.meta.url),'utf8'));
+assert.ok(data.people.length>0,'Collection must contain studies');
+const ids=new Set();let works=0,decisions=0;
+for(const p of data.people){assert.ok(p.id&&!ids.has(p.id),'Unique person IDs');ids.add(p.id);for(const key of ['name','discipline','subtitle','focus','summary','coverage'])assert.equal(typeof p[key],'string',`${p.id}.${key}`);assert.ok(['design','product','growth'].includes(p.discipline));assert.ok(p.artifacts.length>0,`${p.id}: missing sources`);assert.ok(p.decisions.length>0,`${p.id}: missing decisions`);assert.ok(p.techniques.length>0,`${p.id}: missing techniques`);assert.ok(p.exercise.task&&p.exercise.deliverable&&p.exercise.evaluation,`${p.id}: incomplete exercise`);assert.ok(p.limitations.length>0,`${p.id}: missing limits`);for(const a of p.artifacts){assert.ok(a.title&&a.summary);assert.ok(new URL(a.url).protocol==='https:');works++;}for(const d of p.decisions){assert.ok(d.title&&d.detail&&d.tradeoff,`${p.id}: incomplete decision`);assert.ok(d.evidenceUrls.length,`${p.id}: unsourced decision`);for(const url of d.evidenceUrls)assert.ok(new URL(url).protocol==='https:');decisions++;}}
+console.log(`Validated ${ids.size} people, ${works} source entries, ${decisions} evidenced decisions.`);

@@ -1,0 +1,20 @@
+name: Verify app and research
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm test
+      - run: npm run check
+      - name: Confirm generated collection matches research
+        run: |
+          node scripts/build-collection.mjs
+          git diff --exit-code -- dist/data/collection.json

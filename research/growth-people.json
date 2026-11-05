@@ -1,0 +1,1854 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Growth: decisions, craft and evidence",
+  "reviewedAt": "2026-11-05",
+  "rosterUrl": "https://cosign.co/awards/growth",
+  "methodology": {
+    "scope": "Eight substantive profiles, one discovery profile, and an explicit ledger for the 50 names visible on the growth roster. This is a curated subset, not exhaustive research on every nominee.",
+    "selection": "Prioritized accessible primary work, specificity of decisions, diversity of growth mechanisms and usefulness for product practice. This is not a ranking of professional merit.",
+    "sourcePolicy": "Original author essays and first-person interviews are preferred. Transcript mirrors and publisher recaps are labeled. No full copyrighted source is reproduced.",
+    "claimPolicy": "Reported outcomes are attributed to speakers; no causal claim is inferred solely from a before-and-after anecdote. Recommendations and exercises are original analysis.",
+    "historicalContext": "Dates matter. Article-time roles, metrics, platform behavior and organizational arrangements are not assumed to remain current.",
+    "privacy": "Only public-source subject matter is included. Exercises use generic or hypothetical products; no private user, employer or project context is present."
+  },
+  "people": [
+    {
+      "id": "gaurav-vohra",
+      "name": "Gaurav Vohra",
+      "category": "growth",
+      "lens": "Onboarding, activation and customer understanding",
+      "whyStudy": "A detailed account of choices inside a growth system, including cases where a popular tactic underperformed and where one metric missed another source of value.",
+      "coverage": {
+        "status": "substantive",
+        "artifactCount": 4,
+        "note": "Three complete article texts reviewed; substantial onboarding sections reviewed. Embedded images were not independently inspected."
+      },
+      "artifacts": [
+        {
+          "id": "gv-onboarding",
+          "title": "Obsessing Over Onboarding for 10+ Years",
+          "url": "https://substack.gauravvohra.com/p/obsessing-over-onboarding-for-10",
+          "publishedAt": "2025-04-23",
+          "kind": "author essay",
+          "coverage": "Substantial selected sections: human-led rationale, transition matrix, opinionated and interruptive onboarding.",
+          "summary": "Superhuman used human onboarding to learn, then encoded selected lessons into self-serve experiences.",
+          "writingTechniques": [
+            "Moves from operating history to a decision matrix and concrete before-and-after cases.",
+            "Uses familiar service and video-game analogies to make interaction design legible."
+          ],
+          "evidenceLocator": "Sections: Five reasons to practice human-led onboarding; transition matrix; Opinionated; Interruptive.",
+          "caveats": [
+            "Reported results are historical internal observations, not independently audited universal effects."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        },
+        {
+          "id": "gv-waitlist",
+          "title": "The Waitlist Delusion",
+          "url": "https://substack.gauravvohra.com/p/the-waitlist-delusion",
+          "publishedAt": "2025-06-24",
+          "kind": "author essay",
+          "coverage": "Complete article text reviewed.",
+          "summary": "A waitlist can manage capacity, but its apparent brand success can conceal lost conversion.",
+          "writingTechniques": [
+            "Starts with a contrarian claim, then distinguishes legitimate constraints from tempting rationalizations.",
+            "Includes his own company as a counterexample to its reputation."
+          ],
+          "evidenceLocator": "Sections: Supply Constraints; Waitlist Costs; Superhuman highlights and lowlights.",
+          "caveats": [],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        },
+        {
+          "id": "gv-aha",
+          "title": "The Aha Moment",
+          "url": "https://substack.gauravvohra.com/p/the-aha-moment",
+          "publishedAt": "2026-02-17",
+          "kind": "author essay",
+          "coverage": "Complete article text reviewed.",
+          "summary": "A threshold is an operational proxy, not the entire customer journey or growth system.",
+          "writingTechniques": [
+            "Uses a canal-lock analogy to expose downstream bottlenecks.",
+            "Replaces a famous numerical slogan with a continuous behavioral objective."
+          ],
+          "evidenceLocator": "Sections: Lines in the sand; One brain, one journey; One-trick pony.",
+          "caveats": [
+            "Contains sponsorship. Thresholds and reported invitation contribution belong to Superhuman’s context."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        },
+        {
+          "id": "gv-taste",
+          "title": "Taste → Resonance",
+          "url": "https://substack.gauravvohra.com/p/taste-resonance",
+          "publishedAt": "2025-03-05",
+          "kind": "author essay",
+          "coverage": "Complete article text reviewed.",
+          "summary": "Growth craft can be practiced through observation, making things and seeking feedback about resonance.",
+          "writingTechniques": [
+            "Defines a contrast between reach and resonance before proposing exercises.",
+            "Builds the argument with examples across design, writing and product."
+          ],
+          "evidenceLocator": "Sections: Resonance; Practical Foundations.",
+          "caveats": [
+            "A practice framework, not a measured intervention proving that taste causes growth."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "gv-d1",
+          "title": "Teach the outcome rather than navigation",
+          "sourceIds": [
+            "gv-onboarding"
+          ],
+          "context": "Early self-serve onboarding emphasized keyboard navigation.",
+          "choice": "Prioritize actions that help users reach Inbox Zero.",
+          "tradeoff": "Less comprehensive interface instruction; stronger immediate connection to the desired result.",
+          "reportedOutcome": "Vohra reports activation rose from 40% to 50%, a 10-percentage-point or 25% relative increase.",
+          "evidenceLimit": "No experiment protocol or uncertainty interval is supplied.",
+          "transferQuestion": "Which first-session instruction teaches mechanics without helping a user complete their real job?"
+        },
+        {
+          "id": "gv-d2",
+          "title": "Remove a successful-looking waitlist",
+          "sourceIds": [
+            "gv-waitlist"
+          ],
+          "context": "Superhuman’s waitlist outlasted its supply constraints.",
+          "choice": "Allow ready customers through instead of maintaining scarcity as a brand device.",
+          "tradeoff": "Lose exclusivity rituals while recovering high-intent demand.",
+          "reportedOutcome": "He reports roughly 3% seven-day paid conversion from a six-month-old waitlist cohort versus 10% from the live funnel.",
+          "evidenceLimit": "An observational comparison described by the operator, not a randomized causal estimate.",
+          "transferQuestion": "What actual constraint justifies waiting, and what condition would retire the queue?"
+        },
+        {
+          "id": "gv-d3",
+          "title": "Choose a usable activation proxy",
+          "sourceIds": [
+            "gv-aha"
+          ],
+          "context": "The team needed a measurable indicator of first value.",
+          "choice": "Use emails cleared and a practical time threshold, informed by retention analysis.",
+          "tradeoff": "A tractable KPI simplifies a continuous behavior and can encourage local optimization.",
+          "reportedOutcome": "He describes choosing 50 emails cleared within seven days; no causal uplift is claimed for choosing this threshold.",
+          "evidenceLimit": "Predictiveness does not prove that forcing the action creates retention.",
+          "transferQuestion": "Can you describe the underlying value without mentioning the threshold?"
+        },
+        {
+          "id": "gv-d4",
+          "title": "Evaluate invitation flow separately",
+          "sourceIds": [
+            "gv-aha"
+          ],
+          "context": "A team-invite step was challenged because it would not improve activation.",
+          "choice": "Retain it for team expansion rather than claim activation benefits.",
+          "tradeoff": "An extra step can serve another goal but must justify its friction.",
+          "reportedOutcome": "Vohra says it drove 40% of all team invites without improving activation.",
+          "evidenceLimit": "Invitation share is not proof of incremental revenue or durable teamwork.",
+          "transferQuestion": "Which apparently neutral experiment may affect a different valuable outcome?"
+        },
+        {
+          "id": "gv-d5",
+          "title": "Practice making, not only collecting examples",
+          "sourceIds": [
+            "gv-taste"
+          ],
+          "context": "Frameworks and production tools are widely available.",
+          "choice": "Have growth practitioners write copy and scaffold flows themselves, then ask for specific feedback.",
+          "tradeoff": "Requires deliberate practice rather than merely delegating all craft.",
+          "reportedOutcome": "No quantified outcome supplied.",
+          "evidenceLimit": "Resonance judgments can be subjective and audience-dependent.",
+          "transferQuestion": "What can you make this week that exposes a gap between your taste and your execution?"
+        }
+      ],
+      "synthesis": "Separate the learning process, the user outcome, the operating metric and the business result. They influence one another but are not interchangeable.",
+      "exercises": [
+        {
+          "id": "gv-e1",
+          "title": "Map the first-value journey",
+          "prompt": "Observe a consenting tester attempting one real task. Record setup, first useful result and the next natural return trigger. Avoid prompting until they get stuck.",
+          "deliverable": "A journey map with three friction observations and one proposed change.",
+          "rubric": [
+            "Defines a user outcome, not a screen view.",
+            "Preserves consent and necessary controls.",
+            "Explains what observation would disprove the proposed fix."
+          ]
+        },
+        {
+          "id": "gv-e2",
+          "title": "Write a waitlist exit rule",
+          "prompt": "For a hypothetical constrained launch, identify capacity, quality and service limits. Specify a measurable condition for removing each restriction.",
+          "deliverable": "A one-page access policy and expiry decision.",
+          "rubric": [
+            "Does not use hype as the only justification.",
+            "Separates interest from retained usage and payment.",
+            "Explains the cost of making high-intent users wait."
+          ]
+        },
+        {
+          "id": "gv-e3",
+          "title": "Test reach versus resonance",
+          "prompt": "Write two launch messages for the same product promise. Ask readers what they remember and what action they believe the product enables.",
+          "deliverable": "Two drafts and an evidence-based revision.",
+          "rubric": [
+            "No inflated claims.",
+            "Compares comprehension and memory, not only reactions."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "casey-winters",
+      "name": "Casey Winters",
+      "category": "growth",
+      "lens": "Retention, feature value and expansion strategy",
+      "whyStudy": "Connects product choices to whole-product outcomes instead of celebrating isolated feature usage.",
+      "coverage": {
+        "status": "substantive",
+        "artifactCount": 3,
+        "note": "Article text reviewed. Charts and embedded tables were not independently interpreted."
+      },
+      "artifacts": [
+        {
+          "id": "cw-pmf",
+          "title": "Casey’s Guide to Finding Product/Market Fit",
+          "url": "https://www.caseyaccidental.com/p/caseys-guide-to-finding-product-market-fit",
+          "publishedAt": "2021-04-13",
+          "kind": "author essay",
+          "coverage": "Complete substantive article text reviewed.",
+          "summary": "A diagnostic connects recurring value, retention and sustainable acquisition.",
+          "writingTechniques": [
+            "Defines terms before offering metrics.",
+            "Contrasts two development philosophies, then examines their failure modes."
+          ],
+          "evidenceLocator": "Sections: Quantitative Approach; Paths to Product/Market Fit; So Which Should You Use?",
+          "caveats": [
+            "A practitioner’s definition of PMF, not a universally agreed standard."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        },
+        {
+          "id": "cw-feature",
+          "title": "Feature/Product Fit",
+          "url": "https://www.caseyaccidental.com/p/feature-product-fit",
+          "publishedAt": "2018-04-18",
+          "kind": "author essay",
+          "coverage": "Complete article text reviewed.",
+          "summary": "Feature adoption is insufficient unless it contributes to the larger product.",
+          "writingTechniques": [
+            "Turns a concept into a checklist, then provides removals and additions as cases.",
+            "Names mistakes before describing interventions."
+          ],
+          "evidenceLocator": "Sections: Feature/Product Fit Checklist; deleted Pinterest features; Grubhub and Related Pins cases.",
+          "caveats": [],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        },
+        {
+          "id": "cw-second",
+          "title": "When and How to Build Second Products",
+          "url": "https://www.caseyaccidental.com/p/second-products",
+          "publishedAt": "2023-12-11",
+          "kind": "author essay",
+          "coverage": "Substantive article text reviewed; embedded tables not inspected.",
+          "summary": "Expansion timing should reflect market constraints and its potential effect on the existing business.",
+          "writingTechniques": [
+            "Starts with changing market conditions, separates expansion types and ends with evaluation criteria.",
+            "Uses company comparisons to challenge a single business-model heuristic."
+          ],
+          "evidenceLocator": "Sections: New Product Value and S-Curve Sequencing; When To Invest; How to Know If New Products Are Successful.",
+          "caveats": [
+            "Company comparisons are interpretive, not controlled evidence."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "cw-d1",
+          "title": "Measure retained value at a natural cadence",
+          "sourceIds": [
+            "cw-pmf"
+          ],
+          "context": "Product use frequency differs by job.",
+          "choice": "Measure cohorts on a value-producing action and appropriate interval rather than a generic login count.",
+          "tradeoff": "Requires a defensible action definition and enough time to observe repeat behavior.",
+          "reportedOutcome": "He cites saving content for Pinterest and ordering food for Grubhub as different operationalizations.",
+          "evidenceLimit": "Retention alone does not establish acquisition economics or willingness to pay.",
+          "transferQuestion": "Would the chosen cadence misclassify a satisfied but infrequent user?"
+        },
+        {
+          "id": "cw-d2",
+          "title": "Delete confusing features",
+          "sourceIds": [
+            "cw-feature"
+          ],
+          "context": "Pinterest features added complexity without sufficient product value.",
+          "choice": "Remove Likes, Place Pins and certain attribution elements rather than force adoption.",
+          "tradeoff": "Sacrifice some existing usage and development investment to simplify the core experience.",
+          "reportedOutcome": "Winters describes this as valuable work; no numeric deletion uplift is disclosed.",
+          "evidenceLimit": "This is his team account, not evidence that low usage alone warrants deletion.",
+          "transferQuestion": "What would you lose by removing a feature, and what evidence shows it helps the whole product?"
+        },
+        {
+          "id": "cw-d3",
+          "title": "Add decision-relevant information despite visual density",
+          "sourceIds": [
+            "cw-feature"
+          ],
+          "context": "Grubhub users struggled to choose restaurants on mobile without opening multiple tabs.",
+          "choice": "Add cuisine, delivery estimates, minimums and ratings to results.",
+          "tradeoff": "A denser screen can reduce task uncertainty.",
+          "reportedOutcome": "He reports improved conversion and retention, without effect sizes.",
+          "evidenceLimit": "The data and study protocol are not published.",
+          "transferQuestion": "Which apparent clutter actually eliminates expensive uncertainty in the task?"
+        },
+        {
+          "id": "cw-d4",
+          "title": "Disable convenience until it is reliable",
+          "sourceIds": [
+            "cw-feature"
+          ],
+          "context": "Users using current location converted worse than those typing an address.",
+          "choice": "Turn the component off while correcting accuracy.",
+          "tradeoff": "Remove a shortcut rather than accept unreliable task completion.",
+          "reportedOutcome": "The essay identifies an accuracy issue; no isolated post-fix result is given.",
+          "evidenceLimit": "Segment differences alone do not establish causality; research supplied the explanation.",
+          "transferQuestion": "When should reliability outweigh one fewer step?"
+        },
+        {
+          "id": "cw-d5",
+          "title": "Invest in new value when existing growth mechanisms saturate",
+          "sourceIds": [
+            "cw-second"
+          ],
+          "context": "At Eventbrite, adding more acquisition mechanisms made the model increasingly complex.",
+          "choice": "Model the limits of existing growth and examine genuinely new value propositions.",
+          "tradeoff": "Expansion diverts resources and can take years to mature.",
+          "reportedOutcome": "He describes realizing new products were necessary; does not present this diagnosis as proof of a successful specific launch.",
+          "evidenceLimit": "A second product’s independent traction may still be too small to matter at company scale.",
+          "transferQuestion": "How large must a new product become to change the parent business’s trajectory?"
+        }
+      ],
+      "synthesis": "A useful product leader can explain why a feature should exist, who it is for, how they will find it and which overall outcome it improves.",
+      "exercises": [
+        {
+          "id": "cw-e1",
+          "title": "Audit one feature for fit",
+          "prompt": "Choose an existing feature. Specify its retained users, adoption route, effect on the core job and a plausible harm to the wider product.",
+          "deliverable": "A keep, revise or retire recommendation with missing evidence called out.",
+          "rubric": [
+            "Does not equate usage with value.",
+            "Names the affected segment.",
+            "Includes an appropriate guardrail."
+          ]
+        },
+        {
+          "id": "cw-e2",
+          "title": "Build an expansion threshold",
+          "prompt": "For a hypothetical mature product, estimate current growth limits and the minimum impact a proposed adjacent product must achieve.",
+          "deliverable": "A sensitivity model with three explicit assumptions.",
+          "rubric": [
+            "Separates users, revenue and contribution margin.",
+            "Shows what happens if the new product only shifts existing usage."
+          ]
+        },
+        {
+          "id": "cw-e3",
+          "title": "Rewrite a feature announcement",
+          "prompt": "Replace a feature-led announcement with a short description of the user problem, demonstrated benefit and relevant audience.",
+          "deliverable": "A 120-word draft and one sentence explaining when not to send it.",
+          "rubric": [
+            "Targets a real user segment.",
+            "Does not imply an unmeasured outcome."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luke-harries",
+      "name": "Luke Harries",
+      "category": "growth",
+      "lens": "Launch systems, useful acquisition surfaces and hiring",
+      "whyStudy": "Offers concrete operating artifacts that connect product, copy, design, distribution and measurement.",
+      "coverage": {
+        "status": "substantive",
+        "artifactCount": 3,
+        "note": "All three article texts reviewed; linked launch videos and checklist images not independently inspected."
+      },
+      "artifacts": [
+        {
+          "id": "lh-launch",
+          "title": "Launch and launch again",
+          "url": "https://harries.co/launch-your-product",
+          "publishedAt": "2025-03-15",
+          "kind": "author guide",
+          "coverage": "Complete article text reviewed.",
+          "summary": "A launch is a coordinated product-value explanation, distribution effort and learning cycle.",
+          "writingTechniques": [
+            "Uses tiered checklists and a concrete Scribe example rather than abstract launch advice.",
+            "Separates audience, claim, asset and channel."
+          ],
+          "evidenceLocator": "Sections: launch checklist; defining messaging; launch assets; Ship, measure, learn.",
+          "caveats": [],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        },
+        {
+          "id": "lh-hire",
+          "title": "Your first growth hire",
+          "url": "https://harries.co/first-growth-hire",
+          "publishedAt": "2025-04-19",
+          "kind": "author guide",
+          "coverage": "Complete article text reviewed.",
+          "summary": "Match hiring to uncertainty and execution bottlenecks before building a specialized organization.",
+          "writingTechniques": [
+            "Uses a comic dialogue to expose premature specialization.",
+            "Explains each desired skill through the work it enables."
+          ],
+          "evidenceLocator": "Sections: first growth hire; hiring process; channel specialists; agencies.",
+          "caveats": [],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        },
+        {
+          "id": "lh-seo",
+          "title": "SEO for startups: a guide for founders and engineers",
+          "url": "https://harries.co/seo-for-startups",
+          "publishedAt": "2024-11-24",
+          "kind": "author guide",
+          "coverage": "Complete article text reviewed.",
+          "summary": "Acquisition pages should solve search intent with useful content, data or tools.",
+          "writingTechniques": [
+            "Organizes the guide around intent, solution and distribution.",
+            "Ends with a recurring review checklist that turns strategy into operations."
+          ],
+          "evidenceLocator": "Sections: three pillars; programmatic pages; balancing SEO and conversion; weekly metric reviews.",
+          "caveats": [
+            "Search-platform specifics and tooling thresholds may date; not independently validated ranking factors."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "lh-d1",
+          "title": "Scale the launch to the change",
+          "sourceIds": [
+            "lh-launch"
+          ],
+          "context": "Small teams often reserve marketing for major releases.",
+          "choice": "Use different scopes for product launches, major features and smaller improvements.",
+          "tradeoff": "Repeated communication requires restraint and a meaningful customer promise.",
+          "reportedOutcome": "The guide provides a method, not controlled evidence of incremental launch lift.",
+          "evidenceLimit": "His cadence recommendation should not be treated as a universal release quota.",
+          "transferQuestion": "What launch treatment is proportionate to this change’s customer impact?"
+        },
+        {
+          "id": "lh-d2",
+          "title": "Define an outcome before creating assets",
+          "sourceIds": [
+            "lh-launch"
+          ],
+          "context": "Assets can drift into company narrative rather than user benefit.",
+          "choice": "Specify audience, core claims and an adoption goal first, then build the assets.",
+          "tradeoff": "Demands agreement with engineering on what the product can actually deliver.",
+          "reportedOutcome": "The Scribe example sets a goal of 500 production WAU in the first week; it is a goal, not a reported result.",
+          "evidenceLimit": "Do not publish the target as achieved performance.",
+          "transferQuestion": "What observable customer behavior would make this launch worthwhile?"
+        },
+        {
+          "id": "lh-d3",
+          "title": "Hire proof of execution before narrow expertise",
+          "sourceIds": [
+            "lh-hire"
+          ],
+          "context": "An early growth role spans positioning, copy, design and channel discovery.",
+          "choice": "Favor a capable generalist and assess work samples plus relevant practical tasks.",
+          "tradeoff": "Less depth in one channel in exchange for independent execution across uncertain needs.",
+          "reportedOutcome": "Harries cites successful former founders and PMs; no comparative hiring dataset is supplied.",
+          "evidenceLimit": "He explicitly allows channel or product context to change the first-hire profile.",
+          "transferQuestion": "What task would reveal the exact capability your current bottleneck requires?"
+        },
+        {
+          "id": "lh-d4",
+          "title": "Use a tool or data asset instead of scaled filler",
+          "sourceIds": [
+            "lh-seo"
+          ],
+          "context": "Large volumes of generated pages can fail to satisfy the searcher.",
+          "choice": "Choose useful page types and solve the query before optimizing conversion.",
+          "tradeoff": "Giving useful value without a gate may reduce immediate signup capture.",
+          "reportedOutcome": "The guide describes the approach and examples, not guaranteed ranking results.",
+          "evidenceLimit": "Organic traffic is not equivalent to qualified acquisition or profit.",
+          "transferQuestion": "Could the searcher complete their task on this page without becoming a lead?"
+        },
+        {
+          "id": "lh-d5",
+          "title": "Vet who actually performs agency work",
+          "sourceIds": [
+            "lh-hire"
+          ],
+          "context": "A capable agency principal may delegate through multiple contractor layers.",
+          "choice": "Inspect the individual execution capability and bring proven channels in-house when appropriate.",
+          "tradeoff": "Outsourcing buys speed but adds coordination and principal-agent risk.",
+          "reportedOutcome": "He recounts an agency managing a contractor who managed more contractors.",
+          "evidenceLimit": "A cautionary anecdote, not proof that all agencies underperform.",
+          "transferQuestion": "Who owns the work quality after the sales pitch ends?"
+        }
+      ],
+      "synthesis": "Treat growth surfaces as products: specify their user, promise, execution quality, distribution route and learning mechanism.",
+      "exercises": [
+        {
+          "id": "lh-e1",
+          "title": "Make a release brief",
+          "prompt": "Choose a hypothetical feature. Define its audience, one promise, proof, launch tier, two channels and a post-launch review.",
+          "deliverable": "A one-page launch brief plus a 30-second demo outline.",
+          "rubric": [
+            "The claim is demonstrable.",
+            "The outcome is not just impressions.",
+            "The effort matches the release size."
+          ]
+        },
+        {
+          "id": "lh-e2",
+          "title": "Design an intent-serving page",
+          "prompt": "Pick one real query relevant to a fictional product. Compare an article, tool and template as possible answers.",
+          "deliverable": "A page wireframe and a rationale for the chosen format.",
+          "rubric": [
+            "Completes a user job.",
+            "Separates qualified visits from raw traffic."
+          ]
+        },
+        {
+          "id": "lh-e3",
+          "title": "Create a fair work-sample rubric",
+          "prompt": "Translate an early growth role into three observable skills and a short, bounded assessment using a hypothetical product.",
+          "deliverable": "A task brief and scoring rubric.",
+          "rubric": [
+            "Tests job-relevant work.",
+            "Avoids unpaid production work for the hiring company.",
+            "Explains the tradeoff between generalist and specialist."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elena-verna",
+      "name": "Elena Verna",
+      "category": "growth",
+      "lens": "Team activation, growth organization and diagnosis",
+      "whyStudy": "Shows why individual usage, collaboration, commercial conversion and growth-team ownership need separate definitions.",
+      "coverage": {
+        "status": "substantive",
+        "artifactCount": 3,
+        "note": "Three complete article texts reviewed. Two additional paywalled previews appear only in the coverage ledger, not as completed readings."
+      },
+      "artifacts": [
+        {
+          "id": "ev-activation",
+          "title": "I bet you are doing product activation all wrong",
+          "url": "https://www.elenaverna.com/p/hey-b2b-i-bet-you-are-measuring-activation",
+          "publishedAt": "2023-10-05",
+          "kind": "author essay",
+          "coverage": "Complete article text reviewed.",
+          "summary": "Activation includes setup, realized value and repeated value; B2B often requires team-level progress.",
+          "writingTechniques": [
+            "Distinguishes neighboring concepts through explicit counterexamples.",
+            "Uses parallel company examples to explain setup, first value and habit."
+          ],
+          "evidenceLocator": "Sections: Activation; User activation is not account activation; B2B activation does not start over for every new user.",
+          "caveats": [
+            "Commercial collaboration with June; broad numeric headline is not established by a published study."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        },
+        {
+          "id": "ev-dropbox",
+          "title": "Growth at Dropbox",
+          "url": "https://www.elenaverna.com/p/growth-at-dropbox",
+          "publishedAt": "2024-05-10",
+          "kind": "author operating account",
+          "coverage": "Complete article text reviewed.",
+          "summary": "An inside account separates acquisition, activation, monetization and engagement responsibilities.",
+          "writingTechniques": [
+            "Uses reader questions to structure an operating-system explanation.",
+            "Corrects a well-known historical story with the present operating context."
+          ],
+          "evidenceLocator": "Sections: team structure; metrics; misconceptions about referrals; culture.",
+          "caveats": [
+            "A 2024 snapshot, not a current organizational chart."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        },
+        {
+          "id": "ev-cliches",
+          "title": "The growth playbook everyone keeps using",
+          "url": "https://www.elenaverna.com/p/the-growth-playbook-everyone-keeps",
+          "publishedAt": "2026-11-03",
+          "kind": "author commentary",
+          "coverage": "Complete substantive article text reviewed.",
+          "summary": "Familiar tactics become avoidance mechanisms when teams skip diagnosis of the actual constraint.",
+          "writingTechniques": [
+            "Satirical mini-dialogues expose hidden assumptions.",
+            "Self-inclusion makes the critique less dependent on blaming other teams."
+          ],
+          "evidenceLocator": "Sections: big launch; community; free-to-paid conversion; final synthesis.",
+          "caveats": [
+            "Examples and percentages are satire, not measured case-study results."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "ev-d1",
+          "title": "Activate teams, not a pile of isolated accounts",
+          "sourceIds": [
+            "ev-activation"
+          ],
+          "context": "SurveyMonkey had many individual accounts inside companies without successful enterprise expansion.",
+          "choice": "At Miro, emphasize collaboration and help new users find existing teams.",
+          "tradeoff": "Joining a team can add coordination and permission complexity.",
+          "reportedOutcome": "Verna contrasts stalled enterprise sales with collaborative demand; no causal effect size is disclosed.",
+          "evidenceLimit": "Individual popularity does not imply organizational willingness to buy.",
+          "transferQuestion": "Which participant handoffs create shared value rather than merely more seats?"
+        },
+        {
+          "id": "ev-d2",
+          "title": "Give invitees a different journey",
+          "sourceIds": [
+            "ev-activation"
+          ],
+          "context": "A creator, reviewer, operator and implementer may play different roles.",
+          "choice": "Route users to their contribution instead of restarting setup for each signup.",
+          "tradeoff": "More conditional onboarding and identity/permission handling.",
+          "reportedOutcome": "Presented as an operating recommendation with product examples.",
+          "evidenceLimit": "Joining by domain must still respect authorization and information boundaries.",
+          "transferQuestion": "What must an invited user do that the workspace creator never needs to do?"
+        },
+        {
+          "id": "ev-d3",
+          "title": "Revisit the remembered growth loop",
+          "sourceIds": [
+            "ev-dropbox"
+          ],
+          "context": "Dropbox is widely associated with storage-for-referrals.",
+          "choice": "Distinguish its personal referral history from B2B sharing and marketing mechanisms.",
+          "tradeoff": "A famous playbook is easier to retell than a segmented present-day model.",
+          "reportedOutcome": "Her account names file sharing and marketing as major current drivers in 2024.",
+          "evidenceLimit": "No relative channel contribution dataset is published.",
+          "transferQuestion": "Are you borrowing a tactic from the wrong customer segment or era?"
+        },
+        {
+          "id": "ev-d4",
+          "title": "Separate metric ownership without hiding system effects",
+          "sourceIds": [
+            "ev-dropbox"
+          ],
+          "context": "Growth work spans several linked outcomes.",
+          "choice": "Assign distinct responsibilities while connecting them through product, data and infrastructure teams.",
+          "tradeoff": "Local ownership can create blind spots unless cross-metric effects are reviewed.",
+          "reportedOutcome": "The article describes the organization rather than proving it is the optimal structure.",
+          "evidenceLimit": "Do not copy a large-company structure into a small team.",
+          "transferQuestion": "Who notices when conversion improves but qualified acquisition or retention deteriorates?"
+        },
+        {
+          "id": "ev-d5",
+          "title": "Diagnose before selecting the familiar tactic",
+          "sourceIds": [
+            "ev-cliches"
+          ],
+          "context": "Teams repeatedly propose launches, channels, pricing changes and communities.",
+          "choice": "Identify the underlying problem and select a fitting intervention.",
+          "tradeoff": "Harder conversations replace immediately assignable projects.",
+          "reportedOutcome": "This is a critique and decision heuristic, not an actual experiment result.",
+          "evidenceLimit": "A satire about misuse is not evidence that the named tactic never works.",
+          "transferQuestion": "What observation says this is the constraint rather than the most fashionable available task?"
+        }
+      ],
+      "synthesis": "Avoid universal growth commandments. Define the customer unit, natural value cycle and commercial mechanism before selecting a metric or tactic.",
+      "exercises": [
+        {
+          "id": "ev-e1",
+          "title": "Separate four types of progress",
+          "prompt": "For a fictional collaboration product, define setup, first shared value, repeated team value and payment as separate events.",
+          "deliverable": "An event map with distinct denominators.",
+          "rubric": [
+            "Does not count setup as realized value.",
+            "Distinguishes a person from an account.",
+            "Does not infer payment from activity."
+          ]
+        },
+        {
+          "id": "ev-e2",
+          "title": "Audit a proposed tactic",
+          "prompt": "Take a proposal such as a referral program or pricing change. State the diagnosed bottleneck, evidence, mechanism and adverse side effect.",
+          "deliverable": "A one-page decision memo with an explicit stop condition.",
+          "rubric": [
+            "No invented benchmark.",
+            "A leading indicator and a downstream guardrail."
+          ]
+        },
+        {
+          "id": "ev-e3",
+          "title": "Write a sharp but fair critique",
+          "prompt": "Write a short critique of a common tactic, then add the conditions under which that same tactic would be sensible.",
+          "deliverable": "A 200-word argument with one concrete example.",
+          "rubric": [
+            "Distinguishes example from evidence.",
+            "Does not ridicule users or coworkers."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nikita-bier",
+      "name": "Nikita Bier",
+      "category": "growth",
+      "lens": "Consumer demand, network cold starts and first value",
+      "whyStudy": "Provides unusually concrete product and test-design cases, alongside strong claims that reward careful skepticism.",
+      "coverage": {
+        "status": "substantive",
+        "artifactCount": 2,
+        "note": "Publisher page and selected substantial transcript sections reviewed, plus a complete author-thread mirror. Direct X retrieval was unavailable."
+      },
+      "artifacts": [
+        {
+          "id": "nb-lenny",
+          "title": "How to consistently go viral",
+          "url": "https://www.lennysnewsletter.com/p/how-to-consistently-go-viral-nikita-bier",
+          "publishedAt": "2024-08-25",
+          "kind": "first-person interview",
+          "coverage": "Publisher summary plus transcript-mirror sections approximately 13–35 and 75–95 minutes reviewed.",
+          "summary": "Cases cover TBH, test seeding, naming, Dupe and the difference between virality and durability.",
+          "writingTechniques": [
+            "Explains mechanisms through chronological failures and concrete interface choices.",
+            "Separates a test-seeding tactic from the subsequent growth mechanism."
+          ],
+          "evidenceLocator": "Transcript: TBH latent demand and authored polls; school seeding; Crush/Gas naming; Dupe URL interaction.",
+          "caveats": [
+            "Transcript mirror timestamps differ from publisher chapter times. Spoken outcomes are self-reported."
+          ],
+          "supportingUrl": "https://github.com/ChatPRD/lennys-podcast-transcripts/blob/main/episodes/nikita-bier/transcript.md",
+          "reviewedAt": "2026-11-05"
+        },
+        {
+          "id": "nb-thread",
+          "title": "Consumer social lessons after ten years",
+          "url": "https://threadreaderapp.com/scrolly/1481118406749220868",
+          "publishedAt": "2022-01-12",
+          "kind": "author text mirrored by third party",
+          "coverage": "Complete 25-post thread text reviewed in Thread Reader; original X page could not be retrieved.",
+          "summary": "A testing-first philosophy emphasizes narrow audiences, achievable value conditions and explicit uncertainty.",
+          "writingTechniques": [
+            "Uses compact assertions, contrasts and concrete examples.",
+            "Ends by warning that outlier products can invalidate his own rules."
+          ],
+          "evidenceLocator": "Thread sequence: reproducible testing, narrow audiences, inconclusive tests, final caveat.",
+          "caveats": [
+            "Several broad demographic and product claims are personal heuristics, not established universal facts.",
+            "Do not adopt unsafe examples, privacy-invasive tactics or coercive engagement patterns."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "nb-d1",
+          "title": "Constrain expression to support the intended experience",
+          "sourceIds": [
+            "nb-lenny"
+          ],
+          "context": "Teens sought social feedback through awkward and sometimes harmful anonymous messaging.",
+          "choice": "For TBH, use authored positive polls rather than unrestricted anonymous text.",
+          "tradeoff": "Reduce expressive freedom to constrain harmful interactions.",
+          "reportedOutcome": "Bier reports strong adoption and message volume; not independent proof of wellbeing outcomes.",
+          "evidenceLimit": "The lesson concerns a specific social product; safety claims need separate validation.",
+          "transferQuestion": "Could a carefully constrained interaction deliver the desired value with less misuse?"
+        },
+        {
+          "id": "nb-d2",
+          "title": "Make value immediate and demonstrable",
+          "sourceIds": [
+            "nb-lenny"
+          ],
+          "context": "Dupe contained several shopping features and a useful price-comparison function.",
+          "choice": "Focus on that function and make it accessible through a memorable URL interaction.",
+          "tradeoff": "Remove breadth and invest in a distinctive entry point.",
+          "reportedOutcome": "Bier reports viral videos and revenue growth, but supplies no audited figures.",
+          "evidenceLimit": "Do not treat his approximate three-second heuristic as a universal SLA.",
+          "transferQuestion": "What setup could move after the first safe, meaningful result?"
+        },
+        {
+          "id": "nb-d3",
+          "title": "Test a viable network condition",
+          "sourceIds": [
+            "nb-thread"
+          ],
+          "context": "A social product can fail because the necessary people never arrive together.",
+          "choice": "Use a narrow community test with the conditions required to experience value.",
+          "tradeoff": "A concentrated manual test is not a scalable acquisition channel.",
+          "reportedOutcome": "The thread offers a testing heuristic, not a controlled outcome.",
+          "evidenceLimit": "Its suggested number of community tests cannot establish a universal stopping rule.",
+          "transferQuestion": "What must be true for your test to distinguish lack of value from an absent network?"
+        },
+        {
+          "id": "nb-d4",
+          "title": "Optimize the experiment process",
+          "sourceIds": [
+            "nb-thread"
+          ],
+          "context": "Consumer ideas have uncertain appeal and teams can lose time in ambiguous launches.",
+          "choice": "Improve repeatable access to a relevant audience and define what counts as an informative result.",
+          "tradeoff": "Testing infrastructure competes with building another product concept.",
+          "reportedOutcome": "A practitioner recommendation rather than demonstrated comparative probability of success.",
+          "evidenceLimit": "The thread itself notes luck, timing and outliers.",
+          "transferQuestion": "Which confounder would let you explain away a disappointing result afterward?"
+        }
+      ],
+      "synthesis": "Borrow the precision of the experiment and the interface, not the certainty of the slogan. Fast acquisition, durable engagement and healthy social value need separate evidence.",
+      "exercises": [
+        {
+          "id": "nb-e1",
+          "title": "Find latent demand",
+          "prompt": "Observe a harmless existing workaround for a consumer task. Describe the desired value without proposing a product first.",
+          "deliverable": "Three observed behaviors, one problem statement and two alternative explanations.",
+          "rubric": [
+            "Observation is distinguished from inference.",
+            "No demographic stereotype is treated as a fact."
+          ]
+        },
+        {
+          "id": "nb-e2",
+          "title": "Design a credible small-community test",
+          "prompt": "Specify the minimum relevant participants, value condition, consent process and outcome for a hypothetical social feature.",
+          "deliverable": "A test protocol with confounders and guardrails.",
+          "rubric": [
+            "Tests real value, not compelled invitations.",
+            "Protects contact information.",
+            "Does not use popularity as a wellbeing metric."
+          ]
+        },
+        {
+          "id": "nb-e3",
+          "title": "Cut the path to first value",
+          "prompt": "Sketch the current and proposed path for a simple utility. Identify which steps are necessary for safety and which can move later.",
+          "deliverable": "Two flows and a rationale for every removed step.",
+          "rubric": [
+            "Retains necessary consent and authentication.",
+            "Defines value behaviorally."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lauryn-motamedi",
+      "name": "Lauryn Motamedi",
+      "aliases": [
+        "Lauryn Isford"
+      ],
+      "category": "growth",
+      "lens": "Onboarding, multiplayer transitions and product-led sales",
+      "whyStudy": "Explains when collaboration belongs in onboarding, when it belongs later and when it should remain optional.",
+      "coverage": {
+        "status": "substantive",
+        "artifactCount": 3,
+        "note": "One authored essay and one publisher AMA recap read, plus substantive sections of a first-person interview transcript. Historical titles are not presented as current roles."
+      },
+      "artifacts": [
+        {
+          "id": "lm-onboarding",
+          "title": "Mastering onboarding",
+          "url": "https://www.lennysnewsletter.com/p/mastering-onboarding-lauryn-isford",
+          "publishedAt": "2023-02-12",
+          "kind": "first-person interview",
+          "coverage": "Publisher page and transcript sections around 11–38 minutes reviewed.",
+          "summary": "Airtable combined guided setup, personalization and continuing education, with several metrics explaining progress.",
+          "writingTechniques": [
+            "Carefully credits the team and distinguishes the full program from its individual components.",
+            "Qualifies a tempting universal takeaway with product-complexity conditions."
+          ],
+          "evidenceLocator": "Transcript: guided wizard; learning-style segmentation; week-four multi-user activation; Build metric.",
+          "caveats": [
+            "Reported 20% lift refers to several changes over a period, not one isolated design."
+          ],
+          "supportingUrl": "https://github.com/ChatPRD/lennys-podcast-transcripts/blob/main/episodes/lauryn-isford/transcript.md",
+          "reviewedAt": "2026-11-05"
+        },
+        {
+          "id": "lm-multiplayer",
+          "title": "Crossing the Chasm from Single to Multiplayer",
+          "url": "https://www.fishmanafnewsletter.com/p/crossing-the-chasm-from-single-to-multiplayer",
+          "publishedAt": "2023-07-25",
+          "kind": "author guest essay",
+          "coverage": "Complete article text reviewed; screenshots not independently inspected.",
+          "summary": "A three-part typology changes how and when collaborative features should be introduced.",
+          "writingTechniques": [
+            "Classifies the product before prescribing tactics.",
+            "Pairs consumer and SaaS examples, and labels personal involvement in the Airtable case."
+          ],
+          "evidenceLocator": "Sections: Collaboration is Core; Multiplayer is Better; Multiplayer Optional.",
+          "caveats": [
+            "Some third-party figures and predictions are not measured results from her own work."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        },
+        {
+          "id": "lm-pls",
+          "title": "Product-Led Sales AMA: Lauryn Isford",
+          "url": "https://www.pocus.com/blog/product-led-sales-pls-ama-lauryn-isford-airtable",
+          "publishedAt": "2022-08-08",
+          "kind": "publisher recap of first-person AMA",
+          "coverage": "Complete publisher recap reviewed; not a verbatim transcript.",
+          "summary": "Airtable coordinated user success, team depth and sales readiness rather than treating self-serve and enterprise as unrelated funnels.",
+          "writingTechniques": [
+            "Uses progression and explicit ownership to clarify organizational interfaces.",
+            "The publisher’s prose must not be attributed as Lauryn’s writing style."
+          ],
+          "evidenceLocator": "Sections: lead prioritization; lead development; one funnel; people, tools, culture.",
+          "caveats": [
+            "Commercial publisher recap; relationship and results reflect the 2022 account."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "lm-d1",
+          "title": "Replace a generic tour with task scaffolding",
+          "sourceIds": [
+            "lm-onboarding"
+          ],
+          "context": "Airtable’s flexibility created high cognitive load for new builders.",
+          "choice": "Use questions that construct a relevant workflow visually, followed by continuing education.",
+          "tradeoff": "More guided structure can help novices but should not obstruct users who already know their task.",
+          "reportedOutcome": "She reports a combined 20% activation lift across the onboarding program.",
+          "evidenceLimit": "Not a 20-percentage-point claim and not attributable solely to the wizard.",
+          "transferQuestion": "Does the user need to learn the interface, or do they need help constructing their first useful object?"
+        },
+        {
+          "id": "lm-d2",
+          "title": "Segment on the barrier to learning",
+          "sourceIds": [
+            "lm-onboarding"
+          ],
+          "context": "Job-role labels did not fully explain onboarding needs.",
+          "choice": "Study database familiarity and building style, and add diagnostic metrics alongside the north star.",
+          "tradeoff": "More dimensions increase complexity but distinguish sophistication from teamwork.",
+          "reportedOutcome": "She describes better activation from learning-style segmentation; no isolated uplift given.",
+          "evidenceLimit": "Low activation percentages are not inherently desirable; predictive validity matters.",
+          "transferQuestion": "Which observed difference changes the assistance someone needs?"
+        },
+        {
+          "id": "lm-d3",
+          "title": "Preserve valuable single-player use",
+          "sourceIds": [
+            "lm-multiplayer"
+          ],
+          "context": "Some products are useful alone even when collaboration offers additional value.",
+          "choice": "Introduce relevant collaborative possibilities contextually rather than force the same invite step on everyone.",
+          "tradeoff": "Slower invitations can preserve trust and the original use case.",
+          "reportedOutcome": "The essay describes Notion exploration and reports more than 10% multiplayer activation lift for an Airtable flow.",
+          "evidenceLimit": "Do not transfer that uplift to another archetype or infer paid expansion.",
+          "transferQuestion": "Is collaboration required, beneficial or genuinely optional for this user’s job?"
+        },
+        {
+          "id": "lm-d4",
+          "title": "Unify the customer journey across commercial motions",
+          "sourceIds": [
+            "lm-pls"
+          ],
+          "context": "Self-serve users could become enterprise customers, creating attribution tension.",
+          "choice": "Treat broader and deeper usage as a shared progression; coordinate lead definitions and sales handoffs.",
+          "tradeoff": "May cannibalize a local team’s revenue category while helping the company.",
+          "reportedOutcome": "The recap describes analysis of incremental sales revenue, without publishing the calculation.",
+          "evidenceLimit": "Product activity is a signal, not automatic permission to contact users or proof of purchase intent.",
+          "transferQuestion": "What would make a sales conversation useful to the customer at this stage?"
+        }
+      ],
+      "synthesis": "Classify the job and the collaboration model before deciding how much onboarding, invitation or selling is appropriate.",
+      "exercises": [
+        {
+          "id": "lm-e1",
+          "title": "Classify a multiplayer feature",
+          "prompt": "Choose three products and classify a specific use case as collaboration-required, collaboration-beneficial or collaboration-optional.",
+          "deliverable": "Three classifications with counterexamples.",
+          "rubric": [
+            "Classifies use cases, not only brand names.",
+            "Protects legitimate private use."
+          ]
+        },
+        {
+          "id": "lm-e2",
+          "title": "Design an invitee journey",
+          "prompt": "Contrast a workflow creator, a reviewer and an invited contributor. Map each person’s first useful action.",
+          "deliverable": "Three small onboarding flows and a shared account-level outcome.",
+          "rubric": [
+            "Does not make invitees recreate the workspace.",
+            "Makes permissions explicit."
+          ]
+        },
+        {
+          "id": "lm-e3",
+          "title": "Decompose an activation metric",
+          "prompt": "Break a team-retention metric into observable components. Add one diagnostic and one guardrail.",
+          "deliverable": "A metric tree with definitions and denominators.",
+          "rubric": [
+            "Distinguishes correlation from causal intervention.",
+            "Does not optimize a low activation rate for its own sake."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sri-batchu",
+      "name": "Sri Batchu",
+      "category": "growth",
+      "lens": "Growth experimentation, economics and operating systems",
+      "whyStudy": "Adds financial and organizational rigor to a curriculum otherwise dominated by acquisition and onboarding.",
+      "coverage": {
+        "status": "substantive",
+        "artifactCount": 2,
+        "note": "One complete authored retrospective and selected interview-transcript sections reviewed."
+      },
+      "artifacts": [
+        {
+          "id": "sb-ramp",
+          "title": "Lessons from scaling Ramp",
+          "url": "https://www.lennysnewsletter.com/p/lessons-from-scaling-ramp-sri-batchu",
+          "publishedAt": "2023-06-25",
+          "kind": "first-person interview",
+          "coverage": "Publisher page plus transcript sections around 43–58 minutes reviewed.",
+          "summary": "Volume metrics need an efficiency counterpart; expensive strategic tests should produce useful learning.",
+          "writingTechniques": [
+            "Explains financial abstractions with a small numerical example.",
+            "Names tradeoffs when challenged instead of presenting a universal rule."
+          ],
+          "evidenceLocator": "Transcript: efficiency and volume; payback period; channel sequencing; failing conclusively.",
+          "caveats": [
+            "A 2023 interview. Illustrative figures are not Ramp’s actual unit economics."
+          ],
+          "supportingUrl": "https://github.com/ChatPRD/lennys-podcast-transcripts/blob/main/episodes/sri-batchu/transcript.md",
+          "reviewedAt": "2026-11-05"
+        },
+        {
+          "id": "sb-why",
+          "title": "Why Ramp Won",
+          "url": "https://operatorjournal.substack.com/p/why-ramp-won",
+          "publishedAt": "2026-01-26",
+          "kind": "author retrospective",
+          "coverage": "Complete article text reviewed.",
+          "summary": "An insider attributes Ramp’s progress to productized operations, risk discipline and broader customer reach.",
+          "writingTechniques": [
+            "Builds a numbered causal account from concrete organizational choices.",
+            "Ends by qualifying the provocative title: the competitive story is not finished."
+          ],
+          "evidenceLocator": "Sections: high scope and velocity; product solutions; measured risk; customer growth.",
+          "caveats": [
+            "Retrospective attribution and company comparisons are not controlled evidence; current valuation and revenue claims were not independently audited."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "sb-d1",
+          "title": "Pair volume with efficiency",
+          "sourceIds": [
+            "sb-ramp"
+          ],
+          "context": "Cheaper acquisition can attract less valuable customers.",
+          "choice": "Evaluate growth alongside contribution-margin payback rather than CAC alone.",
+          "tradeoff": "Requires assumptions about variable cost and revenue, but makes them more immediate than distant lifetime value.",
+          "reportedOutcome": "He explains the method; no comparative company uplift supplied.",
+          "evidenceLimit": "Payback still depends on cohort behavior, cash timing and assumptions.",
+          "transferQuestion": "Could the cheapest customer be the most expensive customer to serve?"
+        },
+        {
+          "id": "sb-d2",
+          "title": "Give an expensive strategy a credible test",
+          "sourceIds": [
+            "sb-ramp"
+          ],
+          "context": "Weak executions can cause teams to repeat the same unresolved idea for years.",
+          "choice": "For larger strategic tests, test a strong version before optimizing cost.",
+          "tradeoff": "A bundled treatment improves the chance of detecting the strategy but obscures component attribution.",
+          "reportedOutcome": "Batchu describes applying this to account-based marketing at Ramp.",
+          "evidenceLimit": "Even a strong null result may reflect execution or insufficient power; it cannot prove a tactic never works.",
+          "transferQuestion": "What specific question will this test settle, and which questions will it leave unresolved?"
+        },
+        {
+          "id": "sb-d3",
+          "title": "Turn repeated operational friction into product work",
+          "sourceIds": [
+            "sb-why"
+          ],
+          "context": "Customer support and growth operations can scale headcount faster than the business.",
+          "choice": "Build product solutions and reusable systems while using external tools for non-strategic work.",
+          "tradeoff": "Requires engineering investment and judgment about which work is truly strategic.",
+          "reportedOutcome": "Batchu says automated outbound became the largest share of pipeline at its peak; no underlying data published.",
+          "evidenceLimit": "Pipeline is not closed revenue; outreach compliance and user trust remain separate constraints.",
+          "transferQuestion": "Which repeated failure should become a product fix rather than another permanent manual process?"
+        },
+        {
+          "id": "sb-d4",
+          "title": "Preserve risk discipline while pursuing growth",
+          "sourceIds": [
+            "sb-why"
+          ],
+          "context": "More generous credit offers can win prospects while increasing loss exposure.",
+          "choice": "Maintain underwriting discipline even when competitors offered higher limits.",
+          "tradeoff": "Forgo some immediate acquisition to protect the economic model.",
+          "reportedOutcome": "The author attributes sustainable segment reach to this choice; no isolated causal estimate.",
+          "evidenceLimit": "This is a historical business account, not financial or underwriting advice.",
+          "transferQuestion": "Which hidden cost could make a growth win economically harmful?"
+        }
+      ],
+      "synthesis": "A growth result is incomplete without its resource cost, risk, learning quality and downstream value.",
+      "exercises": [
+        {
+          "id": "sb-e1",
+          "title": "Compare acquisition cohorts economically",
+          "prompt": "Use invented data for two channels with different CAC, service costs and retention. Compute contribution-margin payback and state assumptions.",
+          "deliverable": "A small spreadsheet and a decision memo.",
+          "rubric": [
+            "Labels synthetic data.",
+            "Does not use revenue as contribution margin.",
+            "Includes sensitivity to retention and cost."
+          ]
+        },
+        {
+          "id": "sb-e2",
+          "title": "Design an informative strategic test",
+          "prompt": "Take a hypothetical channel strategy. Specify the strongest feasible treatment, control, measurement window and what a null result would mean.",
+          "deliverable": "A test protocol and an ambiguity checklist.",
+          "rubric": [
+            "Does not claim certainty from low power.",
+            "Separates strategy validation from component optimization."
+          ]
+        },
+        {
+          "id": "sb-e3",
+          "title": "Audit an operational loop",
+          "prompt": "Identify a repeated support issue in a fictional workflow. Compare product correction, documentation and human assistance.",
+          "deliverable": "A decision matrix with expected cost and quality effects.",
+          "rubric": [
+            "Does not automate away necessary judgment.",
+            "Includes escalation and quality checks."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "greg-isenberg",
+      "name": "Greg Isenberg",
+      "category": "growth",
+      "lens": "Audience, community and demand discovery",
+      "whyStudy": "Provides primary examples of community-led discovery and persuasive writing, with useful opportunities to examine overclaiming and attribution.",
+      "coverage": {
+        "status": "substantive",
+        "artifactCount": 3,
+        "note": "Three complete article texts reviewed. Promotional claims are treated as author reports, not verified business performance."
+      },
+      "artifacts": [
+        {
+          "id": "gi-65",
+          "title": "The Best $65 I’ve Ever Spent",
+          "url": "https://latecheckout.substack.com/p/the-best-65-ive-ever-spent",
+          "publishedAt": "2023-04-20",
+          "kind": "author case narrative",
+          "coverage": "Complete article text reviewed.",
+          "summary": "A public interest test and an open-ended signup question informed a community and an AI-services offer.",
+          "writingTechniques": [
+            "Opens with a specific cost and surprising outcomes, then reconstructs the sequence.",
+            "Connects discovery questions to the eventual offer."
+          ],
+          "evidenceLocator": "Sections: idea; capturing emails; advertisement; agency.",
+          "caveats": [
+            "The $65 headline is not total economic cost: existing audience, labor and opportunity cost are omitted.",
+            "Projected run rate is not realized annual revenue."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        },
+        {
+          "id": "gi-community",
+          "title": "Audiences versus communities",
+          "url": "https://latecheckout.substack.com/p/audiences-versus-communities",
+          "publishedAt": "2023-01-19",
+          "kind": "author essay",
+          "coverage": "Complete article text reviewed.",
+          "summary": "Member-to-member participation differs from a following that depends on a publisher’s next post.",
+          "writingTechniques": [
+            "Uses a counterfactual question to make a fuzzy distinction observable.",
+            "A mnemonic turns several dimensions into an easy recall aid."
+          ],
+          "evidenceLocator": "Sections: audience test; TRIBE dimensions; takeaways.",
+          "caveats": [
+            "A heuristic framework, not validation that community necessarily produces revenue."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        },
+        {
+          "id": "gi-impression",
+          "title": "How I met my heroes",
+          "url": "https://latecheckout.substack.com/p/how-i-met-my-heroes",
+          "publishedAt": "2023-09-07",
+          "kind": "author personal case",
+          "coverage": "Complete article text reviewed.",
+          "summary": "Targeted public work can create valuable relationships that impression payouts do not measure.",
+          "writingTechniques": [
+            "Reframes a familiar term through a word-level contrast.",
+            "Uses a personal story before a short practical sequence."
+          ],
+          "evidenceLocator": "Sections: impression versus monetizing impressions; Attract; short messages.",
+          "caveats": [
+            "Personal anecdote and self-promotion; no counterfactual evidence for the causal effect of posting."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "gi-d1",
+          "title": "Ask what people need before choosing the offer",
+          "sourceIds": [
+            "gi-65"
+          ],
+          "context": "Interest in AI productivity was broad and initially underspecified.",
+          "choice": "Capture an open-ended motivation alongside signup and use recurring needs to shape a services offer.",
+          "tradeoff": "Qualitative demand can guide the offer but may overrepresent vocal respondents.",
+          "reportedOutcome": "He reports building an agency around requests for workflow implementation help.",
+          "evidenceLimit": "The account does not establish total costs, profits or representative demand.",
+          "transferQuestion": "What question would reveal a real task instead of a preference for your proposed solution?"
+        },
+        {
+          "id": "gi-d2",
+          "title": "Buy a contextually timely placement",
+          "sourceIds": [
+            "gi-65"
+          ],
+          "context": "A rapidly spreading public project offered an inexpensive ad slot.",
+          "choice": "Purchase the slot while its attention was growing.",
+          "tradeoff": "High upside from timing, with limited predictability or repeatability.",
+          "reportedOutcome": "He reports a $65 placement and 1.2 million impressions.",
+          "evidenceLimit": "Impressions are not incremental signups, customers or profit.",
+          "transferQuestion": "What evidence would distinguish a lucky placement from a repeatable channel?"
+        },
+        {
+          "id": "gi-d3",
+          "title": "Define community through participant behavior",
+          "sourceIds": [
+            "gi-community"
+          ],
+          "context": "Large follower counts can be mistaken for an interacting community.",
+          "choice": "Ask whether conversation continues without the brand constantly broadcasting.",
+          "tradeoff": "Building member relationships is different work from producing more content.",
+          "reportedOutcome": "Presented as a diagnostic; no controlled result claimed.",
+          "evidenceLimit": "Communities require moderation and maintenance and do not sustain themselves automatically.",
+          "transferQuestion": "Would members have a reason to interact if the product team stopped posting?"
+        },
+        {
+          "id": "gi-d4",
+          "title": "Prefer relevant impressions to maximum impressions",
+          "sourceIds": [
+            "gi-impression"
+          ],
+          "context": "Broad posting can optimize platform attention rather than meaningful professional connection.",
+          "choice": "Narrow the audience to people interested in the work and ideas he wants to pursue.",
+          "tradeoff": "Potentially fewer views, with better fit for relationships and opportunities.",
+          "reportedOutcome": "He describes a resulting personal connection, not a general conversion rate.",
+          "evidenceLimit": "Do not copy artificial urgency or intrusive outreach rules.",
+          "transferQuestion": "Who should remember your work, and what should they remember it for?"
+        }
+      ],
+      "synthesis": "Community is a candidate mechanism, not a guaranteed moat or revenue model. Evaluate who participates, why they return and whether the proposed offer solves their actual problem.",
+      "exercises": [
+        {
+          "id": "gi-e1",
+          "title": "Separate audience from community",
+          "prompt": "Choose a public, consent-respecting example. Identify broadcaster-to-member and member-to-member interactions.",
+          "deliverable": "A behavioral map and two unanswered questions.",
+          "rubric": [
+            "Does not infer trust from follower count.",
+            "Accounts for moderation and maintenance."
+          ]
+        },
+        {
+          "id": "gi-e2",
+          "title": "Write a demand-discovery question",
+          "prompt": "Draft a signup question that invites concrete recent behavior rather than agreement with a product pitch.",
+          "deliverable": "One question, three example response patterns and a coding rubric.",
+          "rubric": [
+            "Avoids leading wording.",
+            "Separates expressed interest from willingness to pay."
+          ]
+        },
+        {
+          "id": "gi-e3",
+          "title": "Audit a growth headline",
+          "prompt": "Take a hypothetical claim combining a small spend and a large outcome. List omitted inputs and the evidence needed for causal attribution.",
+          "deliverable": "A rewritten honest headline and evidence checklist.",
+          "rubric": [
+            "Includes labor and pre-existing distribution.",
+            "Distinguishes reach, conversion, revenue and profit."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kristin-fracchia",
+      "name": "Kristin Fracchia",
+      "category": "growth",
+      "lens": "Brand, creator distribution and AI-native marketing teams",
+      "whyStudy": "A promising counterpoint to pure funnel optimization, but current review depth is lower than the substantive profiles.",
+      "coverage": {
+        "status": "discovery",
+        "artifactCount": 2,
+        "note": "Only publisher descriptions and chapter lists reviewed. Full audio and video were not reviewed. No deep case conclusions should be inferred."
+      },
+      "artifacts": [
+        {
+          "id": "kf-ahrefs",
+          "title": "How to Build a $2.1B Brand with a Team of 10",
+          "url": "https://www.youtube.com/watch?v=1SZC96fQeC4",
+          "publishedAt": "2026-03-03",
+          "kind": "first-person interview",
+          "coverage": "Title verified on YouTube; detailed publisher show notes available through episode syndication. No full transcript available in the checked source.",
+          "summary": "The announced topics include coordinated launches, influencer attribution, creative distribution and production choices.",
+          "writingTechniques": [
+            "The publisher’s chapter framing pairs attention-grabbing claims with specific operational questions.",
+            "This is not evidence of Fracchia’s own prose style."
+          ],
+          "evidenceLocator": "Announced chapters: 05:28 launch cadence; 23:36 measurement; 28:54 attribution; 48:01 distribution.",
+          "caveats": [
+            "Do not attribute all Gamma company growth to one person.",
+            "Show-note claims are not an independent performance audit."
+          ],
+          "supportingUrl": "https://podscan.fm/podcasts/ahrefs-podcast/episodes/how-to-build-a-21b-brand-with-a-team-of-10-gammas-playbook",
+          "reviewedAt": "2026-11-05"
+        },
+        {
+          "id": "kf-brandformance",
+          "title": "How Gamma built one of AI’s fastest-growing marketing teams",
+          "url": "https://podcasts.apple.com/us/podcast/how-gamma-built-one-of-ais-fastest-growing-marketing-teams/id1746064786?i=1000777658528",
+          "publishedAt": "2026-07-21",
+          "kind": "first-person interview",
+          "coverage": "Publisher description reviewed; audio not reviewed.",
+          "summary": "The description previews a team of generalists, creator distribution and planning around a narrative rather than fixed annual plans.",
+          "writingTechniques": [
+            "Only the publisher’s summary was inspected; no claim about the guest’s writing technique."
+          ],
+          "evidenceLocator": "Publisher episode description, 48-minute episode.",
+          "caveats": [
+            "Numbers and methods require checking against the interview before detailed application."
+          ],
+          "supportingUrl": null,
+          "reviewedAt": "2026-11-05"
+        }
+      ],
+      "decisions": [],
+      "synthesis": "Research lead, not a completed operator case. Review the original interview before adopting detailed tactics or numerical claims.",
+      "exercises": [
+        {
+          "id": "kf-e1",
+          "title": "Investigate attribution limits",
+          "prompt": "Listen to the source’s measurement sections and separate direct observation, self-reported attribution and causal evidence.",
+          "deliverable": "A source-linked evidence note.",
+          "rubric": [
+            "Uses timestamps from the actual recording.",
+            "Does not turn show notes into verified claims."
+          ]
+        }
+      ]
+    }
+  ],
+  "coverageLedger": [
+    {
+      "name": "Christian Levan",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Nikita Bier",
+      "status": "substantive",
+      "personId": "nikita-bier",
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "David Pawlan",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Greg Isenberg",
+      "status": "substantive",
+      "personId": "greg-isenberg",
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Gaurav Vohra",
+      "status": "substantive",
+      "personId": "gaurav-vohra",
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Marty Imber",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Casey Winters",
+      "status": "substantive",
+      "personId": "casey-winters",
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Will Kenney",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Talha Alver",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Elena Verna",
+      "status": "substantive",
+      "personId": "elena-verna",
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "EJ White",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Leo Yu",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Ravish Agrawal",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Raman Malik",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Luc Levesque",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Kyle Norton",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Everett Berry",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Henrik Westerlund",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Brennan Lupyrypa",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Kieran Flanagan",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "George Bonaci",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Ajay Prakash",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Lukas Esch",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Obie Odom",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Emily Gavrilenko",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Tina Sang",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Sri Batchu",
+      "status": "substantive",
+      "personId": "sri-batchu",
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Riancy Li",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Quinn Donohue",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Milan Novotný",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Wayne Sutton",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Lauryn Motamedi",
+      "status": "substantive",
+      "personId": "lauryn-motamedi",
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Luke Harries",
+      "status": "substantive",
+      "personId": "luke-harries",
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Davide Grieco",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Aaron Lu",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Ramya Durvasula",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Madeline Lawrence",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Cole Jones",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Keyan Sarrafzadeh",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Austin Lau",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Yash Tekriwal",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Sadok Hasan",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Brendan James",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Kritii",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Kristin Fracchia",
+      "status": "discovery",
+      "personId": "kristin-fracchia",
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "bo lau",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Macy Mills",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Elsa Cai",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Devin Lewtan",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    },
+    {
+      "name": "Amee Bhavsar",
+      "status": "roster-only",
+      "personId": null,
+      "source": "https://cosign.co/awards/growth"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "activation-thresholds",
+      "title": "One activation percentage cannot be copied across products",
+      "personIds": [
+        "gaurav-vohra",
+        "elena-verna",
+        "lauryn-motamedi"
+      ],
+      "sourceIds": [
+        "gv-aha",
+        "ev-activation",
+        "lm-onboarding"
+      ],
+      "analysis": "Thresholds describe different actions, time windows and customer units. A high rate for easy setup and a low rate for durable teamwork cannot be compared as if they were the same metric. Validate prediction, denominators and downstream outcomes."
+    },
+    {
+      "id": "short-versus-guided",
+      "title": "Shorter onboarding versus more helpful onboarding",
+      "personIds": [
+        "nikita-bier",
+        "gaurav-vohra",
+        "lauryn-motamedi"
+      ],
+      "sourceIds": [
+        "nb-lenny",
+        "nb-thread",
+        "gv-onboarding",
+        "lm-onboarding"
+      ],
+      "analysis": "Bier’s immediate-value emphasis and Vohra’s or Motamedi’s guided experiences need not conflict. Remove delay that does not help the task; keep instruction that materially reduces later effort. Never remove consent, security or accessibility just to reduce taps."
+    },
+    {
+      "id": "launch-versus-fit",
+      "title": "Frequent launches do not replace feature value",
+      "personIds": [
+        "luke-harries",
+        "casey-winters",
+        "elena-verna"
+      ],
+      "sourceIds": [
+        "lh-launch",
+        "cw-feature",
+        "ev-cliches"
+      ],
+      "analysis": "Harries describes a distribution operating system; Winters asks whether a feature should be promoted at all; Verna warns against announcement activity hiding flat retention. Establish the relevant value, then size the launch and measure beyond the initial spike."
+    },
+    {
+      "id": "community-versus-channel",
+      "title": "Community cannot be switched on like an ad channel",
+      "personIds": [
+        "greg-isenberg",
+        "elena-verna"
+      ],
+      "sourceIds": [
+        "gi-community",
+        "ev-cliches"
+      ],
+      "analysis": "Isenberg supplies a member-behavior diagnostic; Verna critiques communities without a reason for members to interact. The useful joint question is what members do for each other and why that behavior persists. Revenue is a further hypothesis."
+    },
+    {
+      "id": "strategy-versus-components",
+      "title": "Test the strategy before optimizing its components",
+      "personIds": [
+        "sri-batchu",
+        "nikita-bier",
+        "luke-harries"
+      ],
+      "sourceIds": [
+        "sb-ramp",
+        "nb-thread",
+        "lh-hire"
+      ],
+      "analysis": "A well-executed version can reduce ambiguity about whether a strategy deserves more investment. It does not identify every causal component, and failure is not conclusive without adequate exposure, power and execution quality."
+    },
+    {
+      "id": "local-versus-system",
+      "title": "Local metric wins can harm the system",
+      "personIds": [
+        "casey-winters",
+        "gaurav-vohra",
+        "sri-batchu",
+        "elena-verna"
+      ],
+      "sourceIds": [
+        "cw-feature",
+        "gv-aha",
+        "sb-ramp",
+        "ev-cliches"
+      ],
+      "analysis": "Feature adoption, invitations, low CAC and free-to-paid conversion each describe only part of the system. Check retained value, total economic contribution and user trust before declaring success."
+    }
+  ],
+  "readingPaths": [
+    {
+      "id": "new-product",
+      "title": "A product approaching launch",
+      "sourceIds": [
+        "gv-onboarding",
+        "nb-lenny",
+        "cw-pmf",
+        "lh-launch"
+      ],
+      "output": "A first-value test and a proportionate release-learning brief."
+    },
+    {
+      "id": "collaboration",
+      "title": "A team or expert workflow",
+      "sourceIds": [
+        "lm-multiplayer",
+        "ev-activation",
+        "lm-onboarding",
+        "cw-feature"
+      ],
+      "output": "A role-aware onboarding map and a whole-workflow success metric."
+    },
+    {
+      "id": "growth-organization",
+      "title": "A growth function taking shape",
+      "sourceIds": [
+        "lh-hire",
+        "ev-dropbox",
+        "sb-ramp",
+        "lm-pls"
+      ],
+      "output": "A responsibility map, metric definitions and an economically grounded experiment brief."
+    },
+    {
+      "id": "writing-craft",
+      "title": "Writing and judgment practice",
+      "sourceIds": [
+        "gv-taste",
+        "gi-community",
+        "cw-feature",
+        "ev-cliches"
+      ],
+      "output": "A concise argument with definitions, evidence, caveats and a useful decision."
+    }
+  ],
+  "additionalSources": [
+    {
+      "id": "ev-squads-preview",
+      "title": "How to sequence your growth squads",
+      "url": "https://www.elenaverna.com/p/how-to-sequence-your-growth-squads",
+      "coverage": "Public preview only; later sections paywalled. Not counted as completed article.",
+      "note": "Its activation-first rhetoric should be read in context, not promoted to a universal rule."
+    },
+    {
+      "id": "ev-treadmill-preview",
+      "title": "The Product-Market Fit Treadmill",
+      "url": "https://www.elenaverna.com/p/the-product-market-fit-treadmill",
+      "coverage": "Public opening only; paywall prevents full review. Not counted as completed article."
+    },
+    {
+      "id": "gb-20vc-preview",
+      "title": "George Bonaci: Inside Ramp’s growth engine",
+      "url": "https://www.thetwentyminutevc.com/george-bonaci",
+      "coverage": "Publisher topic list only. No substantive interview review or decisions inferred."
+    }
+  ],
+  "limitations": [
+    "Eight profiles have multiple substantive artifacts, but evidence density varies. A two-source case is not equivalent to a complete career assessment.",
+    "No original experiment datasets, internal documents or private metrics were available.",
+    "Published operating accounts contain selection, survivorship and promotional bias.",
+    "Images, charts and videos were not visually reviewed unless stated; this dataset makes no visual-composition claims about them.",
+    "Do not compare company metrics across incompatible definitions, populations or dates.",
+    "Publicly described tactics still require current policy, privacy, platform and consent review before execution."
+  ]
+}

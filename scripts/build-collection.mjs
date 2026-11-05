@@ -1,0 +1,33 @@
+import {readFileSync,readdirSync,writeFileSync} from 'node:fs';
+import {dirname,resolve} from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
+const arr=x=>x==null?[]:Array.isArray(x)?x:[x];
+const text=x=>x==null?'':Array.isArray(x)?x.map(text).join(' '):typeof x==='object'?Object.entries(x).map(([k,v])=>`${k}: ${text(v)}`).join(' '):String(x);
+const records=[];
+const discovery=[];
+const comparisonRecords=[];
+for(const file of readdirSync(resolve(root,'research')).filter(f=>f.endsWith('.json'))){
+  const raw=JSON.parse(readFileSync(resolve(root,'research',file),'utf8'));
+  const discipline=file.split('-')[0];
+  comparisonRecords.push(...arr(raw.comparisons||raw.crossCaseApplications||raw.crossStudy));
+  for(const p of raw.people||raw.practitioners||[]){
+    if(p.coverage?.status==='discovery'){discovery.push({id:p.id,name:p.name,discipline:p.category||discipline,focus:p.lens||'',coverage:p.coverage.note,sources:p.artifacts.map(a=>({title:a.title,url:a.url}))});continue;}
+    const sourceRecords=arr(p.artifacts||p.sources);
+    const urlsById=Object.fromEntries(sourceRecords.map(a=>[a.id,a.url]));
+    const urls=value=>arr(value).map(x=>urlsById[x]||x).filter(x=>typeof x==='string'&&x.startsWith('https://'));
+    const artifacts=sourceRecords.map((a,i)=>({id:a.id||`${p.id}-source-${i+1}`,title:a.title||a.name,url:a.url,date:a.date||a.publishedAt||null,author:a.author||(a.kind==='author essay'?p.name:''),attribution:text(a.attribution||a.authorship||''),kind:a.sourceType||a.kind||a.type||'Public source',coverage:text(a.coverage||a.access||a.confidence||''),summary:text(a.summary||a.finding||a.readFor||'Read the original work for the full context.')}));
+    const decisions=arr(p.decisions||p.lessons).map(d=>({title:text(d.title||d.decision),detail:text(d.finding?[d.finding,d.evidence,d.outcome].filter(Boolean):[d.context,d.title?d.decision:'',d.choice,d.detail||d.rationale||d.status||d.attribution||d.ownership,d.reportedOutcome].filter(Boolean)),alternative:text(d.alternative),tradeoff:text(d.tradeoff||d.tradeoffs),evidenceUrls:urls(d.evidenceUrls||d.sourceUrls||d.sourceUrl||d.sourceIds||d.evidence||d.url),application:text(d.application||d.exercise||d.transferQuestion),limits:text(d.limits||d.evidenceLimit||'')}));
+    const techniques=arr(p.writingTechniques||p.communicationTechniques||p.techniques||sourceRecords.flatMap(a=>arr(a.writingTechniques).map(t=>({title:t.split(' ').slice(0,8).join(' ')+(t.split(' ').length>8?'…':''),detail:t,sourceUrl:a.url})))).map(t=>({title:text(t.technique||t.title||t.name),detail:text([t.evidence&&typeof t.evidence==='string'?t.evidence:t.observation||t.detail||t.demonstration||t.description,t.practice].filter(Boolean)),sourceUrl:urls(t.sourceUrl||t.sourceIds||t.evidence||t.url)[0]}));
+    const ex=p.exercise||p.capstone||arr(p.exercises)[0]||{};
+    const coverage=text(p.coverage?.note||p.coverage||`${artifacts.length} selected public sources. Access varies by work and is stated in each source entry. ${text(p.provenanceNotes||p.provenanceCaveats||'')}`);
+    const limits=[...arr(p.limitations),...sourceRecords.flatMap(a=>arr(a.caveats)),...arr(p.decisions).map(d=>d.evidenceLimit).filter(Boolean),...arr(p.provenanceNotes),...arr(p.provenanceCaveats),...arr(p.lessons).map(l=>l.limits).filter(Boolean),...arr(p.limitsAndCounterexamples).map(l=>l.point||l),...arr(p.counterexamples).map(c=>`${c.claimToTest} ${c.analysis}`)].map(text);
+    records.push({id:p.id,name:p.name,discipline:(p.discipline||p.category||discipline).toLowerCase(),subtitle:text(p.role||p.subtitle||`${discipline.charAt(0).toUpperCase()+discipline.slice(1)} practitioner · ${artifacts.length} public works`),focus:Array.isArray(p.focus)?p.focus.join(' · '):text(p.focus||p.lens||p.keyIdea||p.summary),summary:text(p.keyIdea||p.summary||p.synthesis||p.focus||p.whyStudy),coverage,artifacts,decisions,techniques,exercise:{title:text(ex.title),task:text(ex.task||ex.prompt||ex.steps),deliverable:text(ex.deliverable),evaluation:text(ex.evaluation||ex.reviewCriteria||ex.rubric)},exercises:arr(p.exercises).map(x=>({title:text(x.title),task:text(x.task||x.prompt||x.steps),deliverable:text(x.deliverable),evaluation:text(x.evaluation||x.reviewCriteria||x.rubric)})),limitations:limits.length?limits:['A bounded study of public sources, not a comprehensive career assessment.']});
+  }
+}
+const seen=new Set();const people=records.filter(p=>{if(seen.has(p.id))return false;seen.add(p.id);return true;});
+const paths=[{id:'interaction',title:'Make the choice visible.',question:'How do you turn a point of view into a product people can feel?',people:['rauno-freiberg','ryo-lu','emil-kowalski','josh-puckett'],output:'Compare two implementations of one interaction. Name what each makes easier and what each sacrifices.'},{id:'judgment',title:'Choose what matters.',question:'How do you decide what to build, what to leave out, and what evidence is enough?',people:['nan-yu','karri-saarinen','nikolas-klein','jiaona-zhang'],output:'Write a one-page decision memo with an alternative, a tradeoff, and a condition that would change your mind.'},{id:'growth',title:'Earn the next user.',question:'How do you connect a useful product to a repeatable way of reaching people?',people:['gaurav-vohra','casey-winters','elena-verna','luke-harries'],output:'Sketch one growth loop, its bottleneck, and a small experiment that could falsify your assumption.'}].map(p=>({...p,people:p.people.filter(id=>seen.has(id))}));
+const allSources=Object.fromEntries(people.flatMap(p=>p.artifacts.map(a=>[a.id,a.url])));
+const comparisons=comparisonRecords.map(c=>({title:c.title,analysis:text(c.analysis||c.lesson),sourceUrls:arr(c.sourceUrls||c.sourceIds||c.sources).map(x=>allSources[x]||x).filter(x=>x.startsWith('https://'))}));
+const data={version:1,updatedAt:'2026-11-05',repositoryUrl:'https://github.com/SZoloth/cosign-fieldnotes',provenance:'Independent editorial study of selected public works. Cosign listings are peer nominations, not rankings or awards won.',people,paths,discovery,comparisons};
+writeFileSync(resolve(root,'dist/data/collection.json'),JSON.stringify(data,null,2)+'\n');console.log(`Built ${people.length} studies from ${records.length} records.`);

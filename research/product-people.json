@@ -1,0 +1,1653 @@
+{
+  "schemaVersion": 1,
+  "cohort": "product",
+  "verifiedAt": "2026-11-05",
+  "selectionSource": "https://cosign.co/awards/product",
+  "methodology": {
+    "selection": "These people appeared on Cosign's open 2026 peer-nomination roster when checked. Inclusion is a discovery signal, not a validated ranking or endorsement.",
+    "evidence": "Authored essays, original interviews, product announcements and direct public answers are distinguished. A participant's retrospective is evidence of their account, not independent proof that a practice caused success.",
+    "interpretation": "Lessons, tradeoff analysis, communication analysis, counterexamples and exercises are original editorial interpretations unless explicitly attributed. Exercises are not instructions supplied or endorsed by the people studied.",
+    "rights": "Original short paraphrases with links. No full articles, images, transcripts or substantial quotations are reproduced.",
+    "roles": "Role labels describe the work studied rather than making unverified claims about present employment."
+  },
+  "people": [
+    {
+      "id": "nan-yu",
+      "name": "Nan Yu",
+      "role": "Product leader; work studied at Linear",
+      "category": "Product",
+      "focus": [
+        "Continuous discovery",
+        "Product operating systems",
+        "Quality",
+        "Team agents"
+      ],
+      "summary": "Study how an operating philosophy becomes both a team practice and a product capability: evidence becomes candidate projects, projects acquire explicit finish lines, and repetitive coordination becomes a shared agent workflow.",
+      "studyQuestions": [
+        "What information survives from a customer conversation into a roadmap decision?",
+        "How does a team know whether a project is finished?",
+        "When does personal automation need to become shared infrastructure?"
+      ],
+      "sources": [
+        {
+          "id": "nan-planning",
+          "title": "Continuous planning in Linear",
+          "url": "https://linear.app/now/continuous-planning-in-linear",
+          "date": "2025-10-30",
+          "kind": "authored essay",
+          "attribution": "Bylined Nan Yu; describes Linear's practice and product.",
+          "access": "Full relevant article text read.",
+          "summary": "A continuous evidence-gathering process organized around candidate projects."
+        },
+        {
+          "id": "nan-projects",
+          "title": "How we run projects at Linear",
+          "url": "https://linear.app/now/how-we-run-projects-at-linear",
+          "date": "2023-10-05",
+          "kind": "original team interview",
+          "attribution": "Nan Yu, Sabin Roman and Raissa Largman. Individual speakers are named; do not attribute every team practice to Nan alone.",
+          "access": "Full relevant interview text read.",
+          "summary": "Planning, project leadership, updates and release milestones in a small team."
+        },
+        {
+          "id": "nan-lenny",
+          "title": "Linear's secret to building beloved B2B products",
+          "url": "https://www.lennysnewsletter.com/p/linears-secret-to-building-beloved-b2b-products-nan-yu",
+          "date": "2025-01-30",
+          "kind": "original interview landing page",
+          "attribution": "Interview with Nan Yu; inspected Lenny Rachitsky's published takeaways and chapter index, not a complete audio review.",
+          "access": "Publisher's summary and chapter index read.",
+          "summary": "Expert workflow quality, constraint-breaking ideation and disciplined deadlines."
+        },
+        {
+          "id": "nan-loops",
+          "title": "Introducing Loops",
+          "url": "https://linear.app/now/introducing-loops",
+          "date": "2026-07-20",
+          "kind": "authored product announcement",
+          "attribution": "Bylined Nan Yu; announcement documents a team product, not sole personal invention.",
+          "access": "Full relevant announcement text read.",
+          "summary": "Recurring agent work with team-level visibility and control."
+        }
+      ],
+      "lessons": [
+        {
+          "id": "nan-candidate-projects",
+          "title": "Accumulate evidence before the planning meeting",
+          "kind": "operating decision",
+          "finding": "Move synthesis into everyday work rather than treating quarterly planning as a blank-page exercise.",
+          "evidence": "Yu describes gathering related requests and interview notes into candidate projects, while keeping severity-based bug triage separate. Candidates are later weighed against goals and commercial impact.",
+          "tradeoff": "Better preparation requires ongoing curation; request volume alone can privilege vocal customers.",
+          "outcome": "A documented operating practice, not a controlled comparison of roadmap quality.",
+          "limits": "Internal products need appropriate impact measures instead of copying revenue weighting.",
+          "exercise": "Create three candidate projects from ten feedback items. Record the underlying problem, contradictory evidence, missing knowledge and one reason not to prioritize each.",
+          "sourceIds": [
+            "nan-planning"
+          ],
+          "evidenceStrength": "direct authored account"
+        },
+        {
+          "id": "nan-finish-lines",
+          "title": "Define different kinds of done",
+          "kind": "operating decision",
+          "finding": "Separate discovery, limited release and general release rather than giving a project one ambiguous completion flag.",
+          "evidence": "Nan describes milestones as a way to define completion at successive stages. The team interview also distinguishes concise context-setting specs from exhaustive implementation instructions.",
+          "tradeoff": "A crisp boundary improves accountability but can hide unfinished adoption or operational work if milestones track only code.",
+          "outcome": "The source describes the process; it does not quantify its effect.",
+          "limits": "Engineering-led projects reflected a small, experienced team. Copy the clarity, not an assumed staffing ratio.",
+          "exercise": "Write separate exit criteria for an internal pilot and broad rollout. Include user success, support readiness and rollback, not only implementation.",
+          "sourceIds": [
+            "nan-projects"
+          ],
+          "evidenceStrength": "named first-person interview"
+        },
+        {
+          "id": "nan-expert-workflow",
+          "title": "Protect the person doing the work",
+          "kind": "product policy",
+          "finding": "Evaluate a requested capability by what it does to the core user's workflow, not only who requested it.",
+          "evidence": "The original interview's published takeaways describe resisting management-driven customization that worsens individual-contributor work. They also describe exploring extreme versions of a solution before converging.",
+          "tradeoff": "Opinionated defaults can produce coherence while excluding legitimate organizational requirements.",
+          "outcome": "Reported philosophy, not evidence that every customization request should be refused.",
+          "limits": "Use the full interview to investigate nuances beyond its editorial summary. Relevant chapters: 15:31, 44:46 and 51:38.",
+          "exercise": "Sketch the fastest and safest versions of a bulk-edit flow. Compare failure recovery and user effort before choosing a compromise.",
+          "sourceIds": [
+            "nan-lenny"
+          ],
+          "evidenceStrength": "original publisher summary; not full transcript review"
+        },
+        {
+          "id": "nan-shared-automation",
+          "title": "Turn private automation into an inspectable team system",
+          "kind": "shipped product choice",
+          "finding": "Shared recurring work needs shared instructions, execution history and ownership.",
+          "evidence": "The Loops announcement presents scheduled and event-triggered agents operating with workspace context. Teams can inspect configuration and runs, rather than depending on one employee's personal script.",
+          "tradeoff": "Central visibility improves continuity but expands the importance of access control and governance.",
+          "outcome": "A launch announcement verifies the intended design, not reliability or customer impact.",
+          "limits": "The post explicitly says governance controls will continue expanding. Do not read a launch as proof that governance is complete.",
+          "exercise": "Specify one recurring coordination task: trigger, input sources, permitted actions, owner, audit record and conditions requiring human review.",
+          "sourceIds": [
+            "nan-loops"
+          ],
+          "evidenceStrength": "primary product announcement"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "title": "Start with a recognizable failure of work",
+          "observation": "The planning essay opens with the disorientation of switching from execution to strategy, then gives a concrete alternative. It earns the process before naming it.",
+          "practice": "Describe the reader's existing frustrating moment before introducing your proposed framework.",
+          "sourceIds": [
+            "nan-planning"
+          ]
+        },
+        {
+          "title": "Explain the job before the mechanism",
+          "observation": "The Loops launch moves from specific recurring responsibilities to the shared agent concept, then configuration and examples.",
+          "practice": "Order a launch narrative as job, limitation, new ability, control and example.",
+          "sourceIds": [
+            "nan-loops"
+          ]
+        }
+      ],
+      "counterexamples": [
+        {
+          "claimToTest": "Fast shipping is always the opposite of polish.",
+          "analysis": "The interview argues that craft can enable speed, while the team-project account warns that frequent relearning can burden customers. Fast internal iteration and stable external behavior can coexist.",
+          "sourceIds": [
+            "nan-lenny",
+            "nan-projects"
+          ]
+        },
+        {
+          "claimToTest": "The loudest feature request should set priority.",
+          "analysis": "Continuous planning preserves evidence but still requires strategy. Frequency is an input, not a substitute for judgment.",
+          "sourceIds": [
+            "nan-planning"
+          ]
+        }
+      ],
+      "capstone": {
+        "title": "Build a decision-ready opportunity register",
+        "deliverable": "Three evidence-backed candidate projects and a one-page selection memo.",
+        "steps": [
+          "Gather anonymized observations, requests and failures.",
+          "Group by underlying job rather than requested UI.",
+          "Record dissenting evidence and what would change the decision.",
+          "Choose one project and specify pilot and rollout completion criteria."
+        ],
+        "evaluation": "A teammate can explain why one project wins, why another waits and what evidence could reverse the choice.",
+        "attribution": "Editorial exercise inspired by the sources, not an author-prescribed method."
+      },
+      "learningPath": [
+        "nan-planning",
+        "nan-projects",
+        "nan-lenny",
+        "nan-loops"
+      ],
+      "provenanceNotes": [
+        "Use historical affiliations when discussing these artifacts.",
+        "A team's published operating model is descriptive and promotional evidence, not causal proof."
+      ]
+    },
+    {
+      "id": "nikolas-klein",
+      "name": "Nikolas Klein",
+      "role": "Designer and product manager; work studied at Figma",
+      "category": "Product",
+      "focus": [
+        "Expert interaction design",
+        "Editable AI outputs",
+        "Prototyping",
+        "Collaboration"
+      ],
+      "summary": "Follow a repeated product concern across years: helping people explore ideas together without forcing them into brittle structure or disconnected tools. The strongest material is the concrete record of feature decisions.",
+      "studyQuestions": [
+        "When should a feature change a fundamental interaction instead of adding another mode?",
+        "What is lost when AI output becomes a screenshot?",
+        "How can generated code remain a collaborative material rather than a private chat result?"
+      ],
+      "sources": [
+        {
+          "id": "klein-multiedit",
+          "title": "Behind the feature: The multiple lives of multi-edit",
+          "url": "https://www.figma.com/blog/behind-the-feature-the-multiple-lives-of-multi-edit/",
+          "date": "2024-03-06",
+          "kind": "coauthored product retrospective",
+          "attribution": "Sho Kuwamoto and Nikolas Klein speak in separately labeled sections; names of engineering contributors are also provided.",
+          "access": "Full relevant text read.",
+          "summary": "A feature evolved through interaction redesign, exceptions and extensive iteration."
+        },
+        {
+          "id": "klein-copy-design",
+          "title": "Bringing Figma Make to the canvas",
+          "url": "https://www.figma.com/blog/bringing-figma-make-to-the-canvas/",
+          "date": "2025-09-25",
+          "kind": "authored product announcement",
+          "attribution": "Bylined Nikolas Klein; corporate decisions and engineering work are team-level evidence.",
+          "access": "Full relevant text read.",
+          "summary": "Generated previews become editable layers; Figma purchased html.to.design technology."
+        },
+        {
+          "id": "klein-code-canvas",
+          "title": "Code on the Figma canvas",
+          "url": "https://www.figma.com/blog/code-on-the-figma-canvas/",
+          "date": "2026-06-24",
+          "kind": "authored product announcement",
+          "attribution": "Bylined Nikolas Klein, describing a team product in closed beta at publication.",
+          "access": "Full relevant text read.",
+          "summary": "Code, alternatives and editable design states enter a shared canvas."
+        },
+        {
+          "id": "klein-hard-problems",
+          "title": "Hard problems are still hard: A story about the tools that change and the work that doesn't",
+          "url": "https://www.figma.com/blog/hard-problems-are-still-hard/",
+          "date": "2025-12-12",
+          "kind": "authored illustrated essay",
+          "attribution": "Nikolas Klein; illustrations credited to Marco Quadri.",
+          "access": "Title, introduction and image descriptions read; full lettering inside illustrations was not independently transcribed.",
+          "summary": "A visual reflection on a changing prototyping craft; limited evidentiary use here."
+        }
+      ],
+      "lessons": [
+        {
+          "id": "klein-core-mechanics",
+          "title": "Question the primitive, then protect the surrounding workflows",
+          "kind": "shipped product decision",
+          "finding": "A new mode is not always the right answer to a broken interaction.",
+          "evidence": "Klein recounts moving from a proposed multi-bound mode to revised selection behavior. The team enumerated affected actions and retained exceptions for existing workflows; a dedicated mode still remained useful for variants.",
+          "tradeoff": "A simpler experience can require a much larger implementation and regression surface.",
+          "outcome": "The retrospective documents the shipped approach, not measured productivity gains.",
+          "limits": "This is not a universal argument against modes or a prescription for a five-year timeline.",
+          "exercise": "Audit one bulk action across selection scopes, hierarchy levels and undo behavior. Identify where one universal rule would break a legitimate workflow.",
+          "sourceIds": [
+            "klein-multiedit"
+          ],
+          "evidenceStrength": "coauthored first-person retrospective"
+        },
+        {
+          "id": "klein-editable-output",
+          "title": "Treat editability as a product requirement",
+          "kind": "shipped product and partnership decision",
+          "finding": "A useful AI artifact should continue into the team's next activity.",
+          "evidence": "Copy design transfers Make previews as editable Figma layers. The post connects this to observed use of html.to.design and reports purchasing the underlying technology while its maker continued independently.",
+          "tradeoff": "Interoperability requires preserving structure, not merely producing a visually convincing result.",
+          "outcome": "A shipped transfer capability and announced technology purchase; no adoption lift is established.",
+          "limits": "The article does not establish Klein personally negotiated or selected the acquisition.",
+          "exercise": "Trace an AI output through three collaborators. Mark each place it becomes read-only, loses semantics or requires reconstruction; prototype the highest-cost handoff.",
+          "sourceIds": [
+            "klein-copy-design"
+          ],
+          "evidenceStrength": "primary corporate announcement with named author"
+        },
+        {
+          "id": "klein-comparison-space",
+          "title": "Make alternatives comparable in the same workspace",
+          "kind": "product architecture choice",
+          "finding": "AI generation should support branching, comparison and refinement, not just serial replacement.",
+          "evidence": "The code-layers announcement describes preserving originals while generating alternatives, shared commenting, extracting states into editable design layers and moving revisions back toward code.",
+          "tradeoff": "A shared multi-representation workspace must address synchronization, ownership and fidelity.",
+          "outcome": "Announced closed-beta capabilities at publication; not an independent evaluation of their fidelity.",
+          "limits": "The announcement does not prove arbitrary repositories or designs round-trip perfectly.",
+          "exercise": "Compare a linear chat prototype with a canvas of three working alternatives. Test whether reviewers can explain tradeoffs and revisit a rejected option.",
+          "sourceIds": [
+            "klein-code-canvas"
+          ],
+          "evidenceStrength": "primary product announcement"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "title": "Show the abandoned answer",
+          "observation": "The multi-edit account exposes a plausible rejected mode, the problems it raised and the exceptions that survived. This makes judgment visible.",
+          "practice": "In a case study, include one rejected direction and the evidence that changed it.",
+          "sourceIds": [
+            "klein-multiedit"
+          ]
+        },
+        {
+          "title": "Use an artifact contrast",
+          "observation": "The Copy design article contrasts screenshots with editable layers, making an abstract collaboration benefit tangible.",
+          "practice": "Describe what a recipient can do with the artifact before and after the change.",
+          "sourceIds": [
+            "klein-copy-design"
+          ]
+        },
+        {
+          "title": "Organize by user actions",
+          "observation": "The code-canvas launch groups the story around exploring alternatives, moving between materials and refining judgment rather than a technical component list.",
+          "practice": "Replace architecture headings in a release note with the work the reader can now perform.",
+          "sourceIds": [
+            "klein-code-canvas"
+          ]
+        }
+      ],
+      "counterexamples": [
+        {
+          "claimToTest": "Consistency means a rule must have no exceptions.",
+          "analysis": "Multi-edit retained contextual behavior where rigid uniformity would damage existing work. Predictability depends on the user's task, not only internal rule purity.",
+          "sourceIds": [
+            "klein-multiedit"
+          ]
+        },
+        {
+          "claimToTest": "Generating a convincing screen completes the design task.",
+          "analysis": "The later artifacts invest in editability and shared comparison, indicating that downstream work remains a distinct product problem.",
+          "sourceIds": [
+            "klein-copy-design",
+            "klein-code-canvas"
+          ]
+        }
+      ],
+      "capstone": {
+        "title": "Write a feature decision history",
+        "deliverable": "A before/after prototype and a decision record with rejected options, preserved workflows and remaining risks.",
+        "steps": [
+          "Choose an expert action used frequently.",
+          "Observe structured and improvised ways users do it.",
+          "Propose a mode-based and a primitive-level solution.",
+          "Test both against the same cases, including errors and recovery.",
+          "Present the choice with one concrete rejected alternative."
+        ],
+        "evaluation": "Reviewers can distinguish visible simplicity from implementation simplicity and identify the remaining regression risks.",
+        "attribution": "Editorial exercise, not a Figma-prescribed process."
+      },
+      "learningPath": [
+        "klein-multiedit",
+        "klein-copy-design",
+        "klein-code-canvas",
+        "klein-hard-problems"
+      ],
+      "provenanceNotes": [
+        "The illustrated essay is supplementary reading, not evidence for detailed claims about its unseen lettering.",
+        "Authorship of a launch post does not establish sole ownership of the product or corporate decision."
+      ]
+    },
+    {
+      "id": "scott-belsky",
+      "name": "Scott Belsky",
+      "role": "Product builder and writer; work studied across Behance and Implications",
+      "category": "Product",
+      "focus": [
+        "First-use experience",
+        "Creative networks",
+        "Product narrative",
+        "AI strategy"
+      ],
+      "summary": "Study the connection between early product entry points, the structure of creative work and later arguments about AI interfaces. Keep operational retrospectives separate from forecasts.",
+      "studyQuestions": [
+        "What makes an empty network useful before it has scale?",
+        "Which first-use assumptions stop making sense as the audience changes?",
+        "Which parts of an AI strategy are observations, and which are bets?"
+      ],
+      "sources": [
+        {
+          "id": "belsky-behance",
+          "title": "Scott Belsky on Behance's pivotal acquisition",
+          "url": "https://mercury.com/blog/scott-belsky",
+          "date": "2023-05-31",
+          "kind": "original interview",
+          "attribution": "Interview published by Mercury, written/edited by Janaki M. Rao; Belsky's answers are primary recollections.",
+          "access": "Relevant interview text read.",
+          "summary": "Behance's early seeding, project structure and integration with Adobe."
+        },
+        {
+          "id": "belsky-first-mile-interview",
+          "title": "Scott Belsky on the importance of your product's first mile",
+          "url": "https://www.intercom.com/blog/podcasts/scott-belsky-behance-benchmark",
+          "date": "2017-02-23",
+          "kind": "original interview transcript",
+          "attribution": "Interview by Geoffrey Keating, explicitly lightly edited by the publisher.",
+          "access": "Relevant original transcript read.",
+          "summary": "Onboarding, defaults, portfolio storytelling and contextual design."
+        },
+        {
+          "id": "belsky-first-mile-essay",
+          "title": "Crafting The First Mile Of Product",
+          "url": "https://www.implications.com/p/crafting-the-first-mile-of-product-7ed25e8f1027",
+          "date": "2016-06-21",
+          "kind": "authored essay",
+          "attribution": "Bylined Scott Belsky.",
+          "access": "Preview only; the full article was not accessible in retrieved text.",
+          "summary": "A preview warns that existing-user focus can crowd out first-use design."
+        },
+        {
+          "id": "belsky-platform",
+          "title": "The Data Wars & Reimagining Your Product During a Platform Shift",
+          "url": "https://www.implications.com/p/the-data-wars-and-reimagining-your",
+          "date": "2025-04-21",
+          "kind": "authored strategic essay",
+          "attribution": "Bylined Scott Belsky. Includes examples of companies he advises or invests in.",
+          "access": "Substantial relevant section read; page marked paid. Do not imply full unrestricted access.",
+          "summary": "A platform-shift argument for reconsidering workflows and interfaces."
+        },
+        {
+          "id": "belsky-tailored",
+          "title": "5 Things Top Product Leaders Love, Favored Agent Status, & Tailor-Made Enterprise Tools",
+          "url": "https://www.implications.com/p/5-things-top-product-leaders-love",
+          "date": "2026-08-19",
+          "kind": "authored strategic essay",
+          "attribution": "Bylined Scott Belsky; explicitly includes conjecture about future enterprise software.",
+          "access": "Substantial relevant sections read; page marked paid.",
+          "summary": "A forecast about company-specific software and durable organizational context."
+        }
+      ],
+      "lessons": [
+        {
+          "id": "belsky-seed-network",
+          "title": "Choose a useful unit of discovery before chasing scale",
+          "kind": "historical product decision",
+          "finding": "Content structure and manual onboarding can jointly address an empty-network problem.",
+          "evidence": "Belsky recalls manually setting up early portfolios and organizing discovery around projects. Each portfolio supplied multiple browsable examples, making the network useful sooner.",
+          "tradeoff": "Human curation creates an initial quality bar but cannot substitute indefinitely for repeatable contribution.",
+          "outcome": "He reports subsequent organic publishing growth. This is a retrospective, not a causal experiment isolating the project format.",
+          "limits": "Do not infer that project-first browsing works for every marketplace.",
+          "exercise": "Identify the smallest valuable discovery unit in a new directory. Seed a small set with permission and test whether visitors understand value before asking them to contribute.",
+          "sourceIds": [
+            "belsky-behance"
+          ],
+          "evidenceStrength": "first-person retrospective"
+        },
+        {
+          "id": "belsky-entry",
+          "title": "Treat first use as part of the product, not launch packaging",
+          "kind": "design principle",
+          "finding": "New users lack the context that makes a mature team's interface feel obvious.",
+          "evidence": "In the Intercom interview, Belsky examines onboarding, copy, defaults and the first action as a connected experience. He also argues that portfolios should reveal a problem and contribution, not only polished fragments.",
+          "tradeoff": "Reducing initial choices can help orientation while hiding flexibility needed later.",
+          "outcome": "A reasoned principle illustrated by experience, not a universal conversion benchmark.",
+          "limits": "Expert products may need role-specific entry paths; simplistic onboarding can obstruct returning users.",
+          "exercise": "Run a first-use test with no explanation. Record the participant's first prediction, first action and first uncertainty; revise one default, then retest.",
+          "sourceIds": [
+            "belsky-first-mile-interview"
+          ],
+          "evidenceStrength": "original interview transcript"
+        },
+        {
+          "id": "belsky-reimagine",
+          "title": "Revisit the workflow instead of decorating it with AI",
+          "kind": "strategic recommendation",
+          "finding": "A new capability can remove an old step rather than add an assistant beside it.",
+          "evidence": "Belsky's platform-shift essay asks leaders to return to customer needs and consider a new interface over existing data and workflows. He contrasts incremental additions with a more fundamental rethink.",
+          "tradeoff": "A new layer may unify work, but can also introduce another interface and duplicate existing controls.",
+          "outcome": "An argument with examples, not verified evidence that an overlay produces superior retention.",
+          "limits": "His investments and advisory roles are relevant context; treat forecasts as hypotheses.",
+          "exercise": "Draw the current workflow and a version with half the steps. For each removed step, state what new capability replaces it and what trust or control must remain.",
+          "sourceIds": [
+            "belsky-platform"
+          ],
+          "evidenceStrength": "authored opinion; causal claims unproven"
+        },
+        {
+          "id": "belsky-company-specific",
+          "title": "Separate durable context from replaceable screens",
+          "kind": "strategic hypothesis",
+          "finding": "Company-specific knowledge may remain valuable even when interfaces become easier to build.",
+          "evidence": "The 2026 essay argues that internal teams can create tailored software and that organizational relationships and accumulated context can outlast particular applications.",
+          "tradeoff": "Tailoring improves fit but transfers maintenance, security and integration responsibilities to the organization.",
+          "outcome": "A forecast, not demonstrated superiority of custom software.",
+          "limits": "Total lifecycle cost and governance can make a standardized product the better choice.",
+          "exercise": "Write a build-versus-buy memo separating unique workflow knowledge from commodity features. Include a three-year maintenance owner and exit strategy.",
+          "sourceIds": [
+            "belsky-tailored"
+          ],
+          "evidenceStrength": "authored forecast"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "title": "Use a physical analogy to expose an obsolete assumption",
+          "observation": "The platform-shift essay uses the disappearance of toll-booth friction to make workflow removal imaginable.",
+          "practice": "Choose an analogy that clarifies one mechanism, then state where it stops matching your product.",
+          "sourceIds": [
+            "belsky-platform"
+          ]
+        },
+        {
+          "title": "Separate observation from implication",
+          "observation": "The tailored-software essay starts from current tool changes and advances a larger forecast. Its explicit speculative framing is important to retain.",
+          "practice": "Label each paragraph as observed, inferred or predicted before sharing a strategy memo.",
+          "sourceIds": [
+            "belsky-tailored"
+          ]
+        },
+        {
+          "title": "Explain why the artifact's shape mattered",
+          "observation": "The Behance recollection connects project-sized portfolios to discovery density rather than merely announcing that the network grew.",
+          "practice": "Connect a design choice to its proposed mechanism, then distinguish that mechanism from proven causality.",
+          "sourceIds": [
+            "belsky-behance"
+          ]
+        }
+      ],
+      "counterexamples": [
+        {
+          "claimToTest": "A compelling forecast is a product strategy.",
+          "analysis": "A forecast still needs a customer problem, testable mechanism, cost model and disconfirming evidence. The AI essays are useful starting hypotheses, not substitutes for those.",
+          "sourceIds": [
+            "belsky-platform",
+            "belsky-tailored"
+          ]
+        },
+        {
+          "claimToTest": "A successful case study should show only its final output.",
+          "analysis": "His portfolio discussion emphasizes context and contribution. A polished artifact alone can conceal shared authorship and weak reasoning.",
+          "sourceIds": [
+            "belsky-first-mile-interview"
+          ]
+        }
+      ],
+      "capstone": {
+        "title": "Write a falsifiable interface thesis",
+        "deliverable": "A two-page memo and a first-use prototype.",
+        "steps": [
+          "Identify one workflow whose assumptions changed.",
+          "Separate stable user need from historical tool constraints.",
+          "Propose a simpler entry point.",
+          "Name a measurable result and an observation that would invalidate the thesis.",
+          "Describe the maintenance and trust obligations created by the new interface."
+        ],
+        "evaluation": "The proposal can fail a concrete test; it does not depend only on agreement with a trend.",
+        "attribution": "Editorial exercise; not an endorsed Belsky framework."
+      },
+      "learningPath": [
+        "belsky-behance",
+        "belsky-first-mile-interview",
+        "belsky-platform",
+        "belsky-tailored"
+      ],
+      "provenanceNotes": [
+        "Do not treat the full 2016 essay as read; only its preview was inspected.",
+        "AI essays contain forecasts and commercial affiliations, which should remain visible to readers."
+      ]
+    },
+    {
+      "id": "jiaona-zhang",
+      "name": "Jiaona Zhang",
+      "role": "Product leader; work studied at Dropbox, Airbnb, Webflow and Linktree",
+      "category": "Product",
+      "focus": [
+        "Problem discovery",
+        "Minimum lovable products",
+        "PM ownership",
+        "AI adoption"
+      ],
+      "summary": "Study how a product leader revises an initially plausible solution, distinguishes meaningful value from polish and turns changing technology into an organizational learning problem.",
+      "studyQuestions": [
+        "Can a functional feature make the underlying unmet need more obvious?",
+        "How do you cut scope without cutting the reason people care?",
+        "What needs to change around an AI tool before it can work well?"
+      ],
+      "sources": [
+        {
+          "id": "jiaona-mlp",
+          "title": "Don't Serve Burnt Pizza (And Other Lessons in Building Minimum Lovable Products)",
+          "url": "https://review.firstround.com/dont-serve-burnt-pizza-and-other-lessons-in-building-minimum-lovable-products/",
+          "date": "2019-10-21",
+          "kind": "original edited interview",
+          "attribution": "First Round Review interviews Jiaona Zhang; editorial prose is not all her own writing.",
+          "access": "Relevant full-text sections read.",
+          "summary": "Retrospectives on Dropbox Harmony and Airbnb Plus illuminate scope and value."
+        },
+        {
+          "id": "jiaona-career",
+          "title": "Sweat the Details and Other Commandments for Mapping Out a Career in Product",
+          "url": "https://review.firstround.com/sweat-the-details-and-other-commandments-for-mapping-out-a-career-in-product/",
+          "date": "2023-02-27",
+          "kind": "original edited interview",
+          "attribution": "First Round Review interviews Zhang across individual-contributor, manager and executive roles.",
+          "access": "Relevant full-text sections read.",
+          "summary": "Ownership, communication and changing forms of product leadership."
+        },
+        {
+          "id": "jiaona-lenny",
+          "title": "Building minimum lovable products, stories from WeWork and Airbnb, and thriving as a PM",
+          "url": "https://www.lennysnewsletter.com/p/building-minimum-lovable-products",
+          "date": "2023-07-02",
+          "kind": "original interview landing page",
+          "attribution": "Original Lenny interview. Publisher's description and chapter index read; not independently reviewed as full audio.",
+          "access": "Summary and chapter index read.",
+          "summary": "A follow-up interview with chapters on Airbnb Plus, roadmap storytelling and the first 90 days."
+        },
+        {
+          "id": "jiaona-linktree",
+          "title": "Scale Smarter, Not Bigger: How Linktree is Using AI to Accelerate",
+          "url": "https://review.firstround.com/linktree-ai/",
+          "date": "2025-08-28",
+          "kind": "original joint interview",
+          "attribution": "Jiaona Zhang and CTO Farnaz Azmoodeh. Technical and adoption-policy statements must retain the correct speaker.",
+          "access": "Relevant full-text sections read.",
+          "summary": "A joint account of AI adoption, constraints and failed ambitions."
+        }
+      ],
+      "lessons": [
+        {
+          "id": "jiaona-harmony",
+          "title": "A useful feature can still optimize the wrong destination",
+          "kind": "retrospective product decision",
+          "finding": "Solving a visible symptom is not the same as satisfying the underlying job.",
+          "evidence": "Zhang says Harmony showed document collaborators but missed their desire to edit together in real time.",
+          "tradeoff": "An incremental extension fit the existing product but exposed a more fundamental limitation.",
+          "outcome": "Her retrospective judgment, not a quantified failure analysis.",
+          "limits": "Technical feasibility and the available alternatives still matter.",
+          "exercise": "For one feature request, identify the workaround it improves and the outcome the user actually wants.",
+          "sourceIds": [
+            "jiaona-mlp"
+          ],
+          "evidenceStrength": "first-person retrospective in edited interview"
+        },
+        {
+          "id": "jiaona-plus",
+          "title": "Cut requirements while preserving the emotional value",
+          "kind": "reported course correction",
+          "finding": "Lovability is not the number of premium requirements.",
+          "evidence": "Zhang recounts reducing an unwieldy Airbnb Plus amenities approach and investing in a photographic Home Tour that expressed the distinctive home experience.",
+          "tradeoff": "Physical standardization and digital confidence solve different problems.",
+          "outcome": "A reported scope correction, not proof that the overall Plus business succeeded.",
+          "limits": "A persuasive feature does not settle a business model.",
+          "exercise": "Identify one expensive requirement and a cheaper way to deliver its underlying user value.",
+          "sourceIds": [
+            "jiaona-mlp"
+          ],
+          "evidenceStrength": "first-person retrospective in edited interview"
+        },
+        {
+          "id": "jiaona-ownership",
+          "title": "Own the outcome rather than becoming the team's task inbox",
+          "kind": "professional practice",
+          "finding": "Helpful coordination is not sufficient evidence of product impact.",
+          "evidence": "Zhang warns early PMs against proving value only through quick fixes and administration. She pairs detailed care with user understanding, business outcomes and iteration.",
+          "tradeoff": "Protecting strategic work can feel less immediately rewarding than responding to every request.",
+          "outcome": "Career guidance grounded in experience, not a validated promotion formula.",
+          "limits": "In a crisis, operational repair may be the highest-value product work; the distinction is purpose, not prestige.",
+          "exercise": "Classify last week's work by user learning, decisions, execution support and outcome measurement. Remove one task and identify the outcome that gains time.",
+          "sourceIds": [
+            "jiaona-career"
+          ],
+          "evidenceStrength": "original interview testimony"
+        },
+        {
+          "id": "jiaona-adoption",
+          "title": "Treat AI failure as a system diagnosis",
+          "kind": "organizational and product decision",
+          "finding": "Tool availability does not guarantee usable capability or changed habits.",
+          "evidence": "In the Linktree account, Zhang describes obtaining Figma Make access for designers who preferred Figma and reports inconsistent automated page generation. Azmoodeh separately explains schema cleanup and temporary adoption metrics.",
+          "tradeoff": "Meeting people where they work can increase experimentation but create tool sprawl.",
+          "outcome": "A joint self-reported case study; reported company improvements are not causal proof of any single intervention.",
+          "limits": "Do not attribute the CTO's engineering decisions or all company results to Zhang.",
+          "exercise": "For a failed AI task, separate capability, context quality, workflow fit and habit barriers. Fix one barrier and compare on the same examples.",
+          "sourceIds": [
+            "jiaona-linktree"
+          ],
+          "evidenceStrength": "original joint interview; speaker-level attribution required"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "title": "Let a past mistake carry the argument",
+          "observation": "Her Harmony account admits that a useful launch missed a deeper need, making the distinction concrete.",
+          "practice": "Explain one mistaken assumption before stating the lesson.",
+          "sourceIds": [
+            "jiaona-mlp"
+          ]
+        },
+        {
+          "title": "Translate abstraction into a human story",
+          "observation": "The career interview ties strategy to an easily explained user future and communication to different audiences. This is spoken teaching, not proof of her authorship of the article's prose.",
+          "practice": "Explain the same roadmap to a user, an engineer and an executive in three short paragraphs.",
+          "sourceIds": [
+            "jiaona-career"
+          ]
+        },
+        {
+          "title": "Use a failure boundary instead of an AI success montage",
+          "observation": "The joint Linktree interview includes both useful deployments and an unreliable page-generation ambition.",
+          "practice": "Pair every AI demo with a failure case and the conditions under which it should not be used.",
+          "sourceIds": [
+            "jiaona-linktree"
+          ]
+        }
+      ],
+      "counterexamples": [
+        {
+          "claimToTest": "Minimum lovable means add more polish and features.",
+          "analysis": "The Plus example is a scope reduction. The Harmony example is a problem-definition critique. Neither reduces to decorative polish.",
+          "sourceIds": [
+            "jiaona-mlp"
+          ]
+        },
+        {
+          "claimToTest": "High AI adoption proves high productivity.",
+          "analysis": "The joint Linktree account treats adoption metrics as temporary and notes that PR counts compare work of unequal complexity. Outcome evidence remains necessary.",
+          "sourceIds": [
+            "jiaona-linktree"
+          ]
+        }
+      ],
+      "capstone": {
+        "title": "Define the smallest meaningful experience",
+        "deliverable": "A problem brief, two solution concepts and a test plan.",
+        "steps": [
+          "Describe the user's desired outcome without naming a feature.",
+          "List one core promise and the conditions needed to test it fairly.",
+          "Cut everything unrelated to that promise.",
+          "Test behavior and task success, not only compliments.",
+          "Document why a positive prototype response may still fail to establish a viable business."
+        ],
+        "evaluation": "The experiment is small but does not sabotage its own promise; enthusiasm is separated from repeat behavior.",
+        "attribution": "Editorial exercise inspired by the interviews."
+      },
+      "learningPath": [
+        "jiaona-mlp",
+        "jiaona-career",
+        "jiaona-lenny",
+        "jiaona-linktree"
+      ],
+      "provenanceNotes": [
+        "These sources are largely edited interviews. Analyze demonstrated explanation techniques without calling the surrounding editorial prose Zhang's personal writing style.",
+        "The 2023 podcast contains a chapter on why Airbnb Plus did not work, but that full account was not reviewed here; do not infer its detailed causes."
+      ]
+    },
+    {
+      "id": "geoff-charles",
+      "name": "Geoff Charles",
+      "role": "Product leader; work studied at Ramp",
+      "category": "Product",
+      "focus": [
+        "Strategy",
+        "Decision speed",
+        "Risk-calibrated automation",
+        "Product communication"
+      ],
+      "summary": "Study velocity together with its guardrails: clear strategy, organizational context, explicit exceptions for risky work and honest tradeoffs between monetization and existing customers.",
+      "studyQuestions": [
+        "What should remain stable when a plan changes?",
+        "Which workflows should deliberately move more slowly?",
+        "How does a pricing change preserve the trust of early customers?"
+      ],
+      "sources": [
+        {
+          "id": "geoff-builds",
+          "title": "How Ramp builds product",
+          "url": "https://www.lennysnewsletter.com/p/how-ramp-builds-product",
+          "date": "2023-05-23",
+          "kind": "original written Q&A",
+          "attribution": "Lenny Rachitsky's article introduces answers labeled Geoff Charles.",
+          "access": "Substantial relevant Q&A read; article marked paid.",
+          "summary": "Planning horizons, strategy structure and organizational alignment."
+        },
+        {
+          "id": "geoff-open-work",
+          "title": "How we build with velocity at Ramp",
+          "url": "https://ramp.com/blog/how-we-build-product-at-ramp",
+          "date": "2023-05-22",
+          "kind": "company-authored interview excerpts",
+          "attribution": "By Fiona Lee, quoting Geoff. A recap of the same interview, not independent corroboration.",
+          "access": "Full relevant body read.",
+          "summary": "Open project communication and flexible pods with stable reporting relationships."
+        },
+        {
+          "id": "geoff-ama",
+          "title": "Geoff Charles's public Ramp AMA",
+          "url": "https://www.reddit.com/r/Ramp/comments/1nzlp5m/im_geoff_charles_cpo_at_ramp_join_me_on_october_9/",
+          "date": "2025-10-09",
+          "kind": "direct public Q&A",
+          "attribution": "Answers by u/Ramp_Geoff; the official Ramp thread names this answering account.",
+          "access": "Relevant direct answers read.",
+          "summary": "Pricing, product focus, customer discovery and automation boundaries."
+        },
+        {
+          "id": "geoff-risk",
+          "title": "AMA answer: experiment differently on critical workflows",
+          "url": "https://www.reddit.com/r/Ramp/comments/1nzlp5m/comment/ninc3i8/",
+          "date": "2025-10-09",
+          "kind": "direct public answer",
+          "attribution": "u/Ramp_Geoff in the official Ramp AMA.",
+          "access": "Specific answer read.",
+          "summary": "A direct qualification of generalized velocity advice."
+        },
+        {
+          "id": "geoff-human-approval",
+          "title": "AMA answer: where human oversight remains",
+          "url": "https://www.reddit.com/r/Ramp/comments/1nzlp5m/comment/ninfsqy/",
+          "date": "2025-10-09",
+          "kind": "direct public answer",
+          "attribution": "u/Ramp_Geoff in the official Ramp AMA.",
+          "access": "Specific answer read.",
+          "summary": "Bill-payment approval is distinguished from automatable preparation and follow-through."
+        },
+        {
+          "id": "geoff-pricing",
+          "title": "AMA answer: moving from free to paid",
+          "url": "https://www.reddit.com/r/Ramp/comments/1nzlp5m/comment/ninbhju/",
+          "date": "2025-10-09",
+          "kind": "direct public answer",
+          "attribution": "u/Ramp_Geoff in the official Ramp AMA.",
+          "access": "Specific answer read.",
+          "summary": "Paid tiers, legacy customers and the uncertainty of pricing choices."
+        },
+        {
+          "id": "geoff-releases",
+          "title": "2025 Release Notes",
+          "url": "https://ramp.com/blog/2025-release-notes",
+          "date": "2025-12-16",
+          "kind": "bylined product release summary",
+          "attribution": "Bylined Geoff Charles; describes the team's releases, not sole individual authorship of each feature.",
+          "access": "Relevant product sections read.",
+          "summary": "Automation presented through finance workflows and human exceptions."
+        }
+      ],
+      "lessons": [
+        {
+          "id": "geoff-stage-planning",
+          "title": "Change planning depth when coordination needs change",
+          "kind": "operating decision",
+          "finding": "A planning cadence should follow the organization and uncertainty, not become a permanent identity.",
+          "evidence": "Charles describes early two-week focus evolving into quarterly planning as sales cycles, go-to-market coordination and reusable systems became more important.",
+          "tradeoff": "Longer horizons support dependencies but can create false precision.",
+          "outcome": "A first-person account of process evolution, not evidence that one cadence caused growth.",
+          "limits": "The correct horizon depends on reversibility and external commitments.",
+          "exercise": "Classify current decisions by uncertainty and coordination lead time. Assign separate review horizons rather than one roadmap cadence to everything.",
+          "sourceIds": [
+            "geoff-builds"
+          ],
+          "evidenceStrength": "original written Q&A"
+        },
+        {
+          "id": "geoff-context-over-gates",
+          "title": "Replace routine approval waits with visible context",
+          "kind": "operating choice",
+          "finding": "Empowerment requires accessible decisions and active challenge, not hidden autonomy.",
+          "evidence": "The company recap quotes Charles describing specs, designs and status in project channels and seeking dissent. It also describes shifting pods while preserving management relationships.",
+          "tradeoff": "Open communication reduces gatekeeping but can overload attention or obscure who must decide.",
+          "outcome": "A described practice; the recap is not independent evidence of its impact.",
+          "limits": "Sensitive, regulated or irreversible decisions still require designated authority.",
+          "exercise": "For a reversible decision, name an owner, publish context and invite objections by a deadline. Record what changed, rather than counting approvals.",
+          "sourceIds": [
+            "geoff-open-work"
+          ],
+          "evidenceStrength": "company-published excerpts from original interview"
+        },
+        {
+          "id": "geoff-risk-boundary",
+          "title": "Speed is conditional on the cost of being wrong",
+          "kind": "explicit policy boundary",
+          "finding": "Fast experimentation and slow, exhaustive validation can belong in the same product culture.",
+          "evidence": "Charles distinguishes alpha experiments from money movement, compliance, risk and card authorization. In another answer he says a person still approves final bill payment while surrounding work is automated.",
+          "tradeoff": "A human checkpoint adds friction but protects a consequential action.",
+          "outcome": "Direct statements of practice at the time, not an audit of current controls.",
+          "limits": "An agent's successful preparation does not establish authorization to execute the consequential step.",
+          "exercise": "Draw an automation boundary for one workflow. Rate each action's reversibility, loss severity and verification difficulty; specify the evidence required to cross each boundary.",
+          "sourceIds": [
+            "geoff-risk",
+            "geoff-human-approval"
+          ],
+          "evidenceStrength": "direct public answers"
+        },
+        {
+          "id": "geoff-pricing-transition",
+          "title": "Treat pricing as a trust migration",
+          "kind": "commercial decision",
+          "finding": "A new business model changes the promise to existing customers as well as the sales pitch to new ones.",
+          "evidence": "Charles recounts debate over paid tiers and says Ramp adopted a generous legacy policy. He frames the choice as balancing growth, a useful free product and funding further development.",
+          "tradeoff": "Grandfathering can preserve trust while complicating packaging and delaying revenue.",
+          "outcome": "He says the shift worked; the answer provides no isolated retention or revenue analysis.",
+          "limits": "Nearby customer criticism of packaging is not resolved by the executive's positive assessment.",
+          "exercise": "Draft a migration policy for a hypothetical pricing change. Include what stays available, notice, grandfathering, edge cases and how success and harm will be monitored.",
+          "sourceIds": [
+            "geoff-pricing"
+          ],
+          "evidenceStrength": "direct retrospective answer"
+        },
+        {
+          "id": "geoff-workflow-release",
+          "title": "Show automation and exceptions together",
+          "kind": "communication and product pattern",
+          "finding": "An AI announcement is clearer when it describes what work disappears and what still needs judgment.",
+          "evidence": "The release summary describes low-risk expense approval, flagged exceptions, missing-context follow-ups and recommended bill decisions rather than only naming an AI capability.",
+          "tradeoff": "Convenience claims can obscure rare failures if the exception path is not equally concrete.",
+          "outcome": "A release record establishes advertised features, not their accuracy or universal availability.",
+          "limits": "Use current documentation before treating historical release copy as a purchasing or configuration guide.",
+          "exercise": "Write a release note in four parts: old task, new action, remaining human responsibility and failure recovery.",
+          "sourceIds": [
+            "geoff-releases"
+          ],
+          "evidenceStrength": "bylined company release summary"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "title": "Make the strategy's logic inspectable",
+          "observation": "The written Q&A separates desired result, hypothesis, advantage, measurement, work and risk. Readers can challenge the causal chain rather than only a project list.",
+          "practice": "Add a falsifiable hypothesis and an explicit reason your team is positioned to succeed to a one-page plan.",
+          "sourceIds": [
+            "geoff-builds"
+          ]
+        },
+        {
+          "title": "Use the exception to make the rule credible",
+          "observation": "The critical-workflow AMA answer directly limits his broader velocity message.",
+          "practice": "When stating a principle, include a concrete case where you would apply the opposite behavior.",
+          "sourceIds": [
+            "geoff-risk"
+          ]
+        }
+      ],
+      "counterexamples": [
+        {
+          "claimToTest": "Velocity means shipping partially working features everywhere.",
+          "analysis": "His own risk answer rejects that approach for critical financial and compliance functions. Context is part of the principle.",
+          "sourceIds": [
+            "geoff-risk"
+          ]
+        },
+        {
+          "claimToTest": "An executive's reported success settles the customer tradeoff.",
+          "analysis": "The pricing exchange includes a customer's concern about paying for workers with limited feature needs. Preserve both the decision rationale and the unresolved distribution of costs.",
+          "sourceIds": [
+            "geoff-pricing"
+          ]
+        }
+      ],
+      "capstone": {
+        "title": "Design a risk-calibrated delivery policy",
+        "deliverable": "A one-page strategy and a workflow risk map.",
+        "steps": [
+          "State the user result and how it creates business value.",
+          "Classify experiments by reversibility and possible loss.",
+          "Assign fast feedback loops to low-risk work and stronger evidence gates to high-risk actions.",
+          "Define the owner, visibility and review trigger for each class.",
+          "Draft release communication that makes both automation and exceptions understandable."
+        ],
+        "evaluation": "The policy permits meaningful speed without using speed to excuse missing authorization, reliability or recovery.",
+        "attribution": "Editorial exercise inspired by the sources."
+      },
+      "learningPath": [
+        "geoff-builds",
+        "geoff-open-work",
+        "geoff-risk",
+        "geoff-human-approval",
+        "geoff-pricing",
+        "geoff-releases"
+      ],
+      "provenanceNotes": [
+        "The company recap and Lenny Q&A are not two independent confirmations.",
+        "Direct AMA answers verify the statements made, not all claimed outcomes.",
+        "Financial-product discussion is used to study product judgment, not to recommend transactions or financial services."
+      ]
+    },
+    {
+      "id": "cat-wu",
+      "name": "Cat Wu",
+      "sources": [
+        {
+          "id": "cw-exponential",
+          "title": "Product management on the AI exponential",
+          "url": "https://claude.com/resources/articles/product-management-on-the-ai-exponential",
+          "date": "2026-03-19",
+          "access": "Article body read. Historical title is Head of Product for Claude Code; this entry does not assert her current employer.",
+          "readFor": "A repeated Excalidraw test anchors the argument. Inspect the sections on demos/evals, revisiting features, and simplifying implementations.",
+          "kind": "Bylined first-person essay",
+          "attribution": "Explicitly credited to Cat Wu. Describes collective Claude Code work and credits specific colleagues; not evidence she personally invented every feature."
+        },
+        {
+          "id": "cw-latent",
+          "title": "Claude Code: Anthropic's Agent in Your Terminal",
+          "url": "https://www.latent.space/p/claude-code",
+          "date": "2025-05-07",
+          "access": "Original transcript read at relevant sections. It contains transcription errors, including variants of the product name.",
+          "readFor": "03:28–06:57 for joining the project and PM responsibilities; 16:49 for human review; 01:09:21–01:10:00 for simplification.",
+          "kind": "Original interview and speaker-labeled transcript",
+          "attribution": "Cat Wu and Boris Cherny interviewed by Latent Space. Spoken primary testimony, not a Wu-authored essay. Check speaker labels: the terminal/product architecture argument is principally Cherny's."
+        },
+        {
+          "id": "cw-yang",
+          "title": "Inside Claude Code: How an AI Native Team Actually Works",
+          "url": "https://creatoreconomy.so/p/inside-claude-code-how-an-ai-native-actually-works-cat-wu",
+          "date": "2025-09-14",
+          "access": "Public introduction, chapter list, and first two takeaways read. Remaining written takeaways are paywalled; full audiovisual episode was not reviewed.",
+          "readFor": "Public takeaways on prototypes and engineer ownership. Chapters point to 05:00 ownership, 10:04 feedback, and 19:58 evaluations; these timestamps are navigation, not independently reviewed evidence.",
+          "kind": "Original interview landing page and public editorial takeaways",
+          "attribution": "Peter Yang's publication and framing; Cat Wu is the interview guest. The visible takeaways contain attributed remarks but are not a bylined Wu article."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "cw-evaluation-loop",
+          "title": "Turn one uncertain requirement into a test",
+          "duration": "90 minutes plus five user sessions",
+          "application": "Original exercise for an internal tool or AI app.",
+          "steps": [
+            "Choose one uncertain workflow, such as finding a reusable document.",
+            "Write ten realistic tasks, including an ambiguous request, a nonexistent item, and an item the user cannot access.",
+            "Build the smallest testable prototype. Ask users to complete the tasks without explanation.",
+            "Record completion, correction effort, and unsafe or misleading outcomes separately. Write the decision you would make before adding another feature."
+          ],
+          "deliverable": "A runnable prototype, a ten-case evaluation sheet, and a one-page ship/change/stop decision.",
+          "reviewCriteria": [
+            "Tests represent the intended users rather than only the builder.",
+            "A failed safety-critical case is not averaged away by easy successes.",
+            "The next iteration follows observed behavior."
+          ],
+          "inspiredBy": [
+            "cw-exponential",
+            "cw-yang"
+          ]
+        },
+        {
+          "id": "cw-model-retest",
+          "title": "Keep a capability-change ledger",
+          "duration": "45 minutes to set up, repeat after a relevant release",
+          "application": "Original exercise, not a claimed Wu template.",
+          "steps": [
+            "List five workarounds in an AI app and the failure each compensates for.",
+            "Save representative inputs and acceptance criteria.",
+            "After a model change, retest before removing a workaround.",
+            "Publish a short note separating measured improvement, unresolved failures, and the change you propose."
+          ],
+          "deliverable": "A versioned before/after test log with an explicit rollback condition.",
+          "reviewCriteria": [
+            "Comparison uses the same tasks and criteria.",
+            "Removal follows evidence rather than a model-release announcement."
+          ],
+          "inspiredBy": [
+            "cw-exponential"
+          ]
+        }
+      ],
+      "role": "Product leader; work studied on Claude Code",
+      "category": "Product",
+      "summary": "Making product judgment concrete through prototypes, evaluations, and repeated tests of changing model capabilities.",
+      "focus": [
+        "AI product judgment",
+        "Evaluations",
+        "Prototyping",
+        "Capability change"
+      ],
+      "lessons": [
+        {
+          "id": "cw-prototype-first",
+          "title": "Make a working prototype the decision object",
+          "kind": "reported product decision",
+          "finding": "Wu describes a team moving from document-first planning toward demos and evaluations. A plugins prototype helped validate UX; agent-team evaluations exposed where the feature worked and failed.",
+          "evidence": "Team operating model described by Wu; individual examples credit colleagues.",
+          "tradeoff": "Earlier observable feedback versus the risk of leaving rationale and cross-team obligations undocumented.",
+          "sourceIds": [
+            "cw-exponential",
+            "cw-yang"
+          ],
+          "evidenceStrength": "Primary account; see source access and attribution caveats"
+        },
+        {
+          "id": "cw-remove-scaffolding",
+          "title": "Retire scaffolding when the model improves",
+          "kind": "reported product decision",
+          "finding": "The team removed reminders that had compensated for unreliable todo completion. Separately, users manually combining Code and Chrome revealed a workflow worth integrating.",
+          "evidence": "Reported collective product decisions, not sole-authorship claims.",
+          "tradeoff": "Simpler interaction and implementation versus revalidation costs whenever model behavior changes.",
+          "sourceIds": [
+            "cw-exponential"
+          ],
+          "evidenceStrength": "Primary account; see source access and attribution caveats"
+        },
+        {
+          "id": "cw-light-touch",
+          "title": "Give strong product engineers room to decide",
+          "kind": "reported product decision",
+          "finding": "Wu says she concentrates on clearing legal, marketing, and other obstacles while engineers originate much of the roadmap. The team discusses the capabilities future models should support, rather than treating a precise forecast as certain.",
+          "evidence": "Wu's account of her PM responsibilities and shared planning.",
+          "tradeoff": "Fast distributed decisions versus dependence on experienced builders with aligned goals.",
+          "sourceIds": [
+            "cw-latent"
+          ],
+          "evidenceStrength": "Primary account; see source access and attribution caveats"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "title": "Use one recurring test to explain change",
+          "observation": "The Excalidraw opening makes an abstract capability trend visible through the same task across releases.",
+          "sourceIds": [
+            "cw-exponential"
+          ]
+        },
+        {
+          "title": "Describe role boundaries through actual work",
+          "observation": "Rather than presenting PM as universal authority, Wu names the obstacles she clears and distinguishes her contribution from engineers' product thinking.",
+          "sourceIds": [
+            "cw-latent"
+          ]
+        },
+        {
+          "title": "Connect an operating principle to observable behavior",
+          "observation": "The public interview takeaways connect engineer ownership to internal adoption and progressive release, giving the audience something to examine rather than a job-title slogan.",
+          "sourceIds": [
+            "cw-yang"
+          ]
+        }
+      ],
+      "counterexamples": [
+        {
+          "analysis": "Fast coding is not evidence of complete automation: Wu explicitly notes substantial human code review.",
+          "sourceIds": [
+            "cw-latent"
+          ],
+          "kind": "Evidence-based qualification"
+        },
+        {
+          "analysis": "Analyst transfer limit: an expert internal user population can be an unusually favorable test bed. Verify external users, accessibility needs, permission boundaries, and deployment risks separately.",
+          "sourceIds": [
+            "cw-yang"
+          ],
+          "kind": "Application judgment, not a reported experimental finding"
+        },
+        {
+          "analysis": "Analyst counterexample: a rapid prototype cannot replace an auditable specification for a consequential integration, data migration, or permission change.",
+          "sourceIds": [],
+          "kind": "Boundary condition"
+        }
+      ],
+      "provenanceNotes": [
+        "Most evidence is retrospective self-report from a vendor or interviews, not independent causal evaluation.",
+        "The Yang page provides only partial written access. Do not attribute its unpublished takeaways or unreviewed audio to this research.",
+        "The bylined essay is suitable for studying Wu's published prose. Interviews demonstrate spoken explanation; host titles and summaries are not her writing.",
+        "No current-employment assertion is made; roles are recorded as they appeared in the dated artifacts."
+      ],
+      "learningPath": [
+        "cw-exponential",
+        "cw-latent",
+        "cw-yang"
+      ]
+    },
+    {
+      "id": "mike-krieger",
+      "name": "Mike Krieger",
+      "sources": [
+        {
+          "id": "mk-instagram",
+          "title": "Why Instagram Worked",
+          "url": "https://www.wired.com/2014/10/why-instagram-worked/",
+          "date": "2014-10-20",
+          "access": "Relevant article body read.",
+          "readFor": "Opening launch-day timeline, the Burbn pivot, and the accompanying early interface sketch.",
+          "kind": "Bylined retrospective essay",
+          "attribution": "Mike Krieger's byline; describes decisions with cofounder Kevin Systrom."
+        },
+        {
+          "id": "mk-spc",
+          "title": "Mike Krieger's Fireside Chat from the SPC Archive",
+          "url": "https://blog.southparkcommons.com/p/mike-kriegers-fireside-chat-from-the-spc-archive",
+          "date": "2022-09-02",
+          "dateNote": "Publication date. The page says the conversation took place in 2019.",
+          "access": "Public archive text read; embedded video not reviewed.",
+          "readFor": "08:05 on the feature-addition trap and 19:30 on product-review bottlenecks and delegation.",
+          "kind": "Original event archive with selected first-person excerpts",
+          "attribution": "South Park Commons selected and published excerpts from its own conversation with Krieger; not a Krieger-authored essay or complete transcript."
+        },
+        {
+          "id": "mk-decoder",
+          "title": "Anthropic's Mike Krieger wants to build AI products that are worth the hype",
+          "url": "https://www.theverge.com/24237562/anthropic-mike-krieger-claude-ai-chatbot-artifact-web-decoder-podcast-interview",
+          "date": "2024-09-09",
+          "access": "Artifact shutdown discussion read.",
+          "readFor": "The opening questions about ending Artifact and evaluating the last remaining product ideas.",
+          "kind": "Original interview transcript",
+          "attribution": "Nilay Patel interviews Krieger; transcript explicitly lightly edited for length and clarity."
+        },
+        {
+          "id": "mk-every",
+          "title": "AI Makes Building Products Easy. Knowing What To Cut Is the Hard Part.",
+          "url": "https://every.to/podcast/transcript-how-to-build-an-agent-native-product",
+          "date": "2026-03-25",
+          "dateNote": "Page records an update on 2026-08-07.",
+          "access": "Relevant original transcript sections read.",
+          "readFor": "02:33–11:39 on cheap implementation, overbuilding, rewrites, and the minimal Cowork launch.",
+          "kind": "Original interview transcript",
+          "attribution": "Dan Shipper interviews Krieger. The indoor-tree metaphor is introduced by Shipper, not invented by Krieger."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "mk-subtraction-test",
+          "title": "Write a subtraction brief",
+          "duration": "60 minutes plus three usability sessions",
+          "application": "Original exercise for an internal tool or AI app.",
+          "steps": [
+            "Write the product's essential user outcome in one sentence.",
+            "For each feature, identify the behavior that shows it helps achieve that outcome.",
+            "Make a prototype with half the surface area, without removing necessary permissions, recovery, or access controls.",
+            "Compare task completion and comprehension. Document who becomes worse off and why the narrower version may still be worthwhile."
+          ],
+          "deliverable": "Two prototypes and a cut/keep/defer memo with evidence.",
+          "reviewCriteria": [
+            "The smaller product preserves a complete user job.",
+            "Cuts remove complexity rather than merely hiding it.",
+            "The memo names excluded users and costs."
+          ],
+          "inspiredBy": [
+            "mk-instagram",
+            "mk-every"
+          ]
+        },
+        {
+          "id": "mk-bounded-bet",
+          "title": "Define the final experiment before extending a project",
+          "duration": "45 minutes",
+          "application": "Original exercise, not a claimed Krieger framework.",
+          "steps": [
+            "Choose a stalled feature or side project.",
+            "List the remaining hypotheses that could materially change your decision.",
+            "Select the smallest discriminating test and state the evidence needed to continue.",
+            "Write stop, continue, and narrow conditions before observing results. Include transition costs for existing users."
+          ],
+          "deliverable": "A one-page continuation decision with a date and explicit success conditions.",
+          "reviewCriteria": [
+            "The test can change the decision.",
+            "User affection and sufficient sustained value are measured separately.",
+            "Stopping includes a responsible user transition."
+          ],
+          "inspiredBy": [
+            "mk-decoder"
+          ]
+        }
+      ],
+      "role": "Product builder; work studied at Instagram, Artifact and Anthropic",
+      "category": "Product",
+      "summary": "Subtracting to find a product's core, delegating judgment as organizations grow, and distinguishing affection for a product from a reason to keep investing.",
+      "focus": [
+        "Product focus",
+        "Delegation",
+        "Stopping decisions",
+        "AI-native products"
+      ],
+      "lessons": [
+        {
+          "id": "mk-subtract-burbn",
+          "title": "Narrow Burbn to photo sharing",
+          "kind": "reported product decision",
+          "finding": "Krieger and Systrom extracted photo sharing from a stalled, broader product. Their combination of photos-first design and public defaults was a concrete bet, not just generic simplicity.",
+          "evidence": "Cofounder decision.",
+          "tradeoff": "A clearer core meant abandoning other use cases.",
+          "sourceIds": [
+            "mk-instagram"
+          ],
+          "evidenceStrength": "Primary account; see source access and attribution caveats"
+        },
+        {
+          "id": "mk-delegate-reviews",
+          "title": "Stop routing every product decision through founders",
+          "kind": "reported product decision",
+          "finding": "As Instagram expanded, founder product reviews became a bottleneck. Krieger describes shifting toward teams developing a strong point of view and returning for a check before irreversible choices.",
+          "evidence": "Leadership change described in retrospect; shared with Systrom and the organization.",
+          "tradeoff": "More team autonomy and throughput in exchange for less direct founder control.",
+          "sourceIds": [
+            "mk-spc"
+          ],
+          "evidenceStrength": "Primary account; see source access and attribution caveats"
+        },
+        {
+          "id": "mk-end-artifact",
+          "title": "End Artifact after testing the remaining plausible bets",
+          "kind": "reported product decision",
+          "finding": "The founders tried a final list of product directions, found insufficient movement, and stopped despite passionate users and personal attachment.",
+          "evidence": "Joint founder decision, explained by Krieger.",
+          "tradeoff": "Ending a valued experience versus committing more years to weak growth.",
+          "sourceIds": [
+            "mk-decoder"
+          ],
+          "evidenceStrength": "Primary account; see source access and attribution caveats"
+        },
+        {
+          "id": "mk-reduce-ai-v1",
+          "title": "Launch a smaller AI product before adding every possibility",
+          "kind": "reported product decision",
+          "finding": "Krieger describes a minimal Cowork V1 built in ten days, after longer exploration. He also reports pre-launch rewrites when inexpensive implementation had produced excessive complexity.",
+          "evidence": "Collective Labs/product practice described by Krieger, not a claim he personally built Cowork.",
+          "tradeoff": "Earlier real-world learning versus enterprise expectations for completeness and reliability.",
+          "sourceIds": [
+            "mk-every"
+          ],
+          "evidenceStrength": "Primary account; see source access and attribution caveats"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "title": "Make a retrospective tangible",
+          "observation": "A clock-by-clock opening and an early sketch put uncertainty and design work ahead of abstract lessons.",
+          "sourceIds": [
+            "mk-instagram"
+          ]
+        },
+        {
+          "title": "Translate leadership into a changed decision process",
+          "observation": "The review story identifies the old bottleneck, what teams took over, and where leaders still intervened.",
+          "sourceIds": [
+            "mk-spc"
+          ]
+        },
+        {
+          "title": "Separate emotional truth from allocation judgment",
+          "observation": "He acknowledges missing Artifact while explaining why the next investment was unjustified.",
+          "sourceIds": [
+            "mk-decoder"
+          ]
+        },
+        {
+          "title": "Use a recent self-counterexample",
+          "observation": "Krieger admits his own team overbuilt before early access, preventing the simplicity argument from becoming a victory-only story.",
+          "sourceIds": [
+            "mk-every"
+          ]
+        }
+      ],
+      "counterexamples": [
+        {
+          "analysis": "Analyst transfer limit: a consumer social product's public defaults are not a template for private enterprise data. Transfer the explicit tradeoff analysis, not the default.",
+          "sourceIds": [],
+          "kind": "Boundary condition"
+        },
+        {
+          "analysis": "The Labs account itself counters the idea that cheap code guarantees a good product: extra functionality made testing and explanation harder.",
+          "sourceIds": [
+            "mk-every"
+          ],
+          "kind": "Evidence-based qualification"
+        },
+        {
+          "analysis": "An acquisition, a shutdown, and a growth story do not establish a universal product rule. Founder goals, financing, distribution, and market timing can change the rational decision.",
+          "sourceIds": [],
+          "kind": "Analyst causal limitation"
+        },
+        {
+          "analysis": "Delegation is not the absence of leadership: the SPC account retains alignment on the problem and review before irreversible decisions.",
+          "sourceIds": [
+            "mk-spc"
+          ],
+          "kind": "Evidence-based qualification"
+        }
+      ],
+      "provenanceNotes": [
+        "Only the WIRED essay has Krieger's direct prose byline. Interviews and edited event excerpts support spoken communication analysis, not ghost attribution of host writing.",
+        "SPC publication and event dates differ by three years.",
+        "The accounts are retrospective and largely self-reported; success does not prove the described choice caused the outcome.",
+        "Product-development speed anecdotes are team-specific, not independent productivity benchmarks."
+      ],
+      "learningPath": [
+        "mk-instagram",
+        "mk-spc",
+        "mk-decoder",
+        "mk-every"
+      ]
+    },
+    {
+      "id": "alexander-embiricos",
+      "name": "Alexander Embiricos",
+      "sources": [
+        {
+          "id": "ae-pivot",
+          "title": "Remotion users are churning but we're jazzed",
+          "url": "https://www.linkedin.com/posts/embirico_remotion-users-are-churning-but-were-jazzed-activity-7039291337925382144-uDXV",
+          "date": null,
+          "dateNote": "Public page displays a relative age of three years; exact date not independently confirmed. Discusses the January v3 release.",
+          "access": "Full public post read.",
+          "readFor": "The contrasting usage numbers, the distinction between current and new technical leads, and the specific screen-sharing friction.",
+          "kind": "First-person product update",
+          "attribution": "Posted under Alexander Embiricos's profile. First-person account of shared Remotion decisions."
+        },
+        {
+          "id": "ae-quality",
+          "title": "After a 5-week shipping spree, our team went quiet for 4 weeks",
+          "url": "https://www.linkedin.com/posts/embirico_after-a-5-week-shipping-spree-our-team-went-activity-7046185358585163776-qCkH",
+          "date": null,
+          "dateNote": "Public page displays a relative age of three years; exact date not independently confirmed.",
+          "access": "Full public post read.",
+          "readFor": "The admission that feature iteration hurt quality, followed by named cancellations, fixes, and changes in investment.",
+          "kind": "First-person product update",
+          "attribution": "Posted under Alexander Embiricos's profile. Distinguish his interpretation of the market from independently established industry facts."
+        },
+        {
+          "id": "ae-joining",
+          "title": "Multi is joining OpenAI",
+          "url": "https://multi.app/blog/multi-is-joining-openai",
+          "date": "2024-06-24",
+          "access": "Full announcement and FAQ read.",
+          "readFor": "The move from a strategic explanation to the concrete consequences for existing customers.",
+          "kind": "Bylined company announcement and customer FAQ",
+          "attribution": "Page byline is Alexander Embiricos; announcement closes on behalf of the Multi team."
+        },
+        {
+          "id": "ae-codex",
+          "title": "OpenAI Codex Team: From Coding Autocomplete to Asynchronous Autonomous Agents",
+          "url": "https://sequoiacap.com/podcast/training-data-openai-codex",
+          "date": "2025-06-10",
+          "dateNote": "Episode date corroborated by syndicated podcast listings; original transcript page does not visibly state a date.",
+          "access": "Original transcript's relevant product and onboarding sections read.",
+          "readFor": "Delegating versus pairing, onboarding for parallel tasks, professional-quality output, and the difficulty of communicating user intent.",
+          "kind": "Original joint interview and speaker-labeled transcript",
+          "attribution": "Alexander Embiricos and researcher Hanson Wang interviewed by Sequoia. Embiricos identifies himself as product lead; Wang discusses model training. Neither role establishes sole authorship of Codex."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ae-segment-metrics",
+          "title": "Write the update you would send after losing users",
+          "duration": "75 minutes",
+          "application": "Original exercise using a fictional or nonconfidential internal-tool dataset.",
+          "steps": [
+            "Pick one target role and one valuable workflow.",
+            "Compare overall activity, target-segment retention, completed jobs, and failure rates.",
+            "Write a 250-word decision update explaining whether falling activity is healthy focus, friction, or genuine failure.",
+            "Include the strongest competing interpretation and the evidence that would distinguish it."
+          ],
+          "deliverable": "A concise update plus an explicit metric-definition sheet.",
+          "reviewCriteria": [
+            "No percentage appears without its population and time window.",
+            "The selected metric tracks user value rather than flattering the strategy.",
+            "The memo states what would change the decision."
+          ],
+          "inspiredBy": [
+            "ae-pivot"
+          ]
+        },
+        {
+          "id": "ae-reviewable-delegation",
+          "title": "Design the return path before the agent task",
+          "duration": "90 minutes",
+          "application": "Original exercise for an AI app, not a claimed Codex design specification.",
+          "steps": [
+            "Choose one bounded delegated task, such as proposing metadata changes.",
+            "Design the review screen first: proposed change, supporting evidence, confidence limitations, and accept/reject controls.",
+            "Specify what the agent must stop and ask about, including conflicting instructions and missing permissions.",
+            "Test one successful result, one plausible but wrong result, and one incomplete result with users."
+          ],
+          "deliverable": "A review prototype and task contract with acceptance, rejection, and recovery paths.",
+          "reviewCriteria": [
+            "A user can verify the result without redoing the entire task.",
+            "The agent cannot silently convert a proposal into a consequential write.",
+            "Parallel work does not create hidden merge or review overload."
+          ],
+          "inspiredBy": [
+            "ae-codex"
+          ]
+        }
+      ],
+      "role": "Product builder; work studied at Remotion/Multi and on Codex",
+      "category": "Product",
+      "summary": "Narrowing to a consequential workflow, changing metrics when a product changes, and designing reviewable delegation rather than merely generating output.",
+      "focus": [
+        "Segmentation",
+        "Quality",
+        "Product metrics",
+        "Agent delegation"
+      ],
+      "lessons": [
+        {
+          "id": "ae-narrow-segment",
+          "title": "Stop optimizing for every existing top user",
+          "kind": "reported product decision",
+          "finding": "Remotion narrowed toward technical teams, explicitly deprioritizing about 60% of previous top users. New-user interviews shifted the goal from inducing spontaneous conversation to improving calls already happening. Reported weekly users fell 8%, while call usage rose 26% and screen sharing 77%.",
+          "evidence": "Team pivot reported by its cofounder.",
+          "tradeoff": "Less breadth and some churn for deeper use of the chosen workflow.",
+          "sourceIds": [
+            "ae-pivot"
+          ],
+          "evidenceStrength": "Primary account; see source access and attribution caveats"
+        },
+        {
+          "id": "ae-quality-pause",
+          "title": "Pause feature expansion to repair the core",
+          "kind": "reported product decision",
+          "finding": "The team canceled two in-progress features, shipped 19 significant fixes and improvements, and increased polish investment. Embiricos connects this to a narrower audience needing a few dependable interactions.",
+          "evidence": "Team execution change, explained in Embiricos's own post.",
+          "tradeoff": "Fewer visible launches in exchange for reliability and clearer value.",
+          "sourceIds": [
+            "ae-quality"
+          ],
+          "evidenceStrength": "Primary account; see source access and attribution caveats"
+        },
+        {
+          "id": "ae-sunset-multi",
+          "title": "Join OpenAI and sunset Multi",
+          "kind": "reported product decision",
+          "finding": "The announcement paired the new direction with closed signups, a July 24, 2024 sunset and data-deletion date, export instructions, and an extension route.",
+          "evidence": "Company decision announced by Embiricos; transaction terms are not established here.",
+          "tradeoff": "Pursuing a new opportunity imposed switching work on existing customers.",
+          "sourceIds": [
+            "ae-joining"
+          ],
+          "evidenceStrength": "Primary account; see source access and attribution caveats"
+        },
+        {
+          "id": "ae-onboard-delegation",
+          "title": "Teach delegation rather than assume users will discover it",
+          "kind": "reported product decision",
+          "finding": "Embiricos describes changing Codex onboarding to make multiple parallel tasks the initial discovery moment. The team designed independent execution and reviewable work rather than only an interactive typing assistant.",
+          "evidence": "Shared product direction and onboarding practice; the interview separately credits research work to Wang and colleagues.",
+          "tradeoff": "More asynchronous throughput, but greater demands on task definition, environment setup, and review.",
+          "sourceIds": [
+            "ae-codex"
+          ],
+          "evidenceStrength": "Primary account; see source access and attribution caveats"
+        }
+      ],
+      "writingTechniques": [
+        {
+          "title": "Lead with apparently bad evidence, then explain the denominator",
+          "observation": "The pivot post opens with falling active-user counts before explaining which usage increased and which audience the product now serves.",
+          "sourceIds": [
+            "ae-pivot"
+          ]
+        },
+        {
+          "title": "Make a strategic change costly and therefore credible",
+          "observation": "The quality post names stopped work and shipped repairs, making prioritization observable instead of merely declaring a higher quality bar.",
+          "sourceIds": [
+            "ae-quality"
+          ]
+        },
+        {
+          "title": "Put operational consequences beside the vision",
+          "observation": "The acquisition announcement does not leave customers with aspiration alone: it specifies deadlines, export steps, and help.",
+          "sourceIds": [
+            "ae-joining"
+          ]
+        },
+        {
+          "title": "Explain a new interaction model through a familiar working relationship",
+          "observation": "The Codex interview uses professional-development and delegation analogies, then grounds them in PR descriptions, testing, and review.",
+          "sourceIds": [
+            "ae-codex"
+          ]
+        }
+      ],
+      "counterexamples": [
+        {
+          "analysis": "The usage increases are self-reported, with no exposed cohort definitions or independent retention analysis. They support a strategic interpretation, not proof of durable product-market fit.",
+          "sourceIds": [
+            "ae-pivot"
+          ],
+          "kind": "Evidence-based qualification"
+        },
+        {
+          "analysis": "The quality pause is a concrete counterexample to treating faster feature shipping as an unconditional good.",
+          "sourceIds": [
+            "ae-quality"
+          ],
+          "kind": "Evidence-based qualification"
+        },
+        {
+          "analysis": "Multi's later sunset prevents a simple victory narrative. This announcement alone does not establish whether the preceding pivot succeeded or failed commercially.",
+          "sourceIds": [
+            "ae-joining"
+          ],
+          "kind": "Evidence-based qualification"
+        },
+        {
+          "analysis": "A provocative future agent interface in the interview is explicitly speculative. Do not present it as a shipped feature or validated roadmap.",
+          "sourceIds": [
+            "ae-codex"
+          ],
+          "kind": "Evidence-based qualification"
+        }
+      ],
+      "provenanceNotes": [
+        "Remotion here is the collaboration company that became Multi, not the unrelated React video-generation framework.",
+        "The LinkedIn posts are first-person primary accounts, but their exact publication dates were not independently confirmed.",
+        "Codex is a team product. This entry attributes explanations and reported choices to Embiricos, not the complete research, code, or design.",
+        "A secondary roundup was used to locate several originals; conclusions above were checked against the linked primary posts and interview.",
+        "Public announcements and interviews can frame outcomes favorably. The record here is not a complete company history."
+      ],
+      "learningPath": [
+        "ae-pivot",
+        "ae-quality",
+        "ae-joining",
+        "ae-codex"
+      ]
+    }
+  ],
+  "crossCaseApplications": [
+    {
+      "title": "Speed and quality are conditional choices",
+      "analysis": "Compare Wu's cheap prototype loop with Embiricos's pause for reliability. Ask whether the current bottleneck is uncertainty about the user problem or failure to deliver the already-chosen promise.",
+      "sources": [
+        "cw-exponential",
+        "ae-quality"
+      ]
+    },
+    {
+      "title": "Autonomy needs a clear return path",
+      "analysis": "Compare Krieger's leadership delegation with agent delegation. In either case, define the goal, the boundaries, the evidence returned, and the decision that remains with the reviewer.",
+      "sources": [
+        "mk-spc",
+        "ae-codex"
+      ]
+    },
+    {
+      "title": "Prototype speed and production stability solve different problems",
+      "analysis": "Compare Cat Wu's discovery loops, Nikolas Klein's interaction regression work and Geoff Charles's critical-workflow boundary. Choose the pace from uncertainty, reversibility and the cost of failure, not from a universal slogan.",
+      "sources": [
+        "cw-exponential",
+        "klein-multiedit",
+        "geoff-risk"
+      ]
+    },
+    {
+      "title": "Strategy is a choice with an explicit sacrifice",
+      "analysis": "Read Embiricos's narrower audience beside Zhang's scope reductions and Krieger's shutdown. For every decision, record what stopped, who became worse off and what evidence could justify reversing course.",
+      "sources": [
+        "ae-pivot",
+        "jiaona-mlp",
+        "mk-decoder"
+      ]
+    },
+    {
+      "title": "Original authorship is different from product ownership",
+      "analysis": "A byline can support analysis of a published explanation without establishing sole authorship of the product. Edited interviews also include a publisher's narrative choices. Preserve these distinctions when writing your own case studies.",
+      "sources": [
+        "klein-copy-design",
+        "jiaona-career",
+        "ae-codex"
+      ]
+    }
+  ]
+}
